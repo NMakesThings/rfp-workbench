@@ -1,0 +1,2573 @@
+{
+    "requirements":  [
+                         {
+                             "id":  "VENDOR-QUAL-001",
+                             "categoryId":  "VENDOR",
+                             "categoryLabel":  "Vendor Management",
+                             "functionId":  "QUAL",
+                             "functionLabel":  "Vendor Qualifications",
+                             "requirementNumber":  "001",
+                             "title":  "Vendor Corporate Profile",
+                             "sectionId":  "vendor_qualifications",
+                             "sectionLabel":  "Vendor Qualifications",
+                             "subsection":  "Corporate Profile",
+                             "sortOrder":  101,
+                             "requirementLevel":  "must",
+                             "priority":  "high",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Vendor shall describe its organization, ownership, years in business, financial stability, and experience delivering comparable solutions.",
+                             "rationale":  "Basic vendor background helps evaluators understand organizational maturity and delivery risk.",
+                             "responseInstructions":  "Provide a concise corporate profile, ownership summary, years in operation, financial stability indicators, and comparable project experience.",
+                             "evaluationCriteria":  "Responses should demonstrate organizational stability and credible experience with similar engagements.",
+                             "applicability":  {
+                                                   "baseline":  true,
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "vendor_qualifications"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "new_system",
+                                                                            "replacement",
+                                                                            "implementation_services",
+                                                                            "integration_project",
+                                                                            "support_maintenance",
+                                                                            "assessment_planning"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "always":  true
+                                          },
+                             "tags":  [
+                                          "baseline"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "VENDOR-QUAL-001",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "VENDOR-QUAL-001",
+                             "originalText":  "Vendor shall describe its organization, ownership, years in business, financial stability, and experience delivering comparable solutions.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         },
+                         {
+                             "id":  "VENDOR-REF-001",
+                             "categoryId":  "VENDOR",
+                             "categoryLabel":  "Vendor Management",
+                             "functionId":  "REF",
+                             "functionLabel":  "Client References",
+                             "requirementNumber":  "001",
+                             "title":  "Comparable Client References",
+                             "sectionId":  "vendor_qualifications",
+                             "sectionLabel":  "Vendor Qualifications",
+                             "subsection":  "References",
+                             "sortOrder":  102,
+                             "requirementLevel":  "should",
+                             "priority":  "medium",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Vendor shall provide at least three client references for projects of similar scope, size, and complexity.",
+                             "rationale":  "Comparable references help validate delivery performance and customer satisfaction.",
+                             "responseInstructions":  "Provide reference organization name, project summary, dates, scope, and contact information where permitted.",
+                             "evaluationCriteria":  "Preference will be given to references with comparable size, scope, industry, and recency.",
+                             "applicability":  {
+                                                   "vendorPriorities":  [
+                                                                            "references",
+                                                                            "experience"
+                                                                        ],
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "vendor_qualifications"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "new_system",
+                                                                            "replacement",
+                                                                            "implementation_services",
+                                                                            "integration_project"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "any":  {
+                                                          "vendor_priorities":  [
+                                                                                    "references",
+                                                                                    "experience"
+                                                                                ]
+                                                      }
+                                          },
+                             "tags":  [
+                                          "baseline",
+                                          "references"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "VENDOR-REF-001",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "VENDOR-REF-001",
+                             "originalText":  "Vendor shall provide at least three client references for projects of similar scope, size, and complexity.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         },
+                         {
+                             "id":  "PM-PLAN-001",
+                             "categoryId":  "PM",
+                             "categoryLabel":  "Project Management",
+                             "functionId":  "PLAN",
+                             "functionLabel":  "Project Planning",
+                             "requirementNumber":  "001",
+                             "title":  "Project Plan",
+                             "sectionId":  "project_management",
+                             "sectionLabel":  "Project Management",
+                             "subsection":  "Planning",
+                             "sortOrder":  201,
+                             "requirementLevel":  "must",
+                             "priority":  "high",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Vendor shall provide a project plan that identifies major milestones, roles, responsibilities, dependencies, and decision points.",
+                             "rationale":  "A clear project plan establishes delivery expectations and accountability.",
+                             "responseInstructions":  "Include a sample or proposed project plan with milestones, workstreams, responsibilities, dependencies, and governance checkpoints.",
+                             "evaluationCriteria":  "Responses should show a realistic plan aligned to the proposed scope and timeline.",
+                             "applicability":  {
+                                                   "baseline":  true,
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "implementation_services"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "new_system",
+                                                                            "replacement",
+                                                                            "implementation_services",
+                                                                            "integration_project"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "always":  true
+                                          },
+                             "tags":  [
+                                          "baseline"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "PM-PLAN-001",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "PM-PLAN-001",
+                             "originalText":  "Vendor shall provide a project plan that identifies major milestones, roles, responsibilities, dependencies, and decision points.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         },
+                         {
+                             "id":  "PM-RISK-001",
+                             "categoryId":  "PM",
+                             "categoryLabel":  "Project Management",
+                             "functionId":  "RISK",
+                             "functionLabel":  "Risk Management",
+                             "requirementNumber":  "001",
+                             "title":  "Timeline Risk Mitigation",
+                             "sectionId":  "project_management",
+                             "sectionLabel":  "Project Management",
+                             "subsection":  "Risk Management",
+                             "sortOrder":  202,
+                             "requirementLevel":  "should",
+                             "priority":  "medium",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Vendor shall identify risks to the proposed timeline and provide mitigation strategies for each risk.",
+                             "rationale":  "Compressed timelines require explicit risk identification and mitigation planning.",
+                             "responseInstructions":  "Describe timeline assumptions, likely risks, mitigation actions, and decisions needed from the buyer.",
+                             "evaluationCriteria":  "Responses should identify realistic risks and actionable mitigations rather than generic project risks.",
+                             "applicability":  {
+                                                   "timelines":  [
+                                                                     "under_3_months",
+                                                                     "3_6_months"
+                                                                 ],
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "implementation_services"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "new_system",
+                                                                            "replacement",
+                                                                            "implementation_services",
+                                                                            "integration_project"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "any":  {
+                                                          "timeline":  [
+                                                                           "under_3_months",
+                                                                           "3_6_months"
+                                                                       ]
+                                                      }
+                                          },
+                             "tags":  [
+                                          "timeline"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "PM-RISK-001",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "PM-RISK-001",
+                             "originalText":  "Vendor shall identify risks to the proposed timeline and provide mitigation strategies for each risk.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         },
+                         {
+                             "id":  "FUN-WORKFLOW-001",
+                             "categoryId":  "FUN",
+                             "categoryLabel":  "Functional Requirements",
+                             "functionId":  "WORKFLOW",
+                             "functionLabel":  "Workflow Configuration",
+                             "requirementNumber":  "001",
+                             "title":  "Configurable Workflows",
+                             "sectionId":  "functional_requirements",
+                             "sectionLabel":  "Functional Requirements",
+                             "subsection":  "Workflow",
+                             "sortOrder":  301,
+                             "requirementLevel":  "must",
+                             "priority":  "high",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Solution shall support configurable workflows, user roles, approval steps, and notifications without custom code.",
+                             "rationale":  "Configuration reduces implementation cost and supports future process changes.",
+                             "responseInstructions":  "Describe workflow configuration capabilities, role management, approval routing, and notification options.",
+                             "evaluationCriteria":  "Preference will be given to native configuration capabilities that avoid custom code.",
+                             "applicability":  {
+                                                   "projectTypes":  [
+                                                                        "software_platform",
+                                                                        "operations_program"
+                                                                    ],
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "workflow_configuration",
+                                                                                "case_management"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "new_system",
+                                                                            "replacement"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "any":  {
+                                                          "project_type":  [
+                                                                               "software_platform",
+                                                                               "operations_program"
+                                                                           ]
+                                                      }
+                                          },
+                             "tags":  [
+                                          "software"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "FUN-WORKFLOW-001",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "FUN-WORKFLOW-001",
+                             "originalText":  "Solution shall support configurable workflows, user roles, approval steps, and notifications without custom code.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         },
+                         {
+                             "id":  "FUN-ACCESS-001",
+                             "categoryId":  "FUN",
+                             "categoryLabel":  "Functional Requirements",
+                             "functionId":  "ACCESS",
+                             "functionLabel":  "User Access Experience",
+                             "requirementNumber":  "001",
+                             "title":  "Responsive Web and Mobile Access",
+                             "sectionId":  "functional_requirements",
+                             "sectionLabel":  "Functional Requirements",
+                             "subsection":  "User Experience",
+                             "sortOrder":  302,
+                             "requirementLevel":  "should",
+                             "priority":  "medium",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Solution shall provide responsive web access for common user workflows across desktop and mobile browsers.",
+                             "rationale":  "Mobile access may be needed for distributed users and field workflows.",
+                             "responseInstructions":  "Describe supported browsers, mobile workflows, responsive behavior, and any limitations by device type.",
+                             "evaluationCriteria":  "Responses should show that core workflows can be completed on supported mobile browsers.",
+                             "applicability":  {
+                                                   "deploymentModels":  [
+                                                                            "mobile"
+                                                                        ],
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "mobile_access"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "new_system",
+                                                                            "replacement"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "any":  {
+                                                          "deployment_model":  [
+                                                                                   "mobile"
+                                                                               ]
+                                                      }
+                                          },
+                             "tags":  [
+                                          "mobile"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "FUN-ACCESS-001",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "FUN-ACCESS-001",
+                             "originalText":  "Solution shall provide responsive web access for common user workflows across desktop and mobile browsers.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         },
+                         {
+                             "id":  "DATA-MIGRATION-001",
+                             "categoryId":  "DATA",
+                             "categoryLabel":  "Data Management",
+                             "functionId":  "MIGRATION",
+                             "functionLabel":  "Data Migration",
+                             "requirementNumber":  "001",
+                             "title":  "Data Migration Approach",
+                             "sectionId":  "functional_requirements",
+                             "sectionLabel":  "Functional Requirements",
+                             "subsection":  "Data Migration",
+                             "sortOrder":  303,
+                             "requirementLevel":  "must",
+                             "priority":  "high",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Vendor shall document how the solution supports migration from existing systems, including mapping, cleansing, validation, and reconciliation activities.",
+                             "rationale":  "Migration planning reduces data quality, cutover, and continuity risks.",
+                             "responseInstructions":  "Describe migration tools, responsibilities, mapping, cleansing, validation, reconciliation, and cutover support.",
+                             "evaluationCriteria":  "Responses should provide a complete migration approach with clear buyer and vendor responsibilities.",
+                             "applicability":  {
+                                                   "implementationSupport":  [
+                                                                                 "migration"
+                                                                             ],
+                                                   "procurementStages":  [
+                                                                             "replacement"
+                                                                         ],
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "data_migration"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "replacement"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "any":  {
+                                                          "implementation_support":  [
+                                                                                         "migration"
+                                                                                     ],
+                                                          "procurement_stage":  [
+                                                                                    "replacement"
+                                                                                ]
+                                                      }
+                                          },
+                             "tags":  [
+                                          "migration",
+                                          "replacement"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "DATA-MIGRATION-001",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "DATA-MIGRATION-001",
+                             "originalText":  "Vendor shall document how the solution supports migration from existing systems, including mapping, cleansing, validation, and reconciliation activities.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         },
+                         {
+                             "id":  "DATA-REPORT-001",
+                             "categoryId":  "DATA",
+                             "categoryLabel":  "Data Management",
+                             "functionId":  "REPORT",
+                             "functionLabel":  "Reporting",
+                             "requirementNumber":  "001",
+                             "title":  "Operational Dashboards",
+                             "sectionId":  "functional_requirements",
+                             "sectionLabel":  "Functional Requirements",
+                             "subsection":  "Reporting",
+                             "sortOrder":  304,
+                             "requirementLevel":  "should",
+                             "priority":  "medium",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Solution shall support dashboard views for operational metrics, trends, exceptions, and user-defined filters.",
+                             "rationale":  "Dashboards help users monitor operational performance and exceptions.",
+                             "responseInstructions":  "Describe available dashboard capabilities, filtering, configuration, permissions, and example metrics.",
+                             "evaluationCriteria":  "Responses should demonstrate useful dashboards that can be configured for buyer-specific metrics.",
+                             "applicability":  {
+                                                   "reportingNeeds":  [
+                                                                          "dashboards"
+                                                                      ],
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "reporting_analytics"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "new_system",
+                                                                            "replacement"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "any":  {
+                                                          "reporting_needs":  [
+                                                                                  "dashboards"
+                                                                              ]
+                                                      }
+                                          },
+                             "tags":  [
+                                          "reporting",
+                                          "dashboards"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "DATA-REPORT-001",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "DATA-REPORT-001",
+                             "originalText":  "Solution shall support dashboard views for operational metrics, trends, exceptions, and user-defined filters.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         },
+                         {
+                             "id":  "DATA-REPORT-002",
+                             "categoryId":  "DATA",
+                             "categoryLabel":  "Data Management",
+                             "functionId":  "REPORT",
+                             "functionLabel":  "Reporting",
+                             "requirementNumber":  "002",
+                             "title":  "Scheduled Report Delivery",
+                             "sectionId":  "functional_requirements",
+                             "sectionLabel":  "Functional Requirements",
+                             "subsection":  "Reporting",
+                             "sortOrder":  305,
+                             "requirementLevel":  "should",
+                             "priority":  "medium",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Solution shall support scheduled delivery of reports to authorized users and distribution lists.",
+                             "rationale":  "Scheduled reporting reduces manual effort and keeps stakeholders informed.",
+                             "responseInstructions":  "Describe scheduled report formats, delivery channels, permission controls, and administration features.",
+                             "evaluationCriteria":  "Responses should support controlled report scheduling for authorized users and groups.",
+                             "applicability":  {
+                                                   "reportingNeeds":  [
+                                                                          "scheduled_reports"
+                                                                      ],
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "reporting_analytics"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "new_system",
+                                                                            "replacement"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "any":  {
+                                                          "reporting_needs":  [
+                                                                                  "scheduled_reports"
+                                                                              ]
+                                                      }
+                                          },
+                             "tags":  [
+                                          "reporting"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "DATA-REPORT-002",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "DATA-REPORT-002",
+                             "originalText":  "Solution shall support scheduled delivery of reports to authorized users and distribution lists.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         },
+                         {
+                             "id":  "DATA-ANALYTICS-001",
+                             "categoryId":  "DATA",
+                             "categoryLabel":  "Data Management",
+                             "functionId":  "ANALYTICS",
+                             "functionLabel":  "Analytics",
+                             "requirementNumber":  "001",
+                             "title":  "Ad Hoc Analysis",
+                             "sectionId":  "functional_requirements",
+                             "sectionLabel":  "Functional Requirements",
+                             "subsection":  "Analytics",
+                             "sortOrder":  306,
+                             "requirementLevel":  "should",
+                             "priority":  "medium",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Solution shall support ad hoc reporting or analysis capabilities for authorized power users.",
+                             "rationale":  "Ad hoc analysis lets advanced users answer emerging business questions without waiting for custom reports.",
+                             "responseInstructions":  "Describe ad hoc analysis tools, data access controls, export options, and user skill requirements.",
+                             "evaluationCriteria":  "Responses should balance analytical flexibility with appropriate access and governance controls.",
+                             "applicability":  {
+                                                   "projectTypes":  [
+                                                                        "data_analytics"
+                                                                    ],
+                                                   "reportingNeeds":  [
+                                                                          "ad_hoc"
+                                                                      ],
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "reporting_analytics"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "new_system",
+                                                                            "replacement"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "any":  {
+                                                          "reporting_needs":  [
+                                                                                  "ad_hoc"
+                                                                              ],
+                                                          "project_type":  [
+                                                                               "data_analytics"
+                                                                           ]
+                                                      }
+                                          },
+                             "tags":  [
+                                          "analytics"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "DATA-ANALYTICS-001",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "DATA-ANALYTICS-001",
+                             "originalText":  "Solution shall support ad hoc reporting or analysis capabilities for authorized power users.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         },
+                         {
+                             "id":  "TECH-HOSTING-001",
+                             "categoryId":  "TECH",
+                             "categoryLabel":  "Technology",
+                             "functionId":  "HOSTING",
+                             "functionLabel":  "Hosting and Operations",
+                             "requirementNumber":  "001",
+                             "title":  "Hosting and Recovery Model",
+                             "sectionId":  "technical_requirements",
+                             "sectionLabel":  "Technical Requirements",
+                             "subsection":  "Hosting",
+                             "sortOrder":  401,
+                             "requirementLevel":  "must",
+                             "priority":  "high",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Vendor shall describe the proposed hosting model, environments, release process, backup approach, and disaster recovery capabilities.",
+                             "rationale":  "Hosting and recovery details are needed to assess operational resilience.",
+                             "responseInstructions":  "Describe hosting architecture, environments, release management, backups, recovery objectives, and disaster recovery testing.",
+                             "evaluationCriteria":  "Responses should demonstrate reliable operations, defined recovery practices, and appropriate environment controls.",
+                             "applicability":  {
+                                                   "baseline":  true,
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "hosting_operations",
+                                                                                "backup_disaster_recovery"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "new_system",
+                                                                            "replacement",
+                                                                            "support_maintenance"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "always":  true
+                                          },
+                             "tags":  [
+                                          "baseline"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "TECH-HOSTING-001",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "TECH-HOSTING-001",
+                             "originalText":  "Vendor shall describe the proposed hosting model, environments, release process, backup approach, and disaster recovery capabilities.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         },
+                         {
+                             "id":  "INT-API-001",
+                             "categoryId":  "INT",
+                             "categoryLabel":  "Integrations",
+                             "functionId":  "API",
+                             "functionLabel":  "APIs and Exports",
+                             "requirementNumber":  "001",
+                             "title":  "Documented APIs and Exports",
+                             "sectionId":  "technical_requirements",
+                             "sectionLabel":  "Technical Requirements",
+                             "subsection":  "Integration Architecture",
+                             "sortOrder":  402,
+                             "requirementLevel":  "must",
+                             "priority":  "high",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Solution shall provide documented APIs or export mechanisms for data exchange with approved systems.",
+                             "rationale":  "Documented exchange mechanisms reduce integration cost and long-term lock-in.",
+                             "responseInstructions":  "Describe available APIs, export formats, authentication, rate limits, documentation, and support for integration testing.",
+                             "evaluationCriteria":  "Responses should include mature, documented, and supportable data exchange options.",
+                             "applicability":  {
+                                                   "integrations":  [
+                                                                        "crm",
+                                                                        "erp",
+                                                                        "data_warehouse",
+                                                                        "payment",
+                                                                        "email"
+                                                                    ],
+                                                   "reportingNeeds":  [
+                                                                          "api_exports"
+                                                                      ],
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "integrations_apis"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "new_system",
+                                                                            "replacement",
+                                                                            "integration_project"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "any":  {
+                                                          "reporting_needs":  [
+                                                                                  "api_exports"
+                                                                              ],
+                                                          "integrations":  [
+                                                                               "crm",
+                                                                               "erp",
+                                                                               "data_warehouse",
+                                                                               "payment",
+                                                                               "email"
+                                                                           ]
+                                                      }
+                                          },
+                             "tags":  [
+                                          "api",
+                                          "integration"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "INT-API-001",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "INT-API-001",
+                             "originalText":  "Solution shall provide documented APIs or export mechanisms for data exchange with approved systems.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         },
+                         {
+                             "id":  "SEC-AUTH-001",
+                             "categoryId":  "SEC",
+                             "categoryLabel":  "Security",
+                             "functionId":  "AUTH",
+                             "functionLabel":  "Authentication and Access Control",
+                             "requirementNumber":  "001",
+                             "title":  "Single Sign-On Integration",
+                             "sectionId":  "technical_requirements",
+                             "sectionLabel":  "Technical Requirements",
+                             "subsection":  "Identity and Access Management",
+                             "sortOrder":  403,
+                             "requirementLevel":  "must",
+                             "priority":  "high",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Solution shall integrate with the organization\u0027s single sign-on provider using SAML 2.0, OpenID Connect, or another mutually agreed standard.",
+                             "rationale":  "Centralized identity reduces access risk and simplifies user lifecycle management.",
+                             "responseInstructions":  "Describe supported SSO standards, configuration steps, identity provider experience, and limitations.",
+                             "evaluationCriteria":  "Preference will be given to native standards-based SSO with documented implementation references.",
+                             "applicability":  {
+                                                   "integrations":  [
+                                                                        "sso"
+                                                                    ],
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "identity_access_management",
+                                                                                "security_privacy"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "new_system",
+                                                                            "replacement",
+                                                                            "integration_project"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "any":  {
+                                                          "integrations":  [
+                                                                               "sso"
+                                                                           ]
+                                                      }
+                                          },
+                             "tags":  [
+                                          "sso",
+                                          "identity"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "SEC-AUTH-001",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "SEC-AUTH-001",
+                             "originalText":  "Solution shall integrate with the organization\u0027s single sign-on provider using SAML 2.0, OpenID Connect, or another mutually agreed standard.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         },
+                         {
+                             "id":  "INT-SYNC-001",
+                             "categoryId":  "INT",
+                             "categoryLabel":  "Integrations",
+                             "functionId":  "SYNC",
+                             "functionLabel":  "Data Synchronization",
+                             "requirementNumber":  "001",
+                             "title":  "Integration Error Handling and Monitoring",
+                             "sectionId":  "technical_requirements",
+                             "sectionLabel":  "Technical Requirements",
+                             "subsection":  "Integration Architecture",
+                             "sortOrder":  404,
+                             "requirementLevel":  "should",
+                             "priority":  "medium",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Vendor shall describe data synchronization options, error handling, monitoring, and retry logic for all proposed integrations.",
+                             "rationale":  "Integration monitoring and recovery controls reduce operational disruption.",
+                             "responseInstructions":  "Describe synchronization patterns, error handling, retries, alerting, monitoring, and administrative visibility.",
+                             "evaluationCriteria":  "Responses should show reliable integration operations and clear error recovery practices.",
+                             "applicability":  {
+                                                   "integrations":  [
+                                                                        "crm",
+                                                                        "erp",
+                                                                        "data_warehouse",
+                                                                        "payment",
+                                                                        "email"
+                                                                    ],
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "integrations_apis"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "new_system",
+                                                                            "replacement",
+                                                                            "integration_project"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "any":  {
+                                                          "integrations":  [
+                                                                               "crm",
+                                                                               "erp",
+                                                                               "data_warehouse",
+                                                                               "payment",
+                                                                               "email"
+                                                                           ]
+                                                      }
+                                          },
+                             "tags":  [
+                                          "integration"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "INT-SYNC-001",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "INT-SYNC-001",
+                             "originalText":  "Vendor shall describe data synchronization options, error handling, monitoring, and retry logic for all proposed integrations.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         },
+                         {
+                             "id":  "TECH-ENV-001",
+                             "categoryId":  "TECH",
+                             "categoryLabel":  "Technology",
+                             "functionId":  "ENV",
+                             "functionLabel":  "Technical Environment",
+                             "requirementNumber":  "001",
+                             "title":  "Operating Requirements",
+                             "sectionId":  "technical_requirements",
+                             "sectionLabel":  "Technical Requirements",
+                             "subsection":  "Operating Environment",
+                             "sortOrder":  405,
+                             "requirementLevel":  "must",
+                             "priority":  "medium",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Vendor shall identify browser, device, network, and infrastructure requirements needed to operate the proposed solution.",
+                             "rationale":  "Technical prerequisites help the buyer assess readiness and hidden operating costs.",
+                             "responseInstructions":  "List supported browsers, devices, network requirements, infrastructure dependencies, and known limitations.",
+                             "evaluationCriteria":  "Responses should be complete and compatible with the buyer\u0027s expected operating environment.",
+                             "applicability":  {
+                                                   "baseline":  true,
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "hosting_operations",
+                                                                                "configuration_administration"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "new_system",
+                                                                            "replacement",
+                                                                            "implementation_services",
+                                                                            "support_maintenance"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "always":  true
+                                          },
+                             "tags":  [
+                                          "baseline"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "TECH-ENV-001",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "TECH-ENV-001",
+                             "originalText":  "Vendor shall identify browser, device, network, and infrastructure requirements needed to operate the proposed solution.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         },
+                         {
+                             "id":  "SEC-GOV-001",
+                             "categoryId":  "SEC",
+                             "categoryLabel":  "Security",
+                             "functionId":  "GOV",
+                             "functionLabel":  "Security Governance",
+                             "requirementNumber":  "001",
+                             "title":  "Information Security Overview",
+                             "sectionId":  "security_compliance",
+                             "sectionLabel":  "Security and Compliance",
+                             "subsection":  "Security Program",
+                             "sortOrder":  501,
+                             "requirementLevel":  "must",
+                             "priority":  "high",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Vendor shall provide a current information security overview covering access controls, encryption, vulnerability management, incident response, and employee security training.",
+                             "rationale":  "Security program information is needed to assess baseline vendor risk.",
+                             "responseInstructions":  "Provide a security program overview and supporting documentation where available.",
+                             "evaluationCriteria":  "Responses should show a mature security program with documented controls and governance.",
+                             "applicability":  {
+                                                   "baseline":  true,
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "security_privacy",
+                                                                                "compliance"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "new_system",
+                                                                            "replacement",
+                                                                            "implementation_services",
+                                                                            "integration_project",
+                                                                            "support_maintenance"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "always":  true
+                                          },
+                             "tags":  [
+                                          "baseline",
+                                          "security"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "SEC-GOV-001",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "SEC-GOV-001",
+                             "originalText":  "Vendor shall provide a current information security overview covering access controls, encryption, vulnerability management, incident response, and employee security training.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         },
+                         {
+                             "id":  "SEC-ENCRYPT-001",
+                             "categoryId":  "SEC",
+                             "categoryLabel":  "Security",
+                             "functionId":  "ENCRYPT",
+                             "functionLabel":  "Encryption",
+                             "requirementNumber":  "001",
+                             "title":  "Data Encryption",
+                             "sectionId":  "security_compliance",
+                             "sectionLabel":  "Security and Compliance",
+                             "subsection":  "Data Protection",
+                             "sortOrder":  502,
+                             "requirementLevel":  "must",
+                             "priority":  "critical",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Solution shall encrypt sensitive data in transit and at rest using industry-standard protocols and key management practices.",
+                             "rationale":  "Encryption protects sensitive data from unauthorized access and disclosure.",
+                             "responseInstructions":  "Describe encryption protocols, key management practices, data stores covered, and any exceptions.",
+                             "evaluationCriteria":  "Responses should demonstrate strong encryption coverage for moderate or high sensitivity data.",
+                             "applicability":  {
+                                                   "dataSensitivity":  [
+                                                                           "moderate",
+                                                                           "high"
+                                                                       ],
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "security_privacy"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "new_system",
+                                                                            "replacement",
+                                                                            "integration_project",
+                                                                            "support_maintenance"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "any":  {
+                                                          "data_sensitivity":  [
+                                                                                   "moderate",
+                                                                                   "high"
+                                                                               ]
+                                                      }
+                                          },
+                             "tags":  [
+                                          "sensitive-data"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "SEC-ENCRYPT-001",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "SEC-ENCRYPT-001",
+                             "originalText":  "Solution shall encrypt sensitive data in transit and at rest using industry-standard protocols and key management practices.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         },
+                         {
+                             "id":  "SEC-AUDIT-001",
+                             "categoryId":  "SEC",
+                             "categoryLabel":  "Security",
+                             "functionId":  "AUDIT",
+                             "functionLabel":  "Third-Party Assurance",
+                             "requirementNumber":  "001",
+                             "title":  "SOC 2 Assurance",
+                             "sectionId":  "security_compliance",
+                             "sectionLabel":  "Security and Compliance",
+                             "subsection":  "Third-Party Assurance",
+                             "sortOrder":  503,
+                             "requirementLevel":  "should",
+                             "priority":  "high",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Vendor shall provide recent SOC 2 Type II audit documentation or equivalent third-party assurance materials.",
+                             "rationale":  "Independent assurance helps validate the design and operation of vendor controls.",
+                             "responseInstructions":  "Provide SOC 2 Type II documentation or describe equivalent assurance materials, scope, date, and exceptions.",
+                             "evaluationCriteria":  "Preference will be given to recent independent assurance covering relevant services and controls.",
+                             "applicability":  {
+                                                   "compliance":  [
+                                                                      "soc2"
+                                                                  ],
+                                                   "vendorPriorities":  [
+                                                                            "security"
+                                                                        ],
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "security_privacy",
+                                                                                "compliance"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "new_system",
+                                                                            "replacement",
+                                                                            "support_maintenance"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "any":  {
+                                                          "compliance":  [
+                                                                             "soc2"
+                                                                         ],
+                                                          "vendor_priorities":  [
+                                                                                    "security"
+                                                                                ]
+                                                      }
+                                          },
+                             "tags":  [
+                                          "soc2"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "SEC-AUDIT-001",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "SEC-AUDIT-001",
+                             "originalText":  "Vendor shall provide recent SOC 2 Type II audit documentation or equivalent third-party assurance materials.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         },
+                         {
+                             "id":  "SEC-COMPLIANCE-001",
+                             "categoryId":  "SEC",
+                             "categoryLabel":  "Security",
+                             "functionId":  "COMPLIANCE",
+                             "functionLabel":  "Regulatory Compliance",
+                             "requirementNumber":  "001",
+                             "title":  "HIPAA Safeguards",
+                             "sectionId":  "security_compliance",
+                             "sectionLabel":  "Security and Compliance",
+                             "subsection":  "Regulatory Compliance",
+                             "sortOrder":  504,
+                             "requirementLevel":  "must",
+                             "priority":  "critical",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Vendor shall describe how the solution supports HIPAA administrative, physical, and technical safeguard obligations, including Business Associate Agreement expectations where applicable.",
+                             "rationale":  "HIPAA applicability requires explicit evidence of safeguard support and contracting expectations.",
+                             "responseInstructions":  "Describe HIPAA safeguards, covered responsibilities, BAA terms, audit evidence, and implementation assumptions.",
+                             "evaluationCriteria":  "Responses should clearly address HIPAA safeguard obligations and BAA readiness.",
+                             "applicability":  {
+                                                   "compliance":  [
+                                                                      "hipaa"
+                                                                  ],
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "compliance",
+                                                                                "security_privacy"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "new_system",
+                                                                            "replacement",
+                                                                            "support_maintenance"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "any":  {
+                                                          "compliance":  [
+                                                                             "hipaa"
+                                                                         ]
+                                                      }
+                                          },
+                             "tags":  [
+                                          "hipaa"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "SEC-COMPLIANCE-001",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "SEC-COMPLIANCE-001",
+                             "originalText":  "Vendor shall describe how the solution supports HIPAA administrative, physical, and technical safeguard obligations, including Business Associate Agreement expectations where applicable.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         },
+                         {
+                             "id":  "SEC-COMPLIANCE-002",
+                             "categoryId":  "SEC",
+                             "categoryLabel":  "Security",
+                             "functionId":  "COMPLIANCE",
+                             "functionLabel":  "Regulatory Compliance",
+                             "requirementNumber":  "002",
+                             "title":  "PCI DSS Scope and Controls",
+                             "sectionId":  "security_compliance",
+                             "sectionLabel":  "Security and Compliance",
+                             "subsection":  "Regulatory Compliance",
+                             "sortOrder":  505,
+                             "requirementLevel":  "must",
+                             "priority":  "critical",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Vendor shall describe PCI DSS scope, segmentation, cardholder data handling, and evidence available to validate payment security controls.",
+                             "rationale":  "Payment-related scope requires clear responsibility boundaries and control evidence.",
+                             "responseInstructions":  "Describe PCI DSS scope, cardholder data flows, segmentation, attestations, and buyer responsibilities.",
+                             "evaluationCriteria":  "Responses should clearly minimize buyer PCI scope and provide credible control evidence.",
+                             "applicability":  {
+                                                   "compliance":  [
+                                                                      "pci"
+                                                                  ],
+                                                   "integrations":  [
+                                                                        "payment"
+                                                                    ],
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "compliance",
+                                                                                "security_privacy"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "new_system",
+                                                                            "replacement",
+                                                                            "support_maintenance"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "any":  {
+                                                          "compliance":  [
+                                                                             "pci"
+                                                                         ],
+                                                          "integrations":  [
+                                                                               "payment"
+                                                                           ]
+                                                      }
+                                          },
+                             "tags":  [
+                                          "pci"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "SEC-COMPLIANCE-002",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "SEC-COMPLIANCE-002",
+                             "originalText":  "Vendor shall describe PCI DSS scope, segmentation, cardholder data handling, and evidence available to validate payment security controls.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         },
+                         {
+                             "id":  "SEC-PRIVACY-001",
+                             "categoryId":  "SEC",
+                             "categoryLabel":  "Security",
+                             "functionId":  "PRIVACY",
+                             "functionLabel":  "Privacy",
+                             "requirementNumber":  "001",
+                             "title":  "GDPR Privacy Support",
+                             "sectionId":  "security_compliance",
+                             "sectionLabel":  "Security and Compliance",
+                             "subsection":  "Privacy",
+                             "sortOrder":  506,
+                             "requirementLevel":  "must",
+                             "priority":  "high",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Vendor shall describe GDPR support, including data subject request workflows, retention controls, subprocessors, and cross-border transfer mechanisms.",
+                             "rationale":  "Privacy requirements need operational support for data subject rights and processor obligations.",
+                             "responseInstructions":  "Describe GDPR-related workflows, retention controls, subprocessors, transfer mechanisms, and contract terms.",
+                             "evaluationCriteria":  "Responses should demonstrate practical privacy support and transparent subprocessor practices.",
+                             "applicability":  {
+                                                   "compliance":  [
+                                                                      "gdpr"
+                                                                  ],
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "security_privacy",
+                                                                                "compliance"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "new_system",
+                                                                            "replacement",
+                                                                            "support_maintenance"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "any":  {
+                                                          "compliance":  [
+                                                                             "gdpr"
+                                                                         ]
+                                                      }
+                                          },
+                             "tags":  [
+                                          "gdpr"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "SEC-PRIVACY-001",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "SEC-PRIVACY-001",
+                             "originalText":  "Vendor shall describe GDPR support, including data subject request workflows, retention controls, subprocessors, and cross-border transfer mechanisms.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         },
+                         {
+                             "id":  "SEC-FEDRAMP-001",
+                             "categoryId":  "SEC",
+                             "categoryLabel":  "Security",
+                             "functionId":  "FEDRAMP",
+                             "functionLabel":  "Federal Authorization",
+                             "requirementNumber":  "001",
+                             "title":  "FedRAMP Authorization",
+                             "sectionId":  "security_compliance",
+                             "sectionLabel":  "Security and Compliance",
+                             "subsection":  "Federal Compliance",
+                             "sortOrder":  507,
+                             "requirementLevel":  "must",
+                             "priority":  "critical",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Vendor shall describe FedRAMP authorization status, target impact level, boundary, and continuous monitoring responsibilities.",
+                             "rationale":  "Federal cloud requirements depend on authorization status, boundary, and monitoring obligations.",
+                             "responseInstructions":  "Describe current authorization status, impact level, package availability, boundary, and continuous monitoring responsibilities.",
+                             "evaluationCriteria":  "Responses should align authorization status and boundary to the buyer\u0027s federal compliance needs.",
+                             "applicability":  {
+                                                   "compliance":  [
+                                                                      "fedramp"
+                                                                  ],
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "compliance",
+                                                                                "security_privacy",
+                                                                                "hosting_operations"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "new_system",
+                                                                            "replacement",
+                                                                            "support_maintenance"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "any":  {
+                                                          "compliance":  [
+                                                                             "fedramp"
+                                                                         ]
+                                                      }
+                                          },
+                             "tags":  [
+                                          "fedramp"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "SEC-FEDRAMP-001",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "SEC-FEDRAMP-001",
+                             "originalText":  "Vendor shall describe FedRAMP authorization status, target impact level, boundary, and continuous monitoring responsibilities.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         },
+                         {
+                             "id":  "IMPL-METHOD-001",
+                             "categoryId":  "IMPL",
+                             "categoryLabel":  "Implementation",
+                             "functionId":  "METHOD",
+                             "functionLabel":  "Implementation Methodology",
+                             "requirementNumber":  "001",
+                             "title":  "Implementation Methodology",
+                             "sectionId":  "implementation_services",
+                             "sectionLabel":  "Implementation Services",
+                             "subsection":  "Methodology",
+                             "sortOrder":  601,
+                             "requirementLevel":  "must",
+                             "priority":  "high",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Vendor shall provide an implementation methodology that includes kickoff, discovery, configuration, testing, launch readiness, go-live, and stabilization activities.",
+                             "rationale":  "A defined methodology helps evaluators understand how the vendor will manage delivery from kickoff through stabilization.",
+                             "responseInstructions":  "Describe the implementation phases, deliverables, buyer responsibilities, acceptance points, and stabilization support.",
+                             "evaluationCriteria":  "Responses should show a complete and repeatable implementation approach.",
+                             "applicability":  {
+                                                   "baseline":  true,
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "implementation_services"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "new_system",
+                                                                            "replacement",
+                                                                            "implementation_services",
+                                                                            "integration_project"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "always":  true
+                                          },
+                             "tags":  [
+                                          "baseline"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "IMPL-METHOD-001",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "IMPL-METHOD-001",
+                             "originalText":  "Vendor shall provide an implementation methodology that includes kickoff, discovery, configuration, testing, launch readiness, go-live, and stabilization activities.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         },
+                         {
+                             "id":  "IMPL-TRAINING-001",
+                             "categoryId":  "IMPL",
+                             "categoryLabel":  "Implementation",
+                             "functionId":  "TRAINING",
+                             "functionLabel":  "Training",
+                             "requirementNumber":  "001",
+                             "title":  "Training Plan",
+                             "sectionId":  "implementation_services",
+                             "sectionLabel":  "Implementation Services",
+                             "subsection":  "Training",
+                             "sortOrder":  602,
+                             "requirementLevel":  "should",
+                             "priority":  "medium",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Vendor shall provide a training plan for administrators, end users, and support staff, including materials, delivery format, and completion tracking.",
+                             "rationale":  "Training planning supports adoption and operational readiness.",
+                             "responseInstructions":  "Describe training audiences, curriculum, materials, delivery format, schedule, and completion tracking.",
+                             "evaluationCriteria":  "Responses should include role-based training that supports administrator and end-user readiness.",
+                             "applicability":  {
+                                                   "implementationSupport":  [
+                                                                                 "training"
+                                                                             ],
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "implementation_services",
+                                                                                "training_change_management"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "new_system",
+                                                                            "replacement",
+                                                                            "implementation_services"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "any":  {
+                                                          "implementation_support":  [
+                                                                                         "training"
+                                                                                     ]
+                                                      }
+                                          },
+                             "tags":  [
+                                          "training"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "IMPL-TRAINING-001",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "IMPL-TRAINING-001",
+                             "originalText":  "Vendor shall provide a training plan for administrators, end users, and support staff, including materials, delivery format, and completion tracking.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         },
+                         {
+                             "id":  "IMPL-CHANGE-001",
+                             "categoryId":  "IMPL",
+                             "categoryLabel":  "Implementation",
+                             "functionId":  "CHANGE",
+                             "functionLabel":  "Change Management",
+                             "requirementNumber":  "001",
+                             "title":  "Change Management Approach",
+                             "sectionId":  "implementation_services",
+                             "sectionLabel":  "Implementation Services",
+                             "subsection":  "Change Management",
+                             "sortOrder":  603,
+                             "requirementLevel":  "should",
+                             "priority":  "medium",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Vendor shall provide a change management approach covering stakeholder communications, readiness activities, adoption measurement, and resistance management.",
+                             "rationale":  "Change management helps reduce adoption risk and operational disruption.",
+                             "responseInstructions":  "Describe communication planning, stakeholder readiness, adoption measurement, and resistance management practices.",
+                             "evaluationCriteria":  "Responses should show practical change management activities tied to implementation outcomes.",
+                             "applicability":  {
+                                                   "implementationSupport":  [
+                                                                                 "change_management"
+                                                                             ],
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "implementation_services",
+                                                                                "training_change_management"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "new_system",
+                                                                            "replacement",
+                                                                            "implementation_services"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "any":  {
+                                                          "implementation_support":  [
+                                                                                         "change_management"
+                                                                                     ]
+                                                      }
+                                          },
+                             "tags":  [
+                                          "change-management"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "IMPL-CHANGE-001",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "IMPL-CHANGE-001",
+                             "originalText":  "Vendor shall provide a change management approach covering stakeholder communications, readiness activities, adoption measurement, and resistance management.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         },
+                         {
+                             "id":  "IMPL-ROLLOUT-001",
+                             "categoryId":  "IMPL",
+                             "categoryLabel":  "Implementation",
+                             "functionId":  "ROLLOUT",
+                             "functionLabel":  "Rollout Planning",
+                             "requirementNumber":  "001",
+                             "title":  "Phased Rollout Planning",
+                             "sectionId":  "implementation_services",
+                             "sectionLabel":  "Implementation Services",
+                             "subsection":  "Rollout",
+                             "sortOrder":  604,
+                             "requirementLevel":  "should",
+                             "priority":  "medium",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Vendor shall describe how phased rollout planning will be handled across pilot groups, locations, business units, or user cohorts.",
+                             "rationale":  "Phased rollout planning reduces risk for larger or more complex deployments.",
+                             "responseInstructions":  "Describe pilot planning, rollout sequencing, readiness criteria, communications, and support during rollout waves.",
+                             "evaluationCriteria":  "Responses should provide a credible rollout approach for larger user populations or phased adoption.",
+                             "applicability":  {
+                                                   "implementationSupport":  [
+                                                                                 "phased_rollout"
+                                                                             ],
+                                                   "userCounts":  [
+                                                                      "250_1000",
+                                                                      "over_1000"
+                                                                  ],
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "implementation_services"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "new_system",
+                                                                            "replacement",
+                                                                            "implementation_services"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "any":  {
+                                                          "implementation_support":  [
+                                                                                         "phased_rollout"
+                                                                                     ],
+                                                          "user_count":  [
+                                                                             "250_1000",
+                                                                             "over_1000"
+                                                                         ]
+                                                      }
+                                          },
+                             "tags":  [
+                                          "rollout"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "IMPL-ROLLOUT-001",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "IMPL-ROLLOUT-001",
+                             "originalText":  "Vendor shall describe how phased rollout planning will be handled across pilot groups, locations, business units, or user cohorts.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         },
+                         {
+                             "id":  "SUPPORT-SLA-001",
+                             "categoryId":  "SUPPORT",
+                             "categoryLabel":  "Support",
+                             "functionId":  "SLA",
+                             "functionLabel":  "Service Levels",
+                             "requirementNumber":  "001",
+                             "title":  "Support Channels and Service Levels",
+                             "sectionId":  "support_service_levels",
+                             "sectionLabel":  "Support and Service Levels",
+                             "subsection":  "Support Model",
+                             "sortOrder":  701,
+                             "requirementLevel":  "must",
+                             "priority":  "high",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Vendor shall provide support channels, hours of operation, escalation paths, severity definitions, and response time commitments.",
+                             "rationale":  "Support details are needed to assess operational readiness and service expectations.",
+                             "responseInstructions":  "Describe support channels, coverage hours, severity definitions, escalation paths, and response targets.",
+                             "evaluationCriteria":  "Responses should provide clear service commitments aligned to production support needs.",
+                             "applicability":  {
+                                                   "baseline":  true,
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "support_service_levels"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "new_system",
+                                                                            "replacement",
+                                                                            "support_maintenance"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "always":  true
+                                          },
+                             "tags":  [
+                                          "baseline",
+                                          "support"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "SUPPORT-SLA-001",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "SUPPORT-SLA-001",
+                             "originalText":  "Vendor shall provide support channels, hours of operation, escalation paths, severity definitions, and response time commitments.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         },
+                         {
+                             "id":  "SUPPORT-COVERAGE-001",
+                             "categoryId":  "SUPPORT",
+                             "categoryLabel":  "Support",
+                             "functionId":  "COVERAGE",
+                             "functionLabel":  "Support Coverage",
+                             "requirementNumber":  "001",
+                             "title":  "24x7 Critical Incident Support",
+                             "sectionId":  "support_service_levels",
+                             "sectionLabel":  "Support and Service Levels",
+                             "subsection":  "Coverage",
+                             "sortOrder":  702,
+                             "requirementLevel":  "must",
+                             "priority":  "high",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Vendor shall provide 24x7 support coverage for critical production incidents.",
+                             "rationale":  "Critical systems may require continuous coverage to reduce business disruption.",
+                             "responseInstructions":  "Describe 24x7 coverage, severity criteria, escalation procedures, and staffing model.",
+                             "evaluationCriteria":  "Responses should demonstrate reliable round-the-clock support for critical incidents.",
+                             "applicability":  {
+                                                   "supportModels":  [
+                                                                         "24x7"
+                                                                     ],
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "support_service_levels"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "new_system",
+                                                                            "replacement",
+                                                                            "support_maintenance"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "any":  {
+                                                          "support_model":  [
+                                                                                "24x7"
+                                                                            ]
+                                                      }
+                                          },
+                             "tags":  [
+                                          "24x7"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "SUPPORT-COVERAGE-001",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "SUPPORT-COVERAGE-001",
+                             "originalText":  "Vendor shall provide 24x7 support coverage for critical production incidents.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         },
+                         {
+                             "id":  "SUPPORT-COVERAGE-002",
+                             "categoryId":  "SUPPORT",
+                             "categoryLabel":  "Support",
+                             "functionId":  "COVERAGE",
+                             "functionLabel":  "Support Coverage",
+                             "requirementNumber":  "002",
+                             "title":  "Extended Hours Support",
+                             "sectionId":  "support_service_levels",
+                             "sectionLabel":  "Support and Service Levels",
+                             "subsection":  "Coverage",
+                             "sortOrder":  703,
+                             "requirementLevel":  "should",
+                             "priority":  "medium",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Vendor shall provide extended support coverage for production issues outside standard business hours.",
+                             "rationale":  "Extended coverage may be needed for operations that run beyond standard business hours.",
+                             "responseInstructions":  "Describe extended coverage windows, channels, escalation process, and response commitments.",
+                             "evaluationCriteria":  "Responses should align coverage windows to expected operational needs.",
+                             "applicability":  {
+                                                   "supportModels":  [
+                                                                         "extended"
+                                                                     ],
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "support_service_levels"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "new_system",
+                                                                            "replacement",
+                                                                            "support_maintenance"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "any":  {
+                                                          "support_model":  [
+                                                                                "extended"
+                                                                            ]
+                                                      }
+                                          },
+                             "tags":  [
+                                          "extended-support"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "SUPPORT-COVERAGE-002",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "SUPPORT-COVERAGE-002",
+                             "originalText":  "Vendor shall provide extended support coverage for production issues outside standard business hours.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         },
+                         {
+                             "id":  "COMM-PRICING-001",
+                             "categoryId":  "COMM",
+                             "categoryLabel":  "Commercial",
+                             "functionId":  "PRICING",
+                             "functionLabel":  "Pricing",
+                             "requirementNumber":  "001",
+                             "title":  "Complete Pricing Proposal",
+                             "sectionId":  "commercial_pricing",
+                             "sectionLabel":  "Commercial and Pricing",
+                             "subsection":  "Pricing Proposal",
+                             "sortOrder":  801,
+                             "requirementLevel":  "must",
+                             "priority":  "high",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Vendor shall provide a complete pricing proposal covering implementation fees, recurring fees, usage-based charges, optional services, third-party costs, and assumptions.",
+                             "rationale":  "Complete pricing is needed to compare total cost and identify hidden assumptions.",
+                             "responseInstructions":  "Provide itemized pricing for implementation, recurring fees, usage-based charges, optional services, third-party costs, and assumptions.",
+                             "evaluationCriteria":  "Responses should be complete, transparent, and comparable across vendors.",
+                             "applicability":  {
+                                                   "baseline":  true,
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "pricing_tco"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "new_system",
+                                                                            "replacement",
+                                                                            "implementation_services",
+                                                                            "integration_project",
+                                                                            "support_maintenance"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "always":  true
+                                          },
+                             "tags":  [
+                                          "baseline",
+                                          "pricing"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "COMM-PRICING-001",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "COMM-PRICING-001",
+                             "originalText":  "Vendor shall provide a complete pricing proposal covering implementation fees, recurring fees, usage-based charges, optional services, third-party costs, and assumptions.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         },
+                         {
+                             "id":  "COMM-PRICING-002",
+                             "categoryId":  "COMM",
+                             "categoryLabel":  "Commercial",
+                             "functionId":  "PRICING",
+                             "functionLabel":  "Pricing",
+                             "requirementNumber":  "002",
+                             "title":  "Pricing Levers and Renewal Impacts",
+                             "sectionId":  "commercial_pricing",
+                             "sectionLabel":  "Commercial and Pricing",
+                             "subsection":  "Pricing Assumptions",
+                             "sortOrder":  802,
+                             "requirementLevel":  "should",
+                             "priority":  "medium",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Vendor shall identify pricing levers, discount assumptions, renewal terms, and cost impacts for changes in user volume or transaction volume.",
+                             "rationale":  "Pricing levers help the buyer understand future cost exposure and negotiation options.",
+                             "responseInstructions":  "Describe volume tiers, discount assumptions, renewal terms, usage drivers, and cost impacts for volume changes.",
+                             "evaluationCriteria":  "Responses should make future cost drivers and renewal exposure clear.",
+                             "applicability":  {
+                                                   "vendorPriorities":  [
+                                                                            "price"
+                                                                        ],
+                                                   "userCounts":  [
+                                                                      "250_1000",
+                                                                      "over_1000"
+                                                                  ],
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "pricing_tco"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "new_system",
+                                                                            "replacement",
+                                                                            "support_maintenance"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "any":  {
+                                                          "vendor_priorities":  [
+                                                                                    "price"
+                                                                                ],
+                                                          "user_count":  [
+                                                                             "250_1000",
+                                                                             "over_1000"
+                                                                         ]
+                                                      }
+                                          },
+                             "tags":  [
+                                          "pricing"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "COMM-PRICING-002",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "COMM-PRICING-002",
+                             "originalText":  "Vendor shall identify pricing levers, discount assumptions, renewal terms, and cost impacts for changes in user volume or transaction volume.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         },
+                         {
+                             "id":  "EVAL-RESPONSE-001",
+                             "categoryId":  "EVAL",
+                             "categoryLabel":  "Evaluation",
+                             "functionId":  "RESPONSE",
+                             "functionLabel":  "Response Format",
+                             "requirementNumber":  "001",
+                             "title":  "Requirement Response Matrix",
+                             "sectionId":  "evaluation_criteria",
+                             "sectionLabel":  "Evaluation Criteria",
+                             "subsection":  "Response Format",
+                             "sortOrder":  901,
+                             "requirementLevel":  "must",
+                             "priority":  "high",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Vendor responses shall include a requirement-by-requirement response indicating whether each requirement is met, partially met, not met, or requires customization.",
+                             "rationale":  "Structured responses make vendor comparison and evaluation traceable.",
+                             "responseInstructions":  "Provide a response matrix with compliance status, explanation, assumptions, and customization notes for each requirement.",
+                             "evaluationCriteria":  "Responses should be complete, consistent, and easy to compare across vendors.",
+                             "applicability":  {
+                                                   "baseline":  true,
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "evaluation_scoring"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "new_system",
+                                                                            "replacement",
+                                                                            "implementation_services",
+                                                                            "integration_project",
+                                                                            "support_maintenance"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "always":  true
+                                          },
+                             "tags":  [
+                                          "baseline"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "EVAL-RESPONSE-001",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "EVAL-RESPONSE-001",
+                             "originalText":  "Vendor responses shall include a requirement-by-requirement response indicating whether each requirement is met, partially met, not met, or requires customization.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         },
+                         {
+                             "id":  "EVAL-ROADMAP-001",
+                             "categoryId":  "EVAL",
+                             "categoryLabel":  "Evaluation",
+                             "functionId":  "ROADMAP",
+                             "functionLabel":  "Product Roadmap",
+                             "requirementNumber":  "001",
+                             "title":  "Product Roadmap Summary",
+                             "sectionId":  "evaluation_criteria",
+                             "sectionLabel":  "Evaluation Criteria",
+                             "subsection":  "Product Direction",
+                             "sortOrder":  902,
+                             "requirementLevel":  "should",
+                             "priority":  "medium",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Vendor shall provide a product roadmap summary identifying planned enhancements relevant to the requested capabilities.",
+                             "rationale":  "Roadmap visibility helps evaluators understand product direction and future fit.",
+                             "responseInstructions":  "Summarize planned enhancements, expected timing, roadmap confidence, and relevance to the requested capabilities.",
+                             "evaluationCriteria":  "Responses should provide credible roadmap information without relying on speculative capabilities for core requirements.",
+                             "applicability":  {
+                                                   "vendorPriorities":  [
+                                                                            "roadmap"
+                                                                        ],
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "evaluation_scoring"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "new_system",
+                                                                            "replacement",
+                                                                            "support_maintenance"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "any":  {
+                                                          "vendor_priorities":  [
+                                                                                    "roadmap"
+                                                                                ]
+                                                      }
+                                          },
+                             "tags":  [
+                                          "roadmap"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "EVAL-ROADMAP-001",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "EVAL-ROADMAP-001",
+                             "originalText":  "Vendor shall provide a product roadmap summary identifying planned enhancements relevant to the requested capabilities.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         },
+                         {
+                             "id":  "EVAL-TEAM-001",
+                             "categoryId":  "EVAL",
+                             "categoryLabel":  "Evaluation",
+                             "functionId":  "TEAM",
+                             "functionLabel":  "Implementation Team",
+                             "requirementNumber":  "001",
+                             "title":  "Implementation Team Capacity",
+                             "sectionId":  "evaluation_criteria",
+                             "sectionLabel":  "Evaluation Criteria",
+                             "subsection":  "Delivery Team",
+                             "sortOrder":  903,
+                             "requirementLevel":  "should",
+                             "priority":  "medium",
+                             "status":  "approved",
+                             "version":  "1.0.0",
+                             "text":  "Vendor shall describe the named team, capacity, and availability of implementation resources proposed for this engagement.",
+                             "rationale":  "Team capacity is important when implementation speed or resource availability is a procurement priority.",
+                             "responseInstructions":  "Describe proposed roles, named resources where available, availability, competing commitments, and escalation coverage.",
+                             "evaluationCriteria":  "Responses should demonstrate enough qualified capacity to meet the proposed timeline.",
+                             "applicability":  {
+                                                   "vendorPriorities":  [
+                                                                            "implementation_capacity"
+                                                                        ],
+                                                   "timelines":  [
+                                                                     "under_3_months"
+                                                                 ],
+                                                   "domains":  [
+                                                                   "all_justice_public_safety"
+                                                               ],
+                                                   "clientTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "capabilityCategories":  [
+                                                                                "evaluation_scoring",
+                                                                                "implementation_services"
+                                                                            ],
+                                                   "systemTypes":  [
+                                                                       "all"
+                                                                   ],
+                                                   "componentTypes":  [
+                                                                          "requirement"
+                                                                      ],
+                                                   "procurementTypes":  [
+                                                                            "new_system",
+                                                                            "replacement",
+                                                                            "implementation_services",
+                                                                            "integration_project"
+                                                                        ]
+                                               },
+                             "criteria":  {
+                                              "any":  {
+                                                          "vendor_priorities":  [
+                                                                                    "implementation_capacity"
+                                                                                ],
+                                                          "timeline":  [
+                                                                           "under_3_months"
+                                                                       ]
+                                                      }
+                                          },
+                             "tags":  [
+                                          "capacity"
+                                      ],
+                             "source":  {
+                                            "type":  "prototype",
+                                            "name":  "Initial sample library",
+                                            "year":  2026,
+                                            "packageId":  "prototype-sample-library",
+                                            "documentId":  "prototype-requirements-library",
+                                            "originalRequirementId":  "EVAL-TEAM-001",
+                                            "sourceStatus":  "normalized_sample"
+                                        },
+                             "notes":  "",
+                             "sourcePackageId":  "prototype-sample-library",
+                             "sourceDocumentId":  "prototype-requirements-library",
+                             "originalRequirementId":  "EVAL-TEAM-001",
+                             "originalText":  "Vendor shall describe the named team, capacity, and availability of implementation resources proposed for this engagement.",
+                             "sourceStatus":  "normalized_sample",
+                             "reviewStatus":  "approved",
+                             "reuseAssessment":  "reusable",
+                             "clientSpecificity":  "generic"
+                         }
+                     ]
+}

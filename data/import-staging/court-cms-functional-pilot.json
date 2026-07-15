@@ -1,0 +1,1459 @@
+{
+    "batchId":  "court-cms-functional-pilot",
+    "sourcePackage":  "court-requirements-in-progress",
+    "sourceFile":  "source-rfps/court-requirements-in-progress/Draft NE RFP Requirements_V3.xlsx",
+    "sourceSheet":  "CMS Functional Requirements",
+    "importScope":  "First 20 requirements with Status = Review Complete",
+    "importedAt":  "2026-06-17T13:00:00-05:00",
+    "promotionStatus":  "not_promoted",
+    "stagedRequirementCount":  20,
+    "stagedRequirements":  [
+                               {
+                                   "stagingId":  "court-cms-functional-pilot:row-2",
+                                   "sourcePackage":  "court-requirements-in-progress",
+                                   "sourceFile":  "Draft NE RFP Requirements_V3.xlsx",
+                                   "sourceSheet":  "CMS Functional Requirements",
+                                   "sourceRow":  2,
+                                   "sourceColumnMap":  {
+                                                           "sourceStatus":  "A",
+                                                           "originalRequirementId":  "C",
+                                                           "sourceCaseCategory":  "D",
+                                                           "sourceFunction":  "E",
+                                                           "originalRequirementText":  "G",
+                                                           "sourceScoreWeight":  "J",
+                                                           "sourceScoreNotes":  "K",
+                                                           "sourceReviewerNotes":  [
+                                                                                       "L",
+                                                                                       "M",
+                                                                                       "N",
+                                                                                       "O",
+                                                                                       "P",
+                                                                                       "Q",
+                                                                                       "R"
+                                                                                   ]
+                                                       },
+                                   "originalRequirementId":  "1.1.1",
+                                   "sourceCaseCategory":  "1. Case Initiation",
+                                   "sourceFunction":  "1. Data Management",
+                                   "originalRequirementText":  "The system must allow authorized users to manually create a new cases. ",
+                                   "originalTextHash":  "055a90467ba746bd06812893e7cdecc3a597d3dc60acd402de4b60cf82999836",
+                                   "sourceStatus":  "Review Complete",
+                                   "sourceScoreWeight":  "",
+                                   "sourceScoreNotes":  "add notes here for meeting to annote score ",
+                                   "sourceReviewerNotes":  [
+                                                               {
+                                                                   "reviewer":  "Mary Putnam",
+                                                                   "sourceColumn":  "L",
+                                                                   "note":  "ok"
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Katie Weidner",
+                                                                   "sourceColumn":  "M",
+                                                                   "note":  "The case type/categories should be customizable to Nebraska language."
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Laurayne Hall",
+                                                                   "sourceColumn":  "N",
+                                                                   "note":  "Also needs to identify filer, whether attorney or Prosecuting agency. Will there be a maximum number of parties that can be added to a case? "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Raylynn Coble",
+                                                                   "sourceColumn":  "O",
+                                                                   "note":  "ok "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Jordan Hernandez",
+                                                                   "sourceColumn":  "P",
+                                                                   "note":  "ok"
+                                                               }
+                                                           ],
+                                   "proposedCategoryId":  "COURT_CASE_INITIATION",
+                                   "proposedFunctionId":  "COURT_DATA_MANAGEMENT",
+                                   "proposedRequirementText":  "The system must allow authorized users to manually create a new cases. ",
+                                   "reviewStatus":  "staged_unreviewed",
+                                   "duplicateAssessment":  "none",
+                                   "classification":  "reusable_candidate",
+                                   "promotionReadiness":  "needs_review",
+                                   "schemaWarnings":  [
+                                                          "sourceScoreWeight is blank."
+                                                      ],
+                                   "normalizationNotes":  "",
+                                   "importNotes":  "Pilot staged from the first 20 Review Complete rows in CMS Functional Requirements; not promoted to approved requirements library."
+                               },
+                               {
+                                   "stagingId":  "court-cms-functional-pilot:row-3",
+                                   "sourcePackage":  "court-requirements-in-progress",
+                                   "sourceFile":  "Draft NE RFP Requirements_V3.xlsx",
+                                   "sourceSheet":  "CMS Functional Requirements",
+                                   "sourceRow":  3,
+                                   "sourceColumnMap":  {
+                                                           "sourceStatus":  "A",
+                                                           "originalRequirementId":  "C",
+                                                           "sourceCaseCategory":  "D",
+                                                           "sourceFunction":  "E",
+                                                           "originalRequirementText":  "G",
+                                                           "sourceScoreWeight":  "J",
+                                                           "sourceScoreNotes":  "K",
+                                                           "sourceReviewerNotes":  [
+                                                                                       "L",
+                                                                                       "M",
+                                                                                       "N",
+                                                                                       "O",
+                                                                                       "P",
+                                                                                       "Q",
+                                                                                       "R"
+                                                                                   ]
+                                                       },
+                                   "originalRequirementId":  "1.1.7",
+                                   "sourceCaseCategory":  "1. Case Initiation",
+                                   "sourceFunction":  "1. Data Management",
+                                   "originalRequirementText":  "The system must track and retain deficiency details, correction requests, and resubmission status associated with each case initiation attempt.",
+                                   "originalTextHash":  "83b85483a4b6b5cd116c1e03b263f57bd0d0e4b105a9e98a7f45d4f1c5db4b15",
+                                   "sourceStatus":  "Review Complete",
+                                   "sourceScoreWeight":  "",
+                                   "sourceScoreNotes":  "",
+                                   "sourceReviewerNotes":  [
+                                                               {
+                                                                   "reviewer":  "Mary Putnam",
+                                                                   "sourceColumn":  "L",
+                                                                   "note":  "ok"
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Katie Weidner",
+                                                                   "sourceColumn":  "M",
+                                                                   "note":  " "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Laurayne Hall",
+                                                                   "sourceColumn":  "N",
+                                                                   "note":  " "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Raylynn Coble",
+                                                                   "sourceColumn":  "O",
+                                                                   "note":  " suggest adding notifications that the clerk can easily fix (eg bar number not tied to an attorney)  the messages should display in user-friendly language for resolution.  "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Jordan Hernandez",
+                                                                   "sourceColumn":  "P",
+                                                                   "note":  "ok"
+                                                               }
+                                                           ],
+                                   "proposedCategoryId":  "COURT_CASE_INITIATION",
+                                   "proposedFunctionId":  "COURT_DATA_MANAGEMENT",
+                                   "proposedRequirementText":  "The system must track and retain deficiency details, correction requests, and resubmission status associated with each case initiation attempt.",
+                                   "reviewStatus":  "staged_unreviewed",
+                                   "duplicateAssessment":  "none",
+                                   "classification":  "reusable_candidate",
+                                   "promotionReadiness":  "needs_review",
+                                   "schemaWarnings":  [
+                                                          "sourceScoreWeight is blank."
+                                                      ],
+                                   "normalizationNotes":  "",
+                                   "importNotes":  "Pilot staged from the first 20 Review Complete rows in CMS Functional Requirements; not promoted to approved requirements library."
+                               },
+                               {
+                                   "stagingId":  "court-cms-functional-pilot:row-4",
+                                   "sourcePackage":  "court-requirements-in-progress",
+                                   "sourceFile":  "Draft NE RFP Requirements_V3.xlsx",
+                                   "sourceSheet":  "CMS Functional Requirements",
+                                   "sourceRow":  4,
+                                   "sourceColumnMap":  {
+                                                           "sourceStatus":  "A",
+                                                           "originalRequirementId":  "C",
+                                                           "sourceCaseCategory":  "D",
+                                                           "sourceFunction":  "E",
+                                                           "originalRequirementText":  "G",
+                                                           "sourceScoreWeight":  "J",
+                                                           "sourceScoreNotes":  "K",
+                                                           "sourceReviewerNotes":  [
+                                                                                       "L",
+                                                                                       "M",
+                                                                                       "N",
+                                                                                       "O",
+                                                                                       "P",
+                                                                                       "Q",
+                                                                                       "R"
+                                                                                   ]
+                                                       },
+                                   "originalRequirementId":  "1.1.8",
+                                   "sourceCaseCategory":  "1. Case Initiation",
+                                   "sourceFunction":  "1. Data Management",
+                                   "originalRequirementText":  "The system must support advance configuration of reference and rules tables prior to their effective dates.",
+                                   "originalTextHash":  "bdf1731fd3dde0047d9f01722afb5980332826c1dd9b01bf19c1f867d5e74959",
+                                   "sourceStatus":  "Review Complete",
+                                   "sourceScoreWeight":  "",
+                                   "sourceScoreNotes":  "",
+                                   "sourceReviewerNotes":  [
+                                                               {
+                                                                   "reviewer":  "Mary Putnam",
+                                                                   "sourceColumn":  "L",
+                                                                   "note":  "ok"
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Katie Weidner",
+                                                                   "sourceColumn":  "M",
+                                                                   "note":  " "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Laurayne Hall",
+                                                                   "sourceColumn":  "N",
+                                                                   "note":  " "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Raylynn Coble",
+                                                                   "sourceColumn":  "O",
+                                                                   "note":  "ok "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Jordan Hernandez",
+                                                                   "sourceColumn":  "P",
+                                                                   "note":  "ok"
+                                                               }
+                                                           ],
+                                   "proposedCategoryId":  "COURT_CASE_INITIATION",
+                                   "proposedFunctionId":  "COURT_DATA_MANAGEMENT",
+                                   "proposedRequirementText":  "The system must support advance configuration of reference and rules tables prior to their effective dates.",
+                                   "reviewStatus":  "staged_unreviewed",
+                                   "duplicateAssessment":  "none",
+                                   "classification":  "reusable_candidate",
+                                   "promotionReadiness":  "needs_review",
+                                   "schemaWarnings":  [
+                                                          "sourceScoreWeight is blank."
+                                                      ],
+                                   "normalizationNotes":  "",
+                                   "importNotes":  "Pilot staged from the first 20 Review Complete rows in CMS Functional Requirements; not promoted to approved requirements library."
+                               },
+                               {
+                                   "stagingId":  "court-cms-functional-pilot:row-5",
+                                   "sourcePackage":  "court-requirements-in-progress",
+                                   "sourceFile":  "Draft NE RFP Requirements_V3.xlsx",
+                                   "sourceSheet":  "CMS Functional Requirements",
+                                   "sourceRow":  5,
+                                   "sourceColumnMap":  {
+                                                           "sourceStatus":  "A",
+                                                           "originalRequirementId":  "C",
+                                                           "sourceCaseCategory":  "D",
+                                                           "sourceFunction":  "E",
+                                                           "originalRequirementText":  "G",
+                                                           "sourceScoreWeight":  "J",
+                                                           "sourceScoreNotes":  "K",
+                                                           "sourceReviewerNotes":  [
+                                                                                       "L",
+                                                                                       "M",
+                                                                                       "N",
+                                                                                       "O",
+                                                                                       "P",
+                                                                                       "Q",
+                                                                                       "R"
+                                                                                   ]
+                                                       },
+                                   "originalRequirementId":  "1.1.9",
+                                   "sourceCaseCategory":  "1. Case Initiation",
+                                   "sourceFunction":  "1. Data Management",
+                                   "originalRequirementText":  "The system must capture and retain the originating source of a case at initiation, including electronic filing, law enforcement submission, transfer, or internal creation.",
+                                   "originalTextHash":  "5e85de2b7f69ed84204c5c7645cc3bb9f3279d917c8c060f662f63dde26a1be4",
+                                   "sourceStatus":  "Review Complete",
+                                   "sourceScoreWeight":  "",
+                                   "sourceScoreNotes":  "",
+                                   "sourceReviewerNotes":  [
+                                                               {
+                                                                   "reviewer":  "Mary Putnam",
+                                                                   "sourceColumn":  "L",
+                                                                   "note":  "ok"
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Katie Weidner",
+                                                                   "sourceColumn":  "M",
+                                                                   "note":  " "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Laurayne Hall",
+                                                                   "sourceColumn":  "N",
+                                                                   "note":  " "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Raylynn Coble",
+                                                                   "sourceColumn":  "O",
+                                                                   "note":  "ok "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Jordan Hernandez",
+                                                                   "sourceColumn":  "P",
+                                                                   "note":  "ok"
+                                                               }
+                                                           ],
+                                   "proposedCategoryId":  "COURT_CASE_INITIATION",
+                                   "proposedFunctionId":  "COURT_DATA_MANAGEMENT",
+                                   "proposedRequirementText":  "The system must capture and retain the originating source of a case at initiation, including electronic filing, law enforcement submission, transfer, or internal creation.",
+                                   "reviewStatus":  "staged_unreviewed",
+                                   "duplicateAssessment":  "none",
+                                   "classification":  "reusable_candidate",
+                                   "promotionReadiness":  "needs_review",
+                                   "schemaWarnings":  [
+                                                          "sourceScoreWeight is blank."
+                                                      ],
+                                   "normalizationNotes":  "",
+                                   "importNotes":  "Pilot staged from the first 20 Review Complete rows in CMS Functional Requirements; not promoted to approved requirements library."
+                               },
+                               {
+                                   "stagingId":  "court-cms-functional-pilot:row-6",
+                                   "sourcePackage":  "court-requirements-in-progress",
+                                   "sourceFile":  "Draft NE RFP Requirements_V3.xlsx",
+                                   "sourceSheet":  "CMS Functional Requirements",
+                                   "sourceRow":  6,
+                                   "sourceColumnMap":  {
+                                                           "sourceStatus":  "A",
+                                                           "originalRequirementId":  "C",
+                                                           "sourceCaseCategory":  "D",
+                                                           "sourceFunction":  "E",
+                                                           "originalRequirementText":  "G",
+                                                           "sourceScoreWeight":  "J",
+                                                           "sourceScoreNotes":  "K",
+                                                           "sourceReviewerNotes":  [
+                                                                                       "L",
+                                                                                       "M",
+                                                                                       "N",
+                                                                                       "O",
+                                                                                       "P",
+                                                                                       "Q",
+                                                                                       "R"
+                                                                                   ]
+                                                       },
+                                   "originalRequirementId":  "1.1.10",
+                                   "sourceCaseCategory":  "1. Case Initiation",
+                                   "sourceFunction":  "1. Data Management",
+                                   "originalRequirementText":  "The system must allow authorized users to create, update, and manage all reference tables, including effective date and version control.",
+                                   "originalTextHash":  "f954e9b6dfd36952e5d4475c869eb4a9a9c16bf16a2223e453c5354864ac6202",
+                                   "sourceStatus":  "Review Complete",
+                                   "sourceScoreWeight":  "",
+                                   "sourceScoreNotes":  "",
+                                   "sourceReviewerNotes":  [
+                                                               {
+                                                                   "reviewer":  "Mary Putnam",
+                                                                   "sourceColumn":  "L",
+                                                                   "note":  "ok"
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Katie Weidner",
+                                                                   "sourceColumn":  "M",
+                                                                   "note":  " "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Laurayne Hall",
+                                                                   "sourceColumn":  "N",
+                                                                   "note":  " "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Raylynn Coble",
+                                                                   "sourceColumn":  "O",
+                                                                   "note":  "I\u0027m assuming by courts  we mean the support desk, but wanted to be sure  I would have issues with the clerks maintaining this by themselves as things could easily go awry.  "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Jordan Hernandez",
+                                                                   "sourceColumn":  "P",
+                                                                   "note":  "I believe some of the reference tables would only be created/updated/managed by the JUSTICE Team (not court users)"
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Ann Alden",
+                                                                   "sourceColumn":  "Q",
+                                                                   "note":  "Agree that this should be a JUSTICE managed issue. We need to keep consistency accross the state, or we are going to have a mess on our hands if court staff would be in control of this."
+                                                               }
+                                                           ],
+                                   "proposedCategoryId":  "COURT_CASE_INITIATION",
+                                   "proposedFunctionId":  "COURT_DATA_MANAGEMENT",
+                                   "proposedRequirementText":  "The system must allow authorized users to create, update, and manage all reference tables, including effective date and version control.",
+                                   "reviewStatus":  "staged_unreviewed",
+                                   "duplicateAssessment":  "none",
+                                   "classification":  "reusable_candidate",
+                                   "promotionReadiness":  "needs_review",
+                                   "schemaWarnings":  [
+                                                          "sourceScoreWeight is blank."
+                                                      ],
+                                   "normalizationNotes":  "",
+                                   "importNotes":  "Pilot staged from the first 20 Review Complete rows in CMS Functional Requirements; not promoted to approved requirements library."
+                               },
+                               {
+                                   "stagingId":  "court-cms-functional-pilot:row-7",
+                                   "sourcePackage":  "court-requirements-in-progress",
+                                   "sourceFile":  "Draft NE RFP Requirements_V3.xlsx",
+                                   "sourceSheet":  "CMS Functional Requirements",
+                                   "sourceRow":  7,
+                                   "sourceColumnMap":  {
+                                                           "sourceStatus":  "A",
+                                                           "originalRequirementId":  "C",
+                                                           "sourceCaseCategory":  "D",
+                                                           "sourceFunction":  "E",
+                                                           "originalRequirementText":  "G",
+                                                           "sourceScoreWeight":  "J",
+                                                           "sourceScoreNotes":  "K",
+                                                           "sourceReviewerNotes":  [
+                                                                                       "L",
+                                                                                       "M",
+                                                                                       "N",
+                                                                                       "O",
+                                                                                       "P",
+                                                                                       "Q",
+                                                                                       "R"
+                                                                                   ]
+                                                       },
+                                   "originalRequirementId":  "1.1.11",
+                                   "sourceCaseCategory":  "1. Case Initiation",
+                                   "sourceFunction":  "1. Data Management",
+                                   "originalRequirementText":  "The system must ensure that internal clerk notes are not included in external notifications to filers or the public, while allowing authorized users to reference such notes when generating deficiency or correction notices.",
+                                   "originalTextHash":  "54fff1864d3ed1261e6092b0f5dcaacba853ed2b8fb36758c7ffd4e3eec12e41",
+                                   "sourceStatus":  "Review Complete",
+                                   "sourceScoreWeight":  "",
+                                   "sourceScoreNotes":  "",
+                                   "sourceReviewerNotes":  [
+                                                               {
+                                                                   "reviewer":  "Mary Putnam",
+                                                                   "sourceColumn":  "L",
+                                                                   "note":  "ok"
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Katie Weidner",
+                                                                   "sourceColumn":  "M",
+                                                                   "note":  " "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Laurayne Hall",
+                                                                   "sourceColumn":  "N",
+                                                                   "note":  " "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Raylynn Coble",
+                                                                   "sourceColumn":  "O",
+                                                                   "note":  " I think the clerks would appreciate if the court notes could have an alert that displays across the screens.  Asking for something big, but if the court could set which screens would display the alert, would be awesome.  Both the alert and case notes would not be visible to the public. "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Jordan Hernandez",
+                                                                   "sourceColumn":  "P",
+                                                                   "note":  "ok"
+                                                               }
+                                                           ],
+                                   "proposedCategoryId":  "COURT_CASE_INITIATION",
+                                   "proposedFunctionId":  "COURT_DATA_MANAGEMENT",
+                                   "proposedRequirementText":  "The system must ensure that internal clerk notes are not included in external notifications to filers or the public, while allowing authorized users to reference such notes when generating deficiency or correction notices.",
+                                   "reviewStatus":  "staged_unreviewed",
+                                   "duplicateAssessment":  "none",
+                                   "classification":  "reusable_candidate",
+                                   "promotionReadiness":  "needs_review",
+                                   "schemaWarnings":  [
+                                                          "sourceScoreWeight is blank."
+                                                      ],
+                                   "normalizationNotes":  "",
+                                   "importNotes":  "Pilot staged from the first 20 Review Complete rows in CMS Functional Requirements; not promoted to approved requirements library."
+                               },
+                               {
+                                   "stagingId":  "court-cms-functional-pilot:row-8",
+                                   "sourcePackage":  "court-requirements-in-progress",
+                                   "sourceFile":  "Draft NE RFP Requirements_V3.xlsx",
+                                   "sourceSheet":  "CMS Functional Requirements",
+                                   "sourceRow":  8,
+                                   "sourceColumnMap":  {
+                                                           "sourceStatus":  "A",
+                                                           "originalRequirementId":  "C",
+                                                           "sourceCaseCategory":  "D",
+                                                           "sourceFunction":  "E",
+                                                           "originalRequirementText":  "G",
+                                                           "sourceScoreWeight":  "J",
+                                                           "sourceScoreNotes":  "K",
+                                                           "sourceReviewerNotes":  [
+                                                                                       "L",
+                                                                                       "M",
+                                                                                       "N",
+                                                                                       "O",
+                                                                                       "P",
+                                                                                       "Q",
+                                                                                       "R"
+                                                                                   ]
+                                                       },
+                                   "originalRequirementId":  "1.1.12",
+                                   "sourceCaseCategory":  "1. Case Initiation",
+                                   "sourceFunction":  "1. Data Management",
+                                   "originalRequirementText":  "The system must support bulk loading of reference data, including fee schedules, bail schedules, and violation tables.",
+                                   "originalTextHash":  "82089e75cc7c15597673d93d07113c2ae45675a1353a89e39fbf01e05ef59316",
+                                   "sourceStatus":  "Review Complete",
+                                   "sourceScoreWeight":  "",
+                                   "sourceScoreNotes":  "",
+                                   "sourceReviewerNotes":  [
+                                                               {
+                                                                   "reviewer":  "Mary Putnam",
+                                                                   "sourceColumn":  "L",
+                                                                   "note":  "ok"
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Katie Weidner",
+                                                                   "sourceColumn":  "M",
+                                                                   "note":  "Financial Review: ok"
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Laurayne Hall",
+                                                                   "sourceColumn":  "N",
+                                                                   "note":  " "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Raylynn Coble",
+                                                                   "sourceColumn":  "O",
+                                                                   "note":  "6/5:  Okay but do not feel this is needed within the financial requirements.  I interpret this as an available reference table. "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Jordan Hernandez",
+                                                                   "sourceColumn":  "P",
+                                                                   "note":  "ok"
+                                                               }
+                                                           ],
+                                   "proposedCategoryId":  "COURT_CASE_INITIATION",
+                                   "proposedFunctionId":  "COURT_DATA_MANAGEMENT",
+                                   "proposedRequirementText":  "The system must support bulk loading of reference data, including fee schedules, bail schedules, and violation tables.",
+                                   "reviewStatus":  "staged_unreviewed",
+                                   "duplicateAssessment":  "none",
+                                   "classification":  "reusable_candidate",
+                                   "promotionReadiness":  "needs_review",
+                                   "schemaWarnings":  [
+                                                          "sourceScoreWeight is blank."
+                                                      ],
+                                   "normalizationNotes":  "",
+                                   "importNotes":  "Pilot staged from the first 20 Review Complete rows in CMS Functional Requirements; not promoted to approved requirements library."
+                               },
+                               {
+                                   "stagingId":  "court-cms-functional-pilot:row-9",
+                                   "sourcePackage":  "court-requirements-in-progress",
+                                   "sourceFile":  "Draft NE RFP Requirements_V3.xlsx",
+                                   "sourceSheet":  "CMS Functional Requirements",
+                                   "sourceRow":  9,
+                                   "sourceColumnMap":  {
+                                                           "sourceStatus":  "A",
+                                                           "originalRequirementId":  "C",
+                                                           "sourceCaseCategory":  "D",
+                                                           "sourceFunction":  "E",
+                                                           "originalRequirementText":  "G",
+                                                           "sourceScoreWeight":  "J",
+                                                           "sourceScoreNotes":  "K",
+                                                           "sourceReviewerNotes":  [
+                                                                                       "L",
+                                                                                       "M",
+                                                                                       "N",
+                                                                                       "O",
+                                                                                       "P",
+                                                                                       "Q",
+                                                                                       "R"
+                                                                                   ]
+                                                       },
+                                   "originalRequirementId":  "1.1.13",
+                                   "sourceCaseCategory":  "1. Case Initiation",
+                                   "sourceFunction":  "1. Data Management",
+                                   "originalRequirementText":  "The system must identify incomplete, inconsistent, or invalid data during case initiation based on configurable validation rules.",
+                                   "originalTextHash":  "dec2f61f7bb42258339324265341a50b903803ff9ff77b55254b8f15ef8a2aa6",
+                                   "sourceStatus":  "Review Complete",
+                                   "sourceScoreWeight":  "",
+                                   "sourceScoreNotes":  "",
+                                   "sourceReviewerNotes":  [
+                                                               {
+                                                                   "reviewer":  "Mary Putnam",
+                                                                   "sourceColumn":  "L",
+                                                                   "note":  "ok"
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Katie Weidner",
+                                                                   "sourceColumn":  "M",
+                                                                   "note":  " "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Laurayne Hall",
+                                                                   "sourceColumn":  "N",
+                                                                   "note":  " "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Raylynn Coble",
+                                                                   "sourceColumn":  "O",
+                                                                   "note":  "notifications to users should be clear and easy to understand. "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Jordan Hernandez",
+                                                                   "sourceColumn":  "P",
+                                                                   "note":  "ok"
+                                                               }
+                                                           ],
+                                   "proposedCategoryId":  "COURT_CASE_INITIATION",
+                                   "proposedFunctionId":  "COURT_DATA_MANAGEMENT",
+                                   "proposedRequirementText":  "The system must identify incomplete, inconsistent, or invalid data during case initiation based on configurable validation rules.",
+                                   "reviewStatus":  "staged_unreviewed",
+                                   "duplicateAssessment":  "none",
+                                   "classification":  "reusable_candidate",
+                                   "promotionReadiness":  "needs_review",
+                                   "schemaWarnings":  [
+                                                          "sourceScoreWeight is blank."
+                                                      ],
+                                   "normalizationNotes":  "",
+                                   "importNotes":  "Pilot staged from the first 20 Review Complete rows in CMS Functional Requirements; not promoted to approved requirements library."
+                               },
+                               {
+                                   "stagingId":  "court-cms-functional-pilot:row-10",
+                                   "sourcePackage":  "court-requirements-in-progress",
+                                   "sourceFile":  "Draft NE RFP Requirements_V3.xlsx",
+                                   "sourceSheet":  "CMS Functional Requirements",
+                                   "sourceRow":  10,
+                                   "sourceColumnMap":  {
+                                                           "sourceStatus":  "A",
+                                                           "originalRequirementId":  "C",
+                                                           "sourceCaseCategory":  "D",
+                                                           "sourceFunction":  "E",
+                                                           "originalRequirementText":  "G",
+                                                           "sourceScoreWeight":  "J",
+                                                           "sourceScoreNotes":  "K",
+                                                           "sourceReviewerNotes":  [
+                                                                                       "L",
+                                                                                       "M",
+                                                                                       "N",
+                                                                                       "O",
+                                                                                       "P",
+                                                                                       "Q",
+                                                                                       "R"
+                                                                                   ]
+                                                       },
+                                   "originalRequirementId":  "1.1.14",
+                                   "sourceCaseCategory":  "1. Case Initiation",
+                                   "sourceFunction":  "1. Data Management",
+                                   "originalRequirementText":  "The system must support intake and maintenance of count-level attributes including dates or date ranges, count numbering, correctable indicators, and configurable count-specific fields (e.g., speed/weight/zone indicators) where applicable.",
+                                   "originalTextHash":  "e59e5118c152a742edac6b64ef6c1dd0ba6be36efedbe0164764480e3012fa2c",
+                                   "sourceStatus":  "Review Complete",
+                                   "sourceScoreWeight":  "",
+                                   "sourceScoreNotes":  "",
+                                   "sourceReviewerNotes":  [
+                                                               {
+                                                                   "reviewer":  "Mary Putnam",
+                                                                   "sourceColumn":  "L",
+                                                                   "note":  "ok"
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Katie Weidner",
+                                                                   "sourceColumn":  "M",
+                                                                   "note":  " "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Laurayne Hall",
+                                                                   "sourceColumn":  "N",
+                                                                   "note":  " "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Raylynn Coble",
+                                                                   "sourceColumn":  "O",
+                                                                   "note":  "ok "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Jordan Hernandez",
+                                                                   "sourceColumn":  "P",
+                                                                   "note":  "ok"
+                                                               }
+                                                           ],
+                                   "proposedCategoryId":  "COURT_CASE_INITIATION",
+                                   "proposedFunctionId":  "COURT_DATA_MANAGEMENT",
+                                   "proposedRequirementText":  "The system must support intake and maintenance of count-level attributes including dates or date ranges, count numbering, correctable indicators, and configurable count-specific fields (e.g., speed/weight/zone indicators) where applicable.",
+                                   "reviewStatus":  "staged_unreviewed",
+                                   "duplicateAssessment":  "none",
+                                   "classification":  "reusable_candidate",
+                                   "promotionReadiness":  "needs_review",
+                                   "schemaWarnings":  [
+                                                          "sourceScoreWeight is blank."
+                                                      ],
+                                   "normalizationNotes":  "",
+                                   "importNotes":  "Pilot staged from the first 20 Review Complete rows in CMS Functional Requirements; not promoted to approved requirements library."
+                               },
+                               {
+                                   "stagingId":  "court-cms-functional-pilot:row-11",
+                                   "sourcePackage":  "court-requirements-in-progress",
+                                   "sourceFile":  "Draft NE RFP Requirements_V3.xlsx",
+                                   "sourceSheet":  "CMS Functional Requirements",
+                                   "sourceRow":  11,
+                                   "sourceColumnMap":  {
+                                                           "sourceStatus":  "A",
+                                                           "originalRequirementId":  "C",
+                                                           "sourceCaseCategory":  "D",
+                                                           "sourceFunction":  "E",
+                                                           "originalRequirementText":  "G",
+                                                           "sourceScoreWeight":  "J",
+                                                           "sourceScoreNotes":  "K",
+                                                           "sourceReviewerNotes":  [
+                                                                                       "L",
+                                                                                       "M",
+                                                                                       "N",
+                                                                                       "O",
+                                                                                       "P",
+                                                                                       "Q",
+                                                                                       "R"
+                                                                                   ]
+                                                       },
+                                   "originalRequirementId":  "1.1.15",
+                                   "sourceCaseCategory":  "1. Case Initiation",
+                                   "sourceFunction":  "1. Data Management",
+                                   "originalRequirementText":  "The system must support duplication/bulk entry of similar counts during initiation to efficiently create multiple counts with shared attributes, subject to security rules.",
+                                   "originalTextHash":  "f0494099176e1f7aa65b3a64b0e332b51199841440d9cde1f039eb69593f54e7",
+                                   "sourceStatus":  "Review Complete",
+                                   "sourceScoreWeight":  "",
+                                   "sourceScoreNotes":  "",
+                                   "sourceReviewerNotes":  [
+                                                               {
+                                                                   "reviewer":  "Mary Putnam",
+                                                                   "sourceColumn":  "L",
+                                                                   "note":  "ok"
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Katie Weidner",
+                                                                   "sourceColumn":  "M",
+                                                                   "note":  " "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Laurayne Hall",
+                                                                   "sourceColumn":  "N",
+                                                                   "note":  "Will there be a maximum number of counts that can be added? - 3/20/26 Ok but agree with RayLynn that a verificayion window pops up to verify all counts have been added accerding to the complaint document.  "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Raylynn Coble",
+                                                                   "sourceColumn":  "O",
+                                                                   "note":  " ok with this as long as there is a verification screen or process.  Could see issues with courts not recording data.  "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Jordan Hernandez",
+                                                                   "sourceColumn":  "P",
+                                                                   "note":  "ok"
+                                                               }
+                                                           ],
+                                   "proposedCategoryId":  "COURT_CASE_INITIATION",
+                                   "proposedFunctionId":  "COURT_DATA_MANAGEMENT",
+                                   "proposedRequirementText":  "The system must support duplication/bulk entry of similar counts during initiation to efficiently create multiple counts with shared attributes, subject to security rules.",
+                                   "reviewStatus":  "staged_unreviewed",
+                                   "duplicateAssessment":  "none",
+                                   "classification":  "reusable_candidate",
+                                   "promotionReadiness":  "needs_review",
+                                   "schemaWarnings":  [
+                                                          "sourceScoreWeight is blank."
+                                                      ],
+                                   "normalizationNotes":  "",
+                                   "importNotes":  "Pilot staged from the first 20 Review Complete rows in CMS Functional Requirements; not promoted to approved requirements library."
+                               },
+                               {
+                                   "stagingId":  "court-cms-functional-pilot:row-12",
+                                   "sourcePackage":  "court-requirements-in-progress",
+                                   "sourceFile":  "Draft NE RFP Requirements_V3.xlsx",
+                                   "sourceSheet":  "CMS Functional Requirements",
+                                   "sourceRow":  12,
+                                   "sourceColumnMap":  {
+                                                           "sourceStatus":  "A",
+                                                           "originalRequirementId":  "C",
+                                                           "sourceCaseCategory":  "D",
+                                                           "sourceFunction":  "E",
+                                                           "originalRequirementText":  "G",
+                                                           "sourceScoreWeight":  "J",
+                                                           "sourceScoreNotes":  "K",
+                                                           "sourceReviewerNotes":  [
+                                                                                       "L",
+                                                                                       "M",
+                                                                                       "N",
+                                                                                       "O",
+                                                                                       "P",
+                                                                                       "Q",
+                                                                                       "R"
+                                                                                   ]
+                                                       },
+                                   "originalRequirementId":  "1.1.16",
+                                   "sourceCaseCategory":  "1. Case Initiation",
+                                   "sourceFunction":  "1. Data Management",
+                                   "originalRequirementText":  "The system must support associating enhancements, allegations, priors, and other modifiers to specific offenses (charges) and at the case level, based on configurable court rules.",
+                                   "originalTextHash":  "9fbe9f6a26526b08729da6312526f1d52c9b28354cfb8cdc502cbf351a09d3a2",
+                                   "sourceStatus":  "Review Complete",
+                                   "sourceScoreWeight":  "",
+                                   "sourceScoreNotes":  "",
+                                   "sourceReviewerNotes":  [
+                                                               {
+                                                                   "reviewer":  "Mary Putnam",
+                                                                   "sourceColumn":  "L",
+                                                                   "note":  "ok"
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Katie Weidner",
+                                                                   "sourceColumn":  "M",
+                                                                   "note":  "3/17/26 AI review: Based on the conversation in the meeting, I think this requirement is fine."
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Laurayne Hall",
+                                                                   "sourceColumn":  "N",
+                                                                   "note":  "Amendments, deleting and adding new charges.  3/20/26 We have this ability in 3 places. On ADDTRCR when the case is built. On UPDTCJ after the case is added so other charges can be added with this criteria and on the AMEND screen after a hearing.  there may be some parts of this available in Docket, but can\u0027t say for sure.  Just want to clarify if this ability will be available in multiple places considering the phases of the case.  "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Raylynn Coble",
+                                                                   "sourceColumn":  "O",
+                                                                   "note":  "3/20:  After our discussion, I believe this requirement is fine as-is.  \n\nMy understanding of the required fields in the statute table: effective begin and end dates, offense types (fel,msd,inf), statute descriptions, triggers that indicate if the offense can have a jail term affixed as a judgment, if an abstract needs sent to DMV in a batch report, and to notify DMV if the statute is eligible for a suspended license.  If the statute is a speeding offense, we must track location and where the speeding range is.  Additionally we also collect the AAMVA codes which tell DMV how many points should be taken from the driver record- it would be nice if DMV could update some of these fields themselves.   We also collect the PCH charge from NSP, and collect the statute chapter.  \n\nI believe a lot of judges would like the ability for our CMS to better match the statutes as they are listed by the legislative website. \n\nWe should add a requirement that collection of these items should be set at the state-level and at the county level for court clerks to maintain their county ordinances for city prosecutor charges. "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Jordan Hernandez",
+                                                                   "sourceColumn":  "P",
+                                                                   "note":  "3/23 Review: OK"
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Ann Alden",
+                                                                   "sourceColumn":  "Q",
+                                                                   "note":  "I was thinking about the same as Laurayne on the multiple areas where information is amended and must be recorded to other screens"
+                                                               }
+                                                           ],
+                                   "proposedCategoryId":  "COURT_CASE_INITIATION",
+                                   "proposedFunctionId":  "COURT_DATA_MANAGEMENT",
+                                   "proposedRequirementText":  "The system must support associating enhancements, allegations, priors, and other modifiers to specific offenses (charges) and at the case level, based on configurable court rules.",
+                                   "reviewStatus":  "staged_unreviewed",
+                                   "duplicateAssessment":  "none",
+                                   "classification":  "reusable_candidate",
+                                   "promotionReadiness":  "needs_review",
+                                   "schemaWarnings":  [
+                                                          "sourceScoreWeight is blank."
+                                                      ],
+                                   "normalizationNotes":  "",
+                                   "importNotes":  "Pilot staged from the first 20 Review Complete rows in CMS Functional Requirements; not promoted to approved requirements library."
+                               },
+                               {
+                                   "stagingId":  "court-cms-functional-pilot:row-13",
+                                   "sourcePackage":  "court-requirements-in-progress",
+                                   "sourceFile":  "Draft NE RFP Requirements_V3.xlsx",
+                                   "sourceSheet":  "CMS Functional Requirements",
+                                   "sourceRow":  13,
+                                   "sourceColumnMap":  {
+                                                           "sourceStatus":  "A",
+                                                           "originalRequirementId":  "C",
+                                                           "sourceCaseCategory":  "D",
+                                                           "sourceFunction":  "E",
+                                                           "originalRequirementText":  "G",
+                                                           "sourceScoreWeight":  "J",
+                                                           "sourceScoreNotes":  "K",
+                                                           "sourceReviewerNotes":  [
+                                                                                       "L",
+                                                                                       "M",
+                                                                                       "N",
+                                                                                       "O",
+                                                                                       "P",
+                                                                                       "Q",
+                                                                                       "R"
+                                                                                   ]
+                                                       },
+                                   "originalRequirementId":  "1.1.17",
+                                   "sourceCaseCategory":  "1. Case Initiation",
+                                   "sourceFunction":  "1. Data Management",
+                                   "originalRequirementText":  "The system must support the capture of attributes associated with specific offenses or cases case initiation (e.g., BAC value and test type, school/safety/construction zone indicators, accident indicators, booking and custody details), based on configurable data elements and court rules.",
+                                   "originalTextHash":  "20f262682a4601a16c142f96ebde7374e987ab0aae509eb045c7d0bcd4db1eb2",
+                                   "sourceStatus":  "Review Complete",
+                                   "sourceScoreWeight":  "",
+                                   "sourceScoreNotes":  "",
+                                   "sourceReviewerNotes":  [
+                                                               {
+                                                                   "reviewer":  "Mary Putnam",
+                                                                   "sourceColumn":  "L",
+                                                                   "note":  "ok"
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Katie Weidner",
+                                                                   "sourceColumn":  "M",
+                                                                   "note":  "3/17/26 AI review: Based on the conversation in the meeting, I think this requirement is fine."
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Laurayne Hall",
+                                                                   "sourceColumn":  "N",
+                                                                   "note":  "Enhancements? 3/20/2026 see comments above  4/2/2026 - I would add to both 16 \u0026 17 :with the ability to amend throughout the case progression.\" "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Raylynn Coble",
+                                                                   "sourceColumn":  "O",
+                                                                   "note":  "3/20 review:  see comment above.  "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Jordan Hernandez",
+                                                                   "sourceColumn":  "P",
+                                                                   "note":  "3/23 Review: OK"
+                                                               }
+                                                           ],
+                                   "proposedCategoryId":  "COURT_CASE_INITIATION",
+                                   "proposedFunctionId":  "COURT_DATA_MANAGEMENT",
+                                   "proposedRequirementText":  "The system must support the capture of attributes associated with specific offenses or cases case initiation (e.g., BAC value and test type, school/safety/construction zone indicators, accident indicators, booking and custody details), based on configurable data elements and court rules.",
+                                   "reviewStatus":  "staged_unreviewed",
+                                   "duplicateAssessment":  "none",
+                                   "classification":  "reusable_candidate",
+                                   "promotionReadiness":  "needs_review",
+                                   "schemaWarnings":  [
+                                                          "sourceScoreWeight is blank."
+                                                      ],
+                                   "normalizationNotes":  "",
+                                   "importNotes":  "Pilot staged from the first 20 Review Complete rows in CMS Functional Requirements; not promoted to approved requirements library."
+                               },
+                               {
+                                   "stagingId":  "court-cms-functional-pilot:row-14",
+                                   "sourcePackage":  "court-requirements-in-progress",
+                                   "sourceFile":  "Draft NE RFP Requirements_V3.xlsx",
+                                   "sourceSheet":  "CMS Functional Requirements",
+                                   "sourceRow":  14,
+                                   "sourceColumnMap":  {
+                                                           "sourceStatus":  "A",
+                                                           "originalRequirementId":  "C",
+                                                           "sourceCaseCategory":  "D",
+                                                           "sourceFunction":  "E",
+                                                           "originalRequirementText":  "G",
+                                                           "sourceScoreWeight":  "J",
+                                                           "sourceScoreNotes":  "K",
+                                                           "sourceReviewerNotes":  [
+                                                                                       "L",
+                                                                                       "M",
+                                                                                       "N",
+                                                                                       "O",
+                                                                                       "P",
+                                                                                       "Q",
+                                                                                       "R"
+                                                                                   ]
+                                                       },
+                                   "originalRequirementId":  "1.1.18",
+                                   "sourceCaseCategory":  "1. Case Initiation",
+                                   "sourceFunction":  "1. Data Management",
+                                   "originalRequirementText":  "The system must support capture of filing/citing/arresting agency information, officer information (including multiple officers), and violation location details at initiation where applicable.",
+                                   "originalTextHash":  "b3fad6fcd82639de502706dec207661ee48ce2aa33e7fa42bfd42883cf181e66",
+                                   "sourceStatus":  "Review Complete",
+                                   "sourceScoreWeight":  "",
+                                   "sourceScoreNotes":  "",
+                                   "sourceReviewerNotes":  [
+                                                               {
+                                                                   "reviewer":  "Mary Putnam",
+                                                                   "sourceColumn":  "L",
+                                                                   "note":  "ok"
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Katie Weidner",
+                                                                   "sourceColumn":  "M",
+                                                                   "note":  " "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Laurayne Hall",
+                                                                   "sourceColumn":  "N",
+                                                                   "note":  " "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Raylynn Coble",
+                                                                   "sourceColumn":  "O",
+                                                                   "note":  "ok "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Jordan Hernandez",
+                                                                   "sourceColumn":  "P",
+                                                                   "note":  " "
+                                                               }
+                                                           ],
+                                   "proposedCategoryId":  "COURT_CASE_INITIATION",
+                                   "proposedFunctionId":  "COURT_DATA_MANAGEMENT",
+                                   "proposedRequirementText":  "The system must support capture of filing/citing/arresting agency information, officer information (including multiple officers), and violation location details at initiation where applicable.",
+                                   "reviewStatus":  "staged_unreviewed",
+                                   "duplicateAssessment":  "none",
+                                   "classification":  "reusable_candidate",
+                                   "promotionReadiness":  "needs_review",
+                                   "schemaWarnings":  [
+                                                          "sourceScoreWeight is blank."
+                                                      ],
+                                   "normalizationNotes":  "",
+                                   "importNotes":  "Pilot staged from the first 20 Review Complete rows in CMS Functional Requirements; not promoted to approved requirements library."
+                               },
+                               {
+                                   "stagingId":  "court-cms-functional-pilot:row-15",
+                                   "sourcePackage":  "court-requirements-in-progress",
+                                   "sourceFile":  "Draft NE RFP Requirements_V3.xlsx",
+                                   "sourceSheet":  "CMS Functional Requirements",
+                                   "sourceRow":  15,
+                                   "sourceColumnMap":  {
+                                                           "sourceStatus":  "A",
+                                                           "originalRequirementId":  "C",
+                                                           "sourceCaseCategory":  "D",
+                                                           "sourceFunction":  "E",
+                                                           "originalRequirementText":  "G",
+                                                           "sourceScoreWeight":  "J",
+                                                           "sourceScoreNotes":  "K",
+                                                           "sourceReviewerNotes":  [
+                                                                                       "L",
+                                                                                       "M",
+                                                                                       "N",
+                                                                                       "O",
+                                                                                       "P",
+                                                                                       "Q",
+                                                                                       "R"
+                                                                                   ]
+                                                       },
+                                   "originalRequirementId":  "1.1.19",
+                                   "sourceCaseCategory":  "1. Case Initiation",
+                                   "sourceFunction":  "1. Data Management",
+                                   "originalRequirementText":  "The system must support a case-type-specific “citation-style” data entry interface for high-volume traffic/citation filings that captures all required fields defined by the court for that filing type.",
+                                   "originalTextHash":  "e6b4a10b9f54f2208a4f866e11e6bf4480adb21aa64b0aaa1eda060e418c8939",
+                                   "sourceStatus":  "Review Complete",
+                                   "sourceScoreWeight":  "",
+                                   "sourceScoreNotes":  "",
+                                   "sourceReviewerNotes":  [
+                                                               {
+                                                                   "reviewer":  "Mary Putnam",
+                                                                   "sourceColumn":  "L",
+                                                                   "note":  "ok"
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Katie Weidner",
+                                                                   "sourceColumn":  "M",
+                                                                   "note":  " "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Laurayne Hall",
+                                                                   "sourceColumn":  "N",
+                                                                   "note":  " "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Raylynn Coble",
+                                                                   "sourceColumn":  "O",
+                                                                   "note":  "ok "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Jordan Hernandez",
+                                                                   "sourceColumn":  "P",
+                                                                   "note":  " "
+                                                               }
+                                                           ],
+                                   "proposedCategoryId":  "COURT_CASE_INITIATION",
+                                   "proposedFunctionId":  "COURT_DATA_MANAGEMENT",
+                                   "proposedRequirementText":  "The system must support a case-type-specific “citation-style” data entry interface for high-volume traffic/citation filings that captures all required fields defined by the court for that filing type.",
+                                   "reviewStatus":  "staged_unreviewed",
+                                   "duplicateAssessment":  "none",
+                                   "classification":  "reusable_candidate",
+                                   "promotionReadiness":  "needs_review",
+                                   "schemaWarnings":  [
+                                                          "sourceScoreWeight is blank."
+                                                      ],
+                                   "normalizationNotes":  "",
+                                   "importNotes":  "Pilot staged from the first 20 Review Complete rows in CMS Functional Requirements; not promoted to approved requirements library."
+                               },
+                               {
+                                   "stagingId":  "court-cms-functional-pilot:row-16",
+                                   "sourcePackage":  "court-requirements-in-progress",
+                                   "sourceFile":  "Draft NE RFP Requirements_V3.xlsx",
+                                   "sourceSheet":  "CMS Functional Requirements",
+                                   "sourceRow":  16,
+                                   "sourceColumnMap":  {
+                                                           "sourceStatus":  "A",
+                                                           "originalRequirementId":  "C",
+                                                           "sourceCaseCategory":  "D",
+                                                           "sourceFunction":  "E",
+                                                           "originalRequirementText":  "G",
+                                                           "sourceScoreWeight":  "J",
+                                                           "sourceScoreNotes":  "K",
+                                                           "sourceReviewerNotes":  [
+                                                                                       "L",
+                                                                                       "M",
+                                                                                       "N",
+                                                                                       "O",
+                                                                                       "P",
+                                                                                       "Q",
+                                                                                       "R"
+                                                                                   ]
+                                                       },
+                                   "originalRequirementId":  "1.1.20",
+                                   "sourceCaseCategory":  "1. Case Initiation",
+                                   "sourceFunction":  "1. Data Management",
+                                   "originalRequirementText":  "The system must enforce completion of mandatory fields and validation of configurable business rules prior to allowing case creation, and must display clear, user-facing error messages.",
+                                   "originalTextHash":  "95ef426c0d82c4ff2dc07f09da186e0ffcfdfd2e66b30211e4eb8f1f7bfdd663",
+                                   "sourceStatus":  "Review Complete",
+                                   "sourceScoreWeight":  "",
+                                   "sourceScoreNotes":  "",
+                                   "sourceReviewerNotes":  [
+                                                               {
+                                                                   "reviewer":  "Mary Putnam",
+                                                                   "sourceColumn":  "L",
+                                                                   "note":  "ok"
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Katie Weidner",
+                                                                   "sourceColumn":  "M",
+                                                                   "note":  " "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Laurayne Hall",
+                                                                   "sourceColumn":  "N",
+                                                                   "note":  " "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Raylynn Coble",
+                                                                   "sourceColumn":  "O",
+                                                                   "note":  "ok "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Jordan Hernandez",
+                                                                   "sourceColumn":  "P",
+                                                                   "note":  "ok"
+                                                               }
+                                                           ],
+                                   "proposedCategoryId":  "COURT_CASE_INITIATION",
+                                   "proposedFunctionId":  "COURT_DATA_MANAGEMENT",
+                                   "proposedRequirementText":  "The system must enforce completion of mandatory fields and validation of configurable business rules prior to allowing case creation, and must display clear, user-facing error messages.",
+                                   "reviewStatus":  "staged_unreviewed",
+                                   "duplicateAssessment":  "duplicate_id",
+                                   "classification":  "reusable_candidate",
+                                   "promotionReadiness":  "needs_source_resolution",
+                                   "schemaWarnings":  [
+                                                          "sourceScoreWeight is blank.",
+                                                          "originalRequirementId 1.1.20 appears more than once with different requirement text."
+                                                      ],
+                                   "normalizationNotes":  "",
+                                   "importNotes":  "Pilot staged from the first 20 Review Complete rows in CMS Functional Requirements; not promoted to approved requirements library."
+                               },
+                               {
+                                   "stagingId":  "court-cms-functional-pilot:row-17",
+                                   "sourcePackage":  "court-requirements-in-progress",
+                                   "sourceFile":  "Draft NE RFP Requirements_V3.xlsx",
+                                   "sourceSheet":  "CMS Functional Requirements",
+                                   "sourceRow":  17,
+                                   "sourceColumnMap":  {
+                                                           "sourceStatus":  "A",
+                                                           "originalRequirementId":  "C",
+                                                           "sourceCaseCategory":  "D",
+                                                           "sourceFunction":  "E",
+                                                           "originalRequirementText":  "G",
+                                                           "sourceScoreWeight":  "J",
+                                                           "sourceScoreNotes":  "K",
+                                                           "sourceReviewerNotes":  [
+                                                                                       "L",
+                                                                                       "M",
+                                                                                       "N",
+                                                                                       "O",
+                                                                                       "P",
+                                                                                       "Q",
+                                                                                       "R"
+                                                                                   ]
+                                                       },
+                                   "originalRequirementId":  "1.1.20",
+                                   "sourceCaseCategory":  "1. Case Initiation",
+                                   "sourceFunction":  "1. Data Management",
+                                   "originalRequirementText":  "The system must retain original charge and filing document information as entered at initiation for statistical reporting, regardless of later amendments, corrections, or subsequent filings.",
+                                   "originalTextHash":  "afaa2b073f2eea0146b8134a951a57ea0e927bc15ea5f94849e6bd50d2ed514e",
+                                   "sourceStatus":  "Review Complete",
+                                   "sourceScoreWeight":  "",
+                                   "sourceScoreNotes":  "",
+                                   "sourceReviewerNotes":  [
+                                                               {
+                                                                   "reviewer":  "Mary Putnam",
+                                                                   "sourceColumn":  "L",
+                                                                   "note":  "ok"
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Katie Weidner",
+                                                                   "sourceColumn":  "M",
+                                                                   "note":  " "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Laurayne Hall",
+                                                                   "sourceColumn":  "N",
+                                                                   "note":  " "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Raylynn Coble",
+                                                                   "sourceColumn":  "O",
+                                                                   "note":  "ok"
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Jordan Hernandez",
+                                                                   "sourceColumn":  "P",
+                                                                   "note":  " "
+                                                               }
+                                                           ],
+                                   "proposedCategoryId":  "COURT_CASE_INITIATION",
+                                   "proposedFunctionId":  "COURT_DATA_MANAGEMENT",
+                                   "proposedRequirementText":  "The system must retain original charge and filing document information as entered at initiation for statistical reporting, regardless of later amendments, corrections, or subsequent filings.",
+                                   "reviewStatus":  "staged_unreviewed",
+                                   "duplicateAssessment":  "duplicate_id",
+                                   "classification":  "reusable_candidate",
+                                   "promotionReadiness":  "needs_source_resolution",
+                                   "schemaWarnings":  [
+                                                          "sourceScoreWeight is blank.",
+                                                          "originalRequirementId 1.1.20 appears more than once with different requirement text."
+                                                      ],
+                                   "normalizationNotes":  "",
+                                   "importNotes":  "Pilot staged from the first 20 Review Complete rows in CMS Functional Requirements; not promoted to approved requirements library."
+                               },
+                               {
+                                   "stagingId":  "court-cms-functional-pilot:row-18",
+                                   "sourcePackage":  "court-requirements-in-progress",
+                                   "sourceFile":  "Draft NE RFP Requirements_V3.xlsx",
+                                   "sourceSheet":  "CMS Functional Requirements",
+                                   "sourceRow":  18,
+                                   "sourceColumnMap":  {
+                                                           "sourceStatus":  "A",
+                                                           "originalRequirementId":  "C",
+                                                           "sourceCaseCategory":  "D",
+                                                           "sourceFunction":  "E",
+                                                           "originalRequirementText":  "G",
+                                                           "sourceScoreWeight":  "J",
+                                                           "sourceScoreNotes":  "K",
+                                                           "sourceReviewerNotes":  [
+                                                                                       "L",
+                                                                                       "M",
+                                                                                       "N",
+                                                                                       "O",
+                                                                                       "P",
+                                                                                       "Q",
+                                                                                       "R"
+                                                                                   ]
+                                                       },
+                                   "originalRequirementId":  "1.1.21",
+                                   "sourceCaseCategory":  "1. Case Initiation",
+                                   "sourceFunction":  "1. Data Management",
+                                   "originalRequirementText":  "The system must allow configurable public and justice-partner access to search for and view cases through a web-based portal, based on role, case type, and statutory access rules.",
+                                   "originalTextHash":  "656d710258156d2c55058d4906234d99fbe621346b24bde2e14b98e74e9026c0",
+                                   "sourceStatus":  "Review Complete",
+                                   "sourceScoreWeight":  "",
+                                   "sourceScoreNotes":  "",
+                                   "sourceReviewerNotes":  [
+                                                               {
+                                                                   "reviewer":  "Mary Putnam",
+                                                                   "sourceColumn":  "L",
+                                                                   "note":  "ok. Our definition of case type would be very high level, but this access would need to be at what we call subtype level as well."
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Katie Weidner",
+                                                                   "sourceColumn":  "M",
+                                                                   "note":  " "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Laurayne Hall",
+                                                                   "sourceColumn":  "N",
+                                                                   "note":  " "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Raylynn Coble",
+                                                                   "sourceColumn":  "O",
+                                                                   "note":  "ok"
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Jordan Hernandez",
+                                                                   "sourceColumn":  "P",
+                                                                   "note":  " "
+                                                               }
+                                                           ],
+                                   "proposedCategoryId":  "COURT_CASE_INITIATION",
+                                   "proposedFunctionId":  "COURT_DATA_MANAGEMENT",
+                                   "proposedRequirementText":  "The system must allow configurable public and justice-partner access to search for and view cases through a web-based portal, based on role, case type, and statutory access rules.",
+                                   "reviewStatus":  "staged_unreviewed",
+                                   "duplicateAssessment":  "none",
+                                   "classification":  "reusable_candidate",
+                                   "promotionReadiness":  "needs_review",
+                                   "schemaWarnings":  [
+                                                          "sourceScoreWeight is blank."
+                                                      ],
+                                   "normalizationNotes":  "",
+                                   "importNotes":  "Pilot staged from the first 20 Review Complete rows in CMS Functional Requirements; not promoted to approved requirements library."
+                               },
+                               {
+                                   "stagingId":  "court-cms-functional-pilot:row-19",
+                                   "sourcePackage":  "court-requirements-in-progress",
+                                   "sourceFile":  "Draft NE RFP Requirements_V3.xlsx",
+                                   "sourceSheet":  "CMS Functional Requirements",
+                                   "sourceRow":  19,
+                                   "sourceColumnMap":  {
+                                                           "sourceStatus":  "A",
+                                                           "originalRequirementId":  "C",
+                                                           "sourceCaseCategory":  "D",
+                                                           "sourceFunction":  "E",
+                                                           "originalRequirementText":  "G",
+                                                           "sourceScoreWeight":  "J",
+                                                           "sourceScoreNotes":  "K",
+                                                           "sourceReviewerNotes":  [
+                                                                                       "L",
+                                                                                       "M",
+                                                                                       "N",
+                                                                                       "O",
+                                                                                       "P",
+                                                                                       "Q",
+                                                                                       "R"
+                                                                                   ]
+                                                       },
+                                   "originalRequirementId":  "1.1.22",
+                                   "sourceCaseCategory":  "1. Case Initiation",
+                                   "sourceFunction":  "1. Data Management",
+                                   "originalRequirementText":  "The system must distinguish between publicly viewable data and courthouse-only data, enforcing different access rules for web portals versus internal workstations.",
+                                   "originalTextHash":  "b1e967d36a55a7e306e5df875f66f8f0b7ea87640c469d029b3661da69328f0e",
+                                   "sourceStatus":  "Review Complete",
+                                   "sourceScoreWeight":  "",
+                                   "sourceScoreNotes":  "",
+                                   "sourceReviewerNotes":  [
+                                                               {
+                                                                   "reviewer":  "Mary Putnam",
+                                                                   "sourceColumn":  "L",
+                                                                   "note":  "ok"
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Katie Weidner",
+                                                                   "sourceColumn":  "M",
+                                                                   "note":  " "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Laurayne Hall",
+                                                                   "sourceColumn":  "N",
+                                                                   "note":  " "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Raylynn Coble",
+                                                                   "sourceColumn":  "O",
+                                                                   "note":  "ok"
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Jordan Hernandez",
+                                                                   "sourceColumn":  "P",
+                                                                   "note":  " "
+                                                               }
+                                                           ],
+                                   "proposedCategoryId":  "COURT_CASE_INITIATION",
+                                   "proposedFunctionId":  "COURT_DATA_MANAGEMENT",
+                                   "proposedRequirementText":  "The system must distinguish between publicly viewable data and courthouse-only data, enforcing different access rules for web portals versus internal workstations.",
+                                   "reviewStatus":  "staged_unreviewed",
+                                   "duplicateAssessment":  "none",
+                                   "classification":  "reusable_candidate",
+                                   "promotionReadiness":  "needs_review",
+                                   "schemaWarnings":  [
+                                                          "sourceScoreWeight is blank."
+                                                      ],
+                                   "normalizationNotes":  "",
+                                   "importNotes":  "Pilot staged from the first 20 Review Complete rows in CMS Functional Requirements; not promoted to approved requirements library."
+                               },
+                               {
+                                   "stagingId":  "court-cms-functional-pilot:row-20",
+                                   "sourcePackage":  "court-requirements-in-progress",
+                                   "sourceFile":  "Draft NE RFP Requirements_V3.xlsx",
+                                   "sourceSheet":  "CMS Functional Requirements",
+                                   "sourceRow":  20,
+                                   "sourceColumnMap":  {
+                                                           "sourceStatus":  "A",
+                                                           "originalRequirementId":  "C",
+                                                           "sourceCaseCategory":  "D",
+                                                           "sourceFunction":  "E",
+                                                           "originalRequirementText":  "G",
+                                                           "sourceScoreWeight":  "J",
+                                                           "sourceScoreNotes":  "K",
+                                                           "sourceReviewerNotes":  [
+                                                                                       "L",
+                                                                                       "M",
+                                                                                       "N",
+                                                                                       "O",
+                                                                                       "P",
+                                                                                       "Q",
+                                                                                       "R"
+                                                                                   ]
+                                                       },
+                                   "originalRequirementId":  "1.1.23",
+                                   "sourceCaseCategory":  "1. Case Initiation",
+                                   "sourceFunction":  "1. Data Management",
+                                   "originalRequirementText":  "The system must support secure electronic exchange of new case, charging, amendment, and disposition data with prosecutors, public defenders, probation, and detention partners.",
+                                   "originalTextHash":  "c31671698e65e8f0ed211a61bc03822db016e3dd4a3c6bddf60fcb4b8132437e",
+                                   "sourceStatus":  "Review Complete",
+                                   "sourceScoreWeight":  "",
+                                   "sourceScoreNotes":  "",
+                                   "sourceReviewerNotes":  [
+                                                               {
+                                                                   "reviewer":  "Mary Putnam",
+                                                                   "sourceColumn":  "L",
+                                                                   "note":  "ok"
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Katie Weidner",
+                                                                   "sourceColumn":  "M",
+                                                                   "note":  " "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Laurayne Hall",
+                                                                   "sourceColumn":  "N",
+                                                                   "note":  " "
+                                                               }
+                                                           ],
+                                   "proposedCategoryId":  "COURT_CASE_INITIATION",
+                                   "proposedFunctionId":  "COURT_DATA_MANAGEMENT",
+                                   "proposedRequirementText":  "The system must support secure electronic exchange of new case, charging, amendment, and disposition data with prosecutors, public defenders, probation, and detention partners.",
+                                   "reviewStatus":  "staged_unreviewed",
+                                   "duplicateAssessment":  "none",
+                                   "classification":  "reusable_candidate",
+                                   "promotionReadiness":  "needs_review",
+                                   "schemaWarnings":  [
+                                                          "sourceScoreWeight is blank."
+                                                      ],
+                                   "normalizationNotes":  "",
+                                   "importNotes":  "Pilot staged from the first 20 Review Complete rows in CMS Functional Requirements; not promoted to approved requirements library."
+                               },
+                               {
+                                   "stagingId":  "court-cms-functional-pilot:row-21",
+                                   "sourcePackage":  "court-requirements-in-progress",
+                                   "sourceFile":  "Draft NE RFP Requirements_V3.xlsx",
+                                   "sourceSheet":  "CMS Functional Requirements",
+                                   "sourceRow":  21,
+                                   "sourceColumnMap":  {
+                                                           "sourceStatus":  "A",
+                                                           "originalRequirementId":  "C",
+                                                           "sourceCaseCategory":  "D",
+                                                           "sourceFunction":  "E",
+                                                           "originalRequirementText":  "G",
+                                                           "sourceScoreWeight":  "J",
+                                                           "sourceScoreNotes":  "K",
+                                                           "sourceReviewerNotes":  [
+                                                                                       "L",
+                                                                                       "M",
+                                                                                       "N",
+                                                                                       "O",
+                                                                                       "P",
+                                                                                       "Q",
+                                                                                       "R"
+                                                                                   ]
+                                                       },
+                                   "originalRequirementId":  "1.1.24",
+                                   "sourceCaseCategory":  "1. Case Initiation",
+                                   "sourceFunction":  "1. Data Management",
+                                   "originalRequirementText":  "The system must detect potential duplicate cases during initiation and prompt the user to review and resolve the potential duplication prior to case creation.",
+                                   "originalTextHash":  "ef8bba2c5cd4e2be3862923c6de5e4b457bb1669d17b21e3dcc6544e5718df21",
+                                   "sourceStatus":  "Review Complete",
+                                   "sourceScoreWeight":  "",
+                                   "sourceScoreNotes":  "",
+                                   "sourceReviewerNotes":  [
+                                                               {
+                                                                   "reviewer":  "Mary Putnam",
+                                                                   "sourceColumn":  "L",
+                                                                   "note":  "ok"
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Katie Weidner",
+                                                                   "sourceColumn":  "M",
+                                                                   "note":  " "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Laurayne Hall",
+                                                                   "sourceColumn":  "N",
+                                                                   "note":  "Caution this should be a warning only as some foreclosure cases can have same parties but different causes. "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Raylynn Coble",
+                                                                   "sourceColumn":  "O",
+                                                                   "note":  "I feel like this will be a great addition to our new CMS system.  I\u0027m curious on what parameters will be used to determine duplicate filings of civil cases? "
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Jordan Hernandez",
+                                                                   "sourceColumn":  "P",
+                                                                   "note":  "ok"
+                                                               },
+                                                               {
+                                                                   "reviewer":  "Ann Alden",
+                                                                   "sourceColumn":  "Q",
+                                                                   "note":  "I feel that we need some way to identify this to prevent duplications. Additional duplication warnings need to identify citation number duplications/"
+                                                               }
+                                                           ],
+                                   "proposedCategoryId":  "COURT_CASE_INITIATION",
+                                   "proposedFunctionId":  "COURT_DATA_MANAGEMENT",
+                                   "proposedRequirementText":  "The system must detect potential duplicate cases during initiation and prompt the user to review and resolve the potential duplication prior to case creation.",
+                                   "reviewStatus":  "staged_unreviewed",
+                                   "duplicateAssessment":  "none",
+                                   "classification":  "reusable_candidate",
+                                   "promotionReadiness":  "needs_review",
+                                   "schemaWarnings":  [
+                                                          "sourceScoreWeight is blank."
+                                                      ],
+                                   "normalizationNotes":  "",
+                                   "importNotes":  "Pilot staged from the first 20 Review Complete rows in CMS Functional Requirements; not promoted to approved requirements library."
+                               }
+                           ]
+}

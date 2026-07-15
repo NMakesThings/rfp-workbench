@@ -1,0 +1,59 @@
+{
+  "templates": [
+    {
+      "id": "court-cms-rfp",
+      "label": "Court CMS RFP Template",
+      "domains": ["courts"],
+      "systemTypes": ["court_cms"],
+      "description": "Reusable RFP outline for court case management procurements.",
+      "recommendedSourcePackages": ["court-requirements-in-progress"],
+      "sections": [
+        { "id": "project_background", "label": "Project Background and Objectives", "componentTypes": ["proposal_instruction"] },
+        { "id": "vendor_qualifications", "label": "Vendor Qualifications and Court Experience", "componentTypes": ["requirement"] },
+        { "id": "functional_requirements", "label": "Functional Requirements", "componentTypes": ["requirement"], "capabilityCategories": ["case_management", "workflow_configuration", "records_document_management"] },
+        { "id": "technical_requirements", "label": "Technical Requirements", "componentTypes": ["requirement"], "capabilityCategories": ["integrations_apis", "hosting_operations", "security_privacy"] },
+        { "id": "implementation_services", "label": "Implementation, Conversion, and Training", "componentTypes": ["requirement", "sow_task", "deliverable"] },
+        { "id": "support_service_levels", "label": "Maintenance, Support, and Service Levels", "componentTypes": ["requirement", "service_level"] },
+        { "id": "commercial_pricing", "label": "Cost Proposal and TCO", "componentTypes": ["cost_requirement"] },
+        { "id": "evaluation_criteria", "label": "Evaluation Criteria and Scoring", "componentTypes": ["evaluation_criterion", "scoring_weight"] }
+      ],
+      "gapFocus": ["court workflow coverage", "e-filing and partner integrations", "data conversion", "statutory reporting", "security and accessibility"]
+    },
+    {
+      "id": "prosecutor-cms-rfp",
+      "label": "DA / Prosecutor CMS RFP Template",
+      "domains": ["prosecution"],
+      "systemTypes": ["prosecutor_cms"],
+      "description": "Reusable RFP outline for prosecutor or district attorney case management procurements.",
+      "recommendedSourcePackages": ["da-full-rfp-package"],
+      "sections": [
+        { "id": "project_background", "label": "Project Background and Prosecutorial Lifecycle", "componentTypes": ["proposal_instruction"] },
+        { "id": "vendor_qualifications", "label": "Vendor Qualifications and Justice Experience", "componentTypes": ["requirement"] },
+        { "id": "functional_requirements", "label": "Functional Requirements", "componentTypes": ["requirement"], "capabilityCategories": ["case_management", "workflow_configuration", "records_document_management"] },
+        { "id": "technical_requirements", "label": "Technical Requirements and Integrations", "componentTypes": ["requirement"], "capabilityCategories": ["integrations_apis", "security_privacy", "hosting_operations"] },
+        { "id": "implementation_services", "label": "Implementation, Migration, and Change Management", "componentTypes": ["requirement", "sow_task", "deliverable"] },
+        { "id": "support_service_levels", "label": "Maintenance, Support, Hosting, Backup, and DR", "componentTypes": ["requirement", "service_level"] },
+        { "id": "accessibility", "label": "Digital Accessibility Requirements", "componentTypes": ["requirement"] },
+        { "id": "commercial_pricing", "label": "Cost Matrix and Total Cost of Ownership", "componentTypes": ["cost_requirement"] },
+        { "id": "evaluation_criteria", "label": "Evaluation Criteria, Demonstrations, and Scoring", "componentTypes": ["evaluation_criterion", "scoring_weight", "demonstration_requirement"] }
+      ],
+      "gapFocus": ["prosecutorial lifecycle coverage", "discovery and evidence", "justice partner integrations", "data migration", "security and support model", "cost transparency"]
+    }
+  ],
+  "fallbackTemplate": {
+    "id": "justice-technology-rfp",
+    "label": "Justice Technology RFP Template",
+    "description": "General public safety and justice technology RFP outline.",
+    "sections": [
+      { "id": "project_background", "label": "Project Background and Objectives" },
+      { "id": "vendor_qualifications", "label": "Vendor Qualifications" },
+      { "id": "functional_requirements", "label": "Functional Requirements" },
+      { "id": "technical_requirements", "label": "Technical Requirements" },
+      { "id": "implementation_services", "label": "Implementation Services" },
+      { "id": "support_service_levels", "label": "Support and Service Levels" },
+      { "id": "commercial_pricing", "label": "Commercial and Pricing" },
+      { "id": "evaluation_criteria", "label": "Evaluation Criteria" }
+    ],
+    "gapFocus": ["scope clarity", "integrations", "data migration", "security", "support", "evaluation model"]
+  }
+}

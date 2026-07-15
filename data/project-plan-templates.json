@@ -1,0 +1,519 @@
+{
+  "version": 1,
+  "templates": [
+    {
+      "id": "rfp-development",
+      "name": "RFP Development",
+      "description": "Starter plan for RFP development / procurement support engagements.",
+      "engagementType": "rfp_development",
+      "roadmapStages": [
+        {
+          "id": "initiation_setup",
+          "label": "Initiation / Setup",
+          "description": "Confirm kickoff, governance, project controls, and workspace setup."
+        },
+        {
+          "id": "discovery_intake",
+          "label": "Discovery / Intake",
+          "description": "Confirm stakeholders, roles, discovery coverage, and client context."
+        },
+        {
+          "id": "source_research",
+          "label": "Source Review / Research",
+          "description": "Collect and review source materials, prior work, and public context."
+        },
+        {
+          "id": "analysis_requirements",
+          "label": "Analysis / Requirements",
+          "description": "Develop, validate, and trace requirements and related analysis."
+        },
+        {
+          "id": "package_development",
+          "label": "Package Development",
+          "description": "Draft and refine solicitation package content, exhibits, and instructions."
+        },
+        {
+          "id": "review_approval",
+          "label": "Review / Approval",
+          "description": "Resolve review comments, readiness checks, and approval decisions."
+        },
+        {
+          "id": "evaluation_selection",
+          "label": "Evaluation / Selection Support",
+          "description": "Support scoring, vendor questions, demonstrations, selection, and negotiation work."
+        },
+        {
+          "id": "closeout_handoff",
+          "label": "Closeout / Handoff",
+          "description": "Complete closeout, sign-off, final artifacts, and handoff expectations."
+        }
+      ],
+      "projectPlanItems": [
+        {
+          "type": "checkpoint",
+          "title": "Confirm project kickoff and governance structure",
+          "roadmapBucketId": "initiation_setup",
+          "owner": "Joint",
+          "status": "not_started",
+          "notes": "Confirm kickoff participants, decision roles, communication cadence, and project controls.",
+          "estimatedDuration": "1 meeting"
+        },
+        {
+          "type": "deliverable",
+          "title": "Project controls document",
+          "roadmapBucketId": "initiation_setup",
+          "owner": "MCP",
+          "status": "not_started",
+          "notes": "Document working assumptions, project controls, review cadence, and artifact ownership.",
+          "estimatedDuration": "1-2 days"
+        },
+        {
+          "type": "dependency",
+          "title": "Client provides background documentation",
+          "roadmapBucketId": "source_research",
+          "owner": "Client",
+          "status": "not_started",
+          "notes": "Collect prior procurement material, current requirements, contracts, workplans, and relevant source documents.",
+          "estimatedDuration": "Client-dependent"
+        },
+        {
+          "type": "dependency",
+          "title": "Stakeholder list and roles confirmed",
+          "roadmapBucketId": "discovery_intake",
+          "owner": "Client",
+          "status": "not_started",
+          "notes": "Confirm stakeholder groups, subject matter experts, reviewers, and decision-makers.",
+          "estimatedDuration": "Client-dependent"
+        },
+        {
+          "type": "deliverable",
+          "title": "Business requirements questionnaire",
+          "roadmapBucketId": "analysis_requirements",
+          "owner": "MCP",
+          "status": "not_started",
+          "notes": "Prepare structured questions to gather functional, operational, technical, and procurement context.",
+          "estimatedDuration": "1-2 days"
+        },
+        {
+          "type": "deliverable",
+          "title": "Business requirements document",
+          "roadmapBucketId": "analysis_requirements",
+          "owner": "MCP",
+          "status": "not_started",
+          "notes": "Summarize business needs, constraints, assumptions, and procurement requirements.",
+          "estimatedDuration": "1 week"
+        },
+        {
+          "type": "checkpoint",
+          "title": "Requirements validation completed",
+          "roadmapBucketId": "analysis_requirements",
+          "owner": "Joint",
+          "status": "not_started",
+          "notes": "Confirm requirements are complete enough for solicitation development and client review.",
+          "estimatedDuration": "1 meeting"
+        },
+        {
+          "type": "deliverable",
+          "title": "Draft CMS / system requirements",
+          "roadmapBucketId": "analysis_requirements",
+          "owner": "MCP",
+          "status": "not_started",
+          "notes": "Draft system requirements for client review and refinement.",
+          "estimatedDuration": "1-2 weeks"
+        },
+        {
+          "type": "deliverable",
+          "title": "Requirements traceability matrix",
+          "roadmapBucketId": "analysis_requirements",
+          "owner": "MCP",
+          "status": "not_started",
+          "notes": "Map requirements to source inputs, decision rationale, and procurement sections where useful.",
+          "estimatedDuration": "3-5 days"
+        },
+        {
+          "type": "deliverable",
+          "title": "Draft RFP solicitation document",
+          "roadmapBucketId": "package_development",
+          "owner": "MCP",
+          "status": "not_started",
+          "notes": "Prepare the draft solicitation structure and reusable RFP sections for client review.",
+          "estimatedDuration": "1-2 weeks"
+        },
+        {
+          "type": "decision",
+          "title": "Confirm RFP structure and required exhibits",
+          "roadmapBucketId": "package_development",
+          "owner": "Joint",
+          "status": "not_started",
+          "notes": "Confirm solicitation sections, required exhibits, submission instructions, and attachment strategy.",
+          "estimatedDuration": "1 meeting"
+        },
+        {
+          "type": "deliverable",
+          "title": "Final RFP document",
+          "roadmapBucketId": "package_development",
+          "owner": "MCP",
+          "status": "not_started",
+          "notes": "Finalize the RFP document after client review and accepted revisions.",
+          "estimatedDuration": "3-5 days"
+        },
+        {
+          "type": "deliverable",
+          "title": "Evaluation criteria and scoring methodology",
+          "roadmapBucketId": "evaluation_selection",
+          "owner": "MCP",
+          "status": "not_started",
+          "notes": "Draft scoring criteria, weighting approach, and evaluation instructions for client review.",
+          "estimatedDuration": "3-5 days"
+        },
+        {
+          "type": "decision",
+          "title": "Confirm vendor demonstration / interview approach",
+          "roadmapBucketId": "evaluation_selection",
+          "owner": "Joint",
+          "status": "not_started",
+          "notes": "Decide whether demonstrations, interviews, scenarios, or oral presentations are part of evaluation.",
+          "estimatedDuration": "1 meeting"
+        },
+        {
+          "type": "checkpoint",
+          "title": "Vendor questions / clarification process ready",
+          "roadmapBucketId": "evaluation_selection",
+          "owner": "Joint",
+          "status": "not_started",
+          "notes": "Confirm intake, tracking, review, and approval process for vendor questions and clarifications.",
+          "estimatedDuration": "1-2 days"
+        },
+        {
+          "type": "deliverable",
+          "title": "Draft written responses to vendor questions",
+          "roadmapBucketId": "evaluation_selection",
+          "owner": "MCP",
+          "status": "not_started",
+          "notes": "Draft response language for client review based on approved requirements and procurement intent.",
+          "estimatedDuration": "As needed"
+        },
+        {
+          "type": "deliverable",
+          "title": "Initial negotiation matrix",
+          "roadmapBucketId": "evaluation_selection",
+          "owner": "MCP",
+          "status": "not_started",
+          "notes": "Prepare a matrix of negotiation topics, requirements, risks, and proposed positions.",
+          "estimatedDuration": "3-5 days"
+        },
+        {
+          "type": "risk",
+          "title": "Procurement terms or legal boilerplate are unresolved",
+          "roadmapBucketId": "evaluation_selection",
+          "owner": "Joint",
+          "status": "not_started",
+          "notes": "Track unresolved terms, procurement language, or legal review items that could affect final package readiness.",
+          "estimatedDuration": "Client-dependent"
+        },
+        {
+          "type": "risk",
+          "title": "Requirements are not testable or vendor-answerable",
+          "roadmapBucketId": "analysis_requirements",
+          "owner": "MCP",
+          "status": "not_started",
+          "notes": "Review requirements for clarity, response format, acceptance criteria, and vendor-answerable wording.",
+          "estimatedDuration": "1-2 days"
+        },
+        {
+          "type": "checkpoint",
+          "title": "Project closeout meeting completed",
+          "roadmapBucketId": "closeout_handoff",
+          "owner": "Joint",
+          "status": "not_started",
+          "notes": "Hold closeout meeting to confirm final artifacts, open issues, and handoff expectations.",
+          "estimatedDuration": "1 meeting"
+        },
+        {
+          "type": "deliverable",
+          "title": "Project closure report",
+          "roadmapBucketId": "closeout_handoff",
+          "owner": "MCP",
+          "status": "not_started",
+          "notes": "Summarize work completed, artifacts delivered, unresolved assumptions, and recommended next steps.",
+          "estimatedDuration": "1-2 days"
+        },
+        {
+          "type": "checkpoint",
+          "title": "Stakeholder sign-off received",
+          "roadmapBucketId": "review_approval",
+          "owner": "Client",
+          "status": "not_started",
+          "notes": "Confirm final stakeholder acceptance or approval of the agreed project artifacts.",
+          "estimatedDuration": "Client-dependent"
+        }
+      ]
+    },
+    {
+      "id": "evaluation-assessment",
+      "name": "Evaluation / Assessment",
+      "description": "Starter plan for justice system evaluation, operational assessment, technology assessment, or modernization roadmap engagements.",
+      "engagementType": "evaluation_assessment",
+      "roadmapStages": [
+        {
+          "id": "initiation_setup",
+          "label": "Initiation / Setup",
+          "description": "Confirm scope, objectives, project setup, and kickoff expectations."
+        },
+        {
+          "id": "source_research",
+          "label": "Documentation / Source Review",
+          "description": "Collect, catalog, and review background documentation and source materials."
+        },
+        {
+          "id": "discovery_intake",
+          "label": "Stakeholder Discovery",
+          "description": "Plan and conduct stakeholder engagement and SME interviews."
+        },
+        {
+          "id": "current_state_analysis",
+          "label": "Current-State Analysis",
+          "description": "Document current-state workflows, operational pain points, and process dependencies."
+        },
+        {
+          "id": "systems_integration_analysis",
+          "label": "Systems / Integration Analysis",
+          "description": "Assess systems, integrations, data flows, and platform capabilities."
+        },
+        {
+          "id": "gap_recommendations",
+          "label": "Gap / Risk / Recommendations",
+          "description": "Identify gaps, risks, constraints, recommendations, and roadmap priorities."
+        },
+        {
+          "id": "review_approval",
+          "label": "Draft Review / Approval",
+          "description": "Submit draft report and facilitate client review."
+        },
+        {
+          "id": "closeout_handoff",
+          "label": "Final Delivery / Handoff",
+          "description": "Finalize the report, presentation materials, handoff, and follow-up items."
+        }
+      ],
+      "projectPlanItems": [
+        {
+          "type": "checkpoint",
+          "title": "Confirm evaluation scope and objectives",
+          "roadmapBucketId": "initiation_setup",
+          "owner": "Joint",
+          "status": "not_started",
+          "notes": "Confirm purpose, assessment boundaries, expected outputs, review cadence, and success criteria.",
+          "estimatedDuration": "1 meeting"
+        },
+        {
+          "type": "dependency",
+          "title": "Client confirms designated contact and SME roster",
+          "roadmapBucketId": "initiation_setup",
+          "owner": "Client",
+          "status": "not_started",
+          "notes": "Identify client contact, subject matter experts, reviewers, and decision-makers.",
+          "estimatedDuration": "Client-dependent"
+        },
+        {
+          "type": "deliverable",
+          "title": "Project plan and schedule",
+          "roadmapBucketId": "initiation_setup",
+          "owner": "MCP",
+          "status": "not_started",
+          "notes": "Prepare a practical plan and schedule for assessment activities, reviews, and deliverables.",
+          "estimatedDuration": "1-2 days"
+        },
+        {
+          "type": "dependency",
+          "title": "Client provides background documentation",
+          "roadmapBucketId": "source_research",
+          "owner": "Client",
+          "status": "not_started",
+          "notes": "Collect policies, process documents, current-state materials, reports, inventories, and supporting artifacts.",
+          "estimatedDuration": "Client-dependent"
+        },
+        {
+          "type": "deliverable",
+          "title": "Documentation catalog",
+          "roadmapBucketId": "source_research",
+          "owner": "MCP",
+          "status": "not_started",
+          "notes": "Create a catalog of reviewed documents, source types, gaps, and follow-up needs.",
+          "estimatedDuration": "3-5 days"
+        },
+        {
+          "type": "deliverable",
+          "title": "Documentation review summary",
+          "roadmapBucketId": "source_research",
+          "owner": "MCP",
+          "status": "not_started",
+          "notes": "Summarize key findings, constraints, assumptions, and information gaps from documentation review.",
+          "estimatedDuration": "1 week"
+        },
+        {
+          "type": "deliverable",
+          "title": "Legislative / policy compliance matrix, if applicable",
+          "roadmapBucketId": "source_research",
+          "owner": "MCP",
+          "status": "not_started",
+          "notes": "Map relevant policy or compliance considerations when they affect findings or recommendations.",
+          "estimatedDuration": "3-5 days"
+        },
+        {
+          "type": "deliverable",
+          "title": "Stakeholder interview guides",
+          "roadmapBucketId": "discovery_intake",
+          "owner": "MCP",
+          "status": "not_started",
+          "notes": "Prepare interview guides tailored to stakeholder roles and assessment objectives.",
+          "estimatedDuration": "1-2 days"
+        },
+        {
+          "type": "checkpoint",
+          "title": "SME interviews scheduled",
+          "roadmapBucketId": "discovery_intake",
+          "owner": "Joint",
+          "status": "not_started",
+          "notes": "Confirm interview schedule, attendees, logistics, and topics.",
+          "estimatedDuration": "Client-dependent"
+        },
+        {
+          "type": "checkpoint",
+          "title": "SME interviews completed",
+          "roadmapBucketId": "discovery_intake",
+          "owner": "Joint",
+          "status": "not_started",
+          "notes": "Confirm interviews are complete or identify remaining stakeholder coverage gaps.",
+          "estimatedDuration": "1-2 weeks"
+        },
+        {
+          "type": "deliverable",
+          "title": "Current-state workflow documentation",
+          "roadmapBucketId": "current_state_analysis",
+          "owner": "MCP",
+          "status": "not_started",
+          "notes": "Document current-state workflows, operational steps, pain points, and decision points.",
+          "estimatedDuration": "1 week"
+        },
+        {
+          "type": "deliverable",
+          "title": "Systems inventory and overview",
+          "roadmapBucketId": "systems_integration_analysis",
+          "owner": "MCP",
+          "status": "not_started",
+          "notes": "Summarize systems, platforms, modules, users, ownership, and high-level usage context.",
+          "estimatedDuration": "3-5 days"
+        },
+        {
+          "type": "deliverable",
+          "title": "Integration and data flow mapping",
+          "roadmapBucketId": "systems_integration_analysis",
+          "owner": "MCP",
+          "status": "not_started",
+          "notes": "Map key integrations, data exchanges, dependencies, and information flow constraints.",
+          "estimatedDuration": "1 week"
+        },
+        {
+          "type": "deliverable",
+          "title": "Vendor / platform capability assessment, if applicable",
+          "roadmapBucketId": "systems_integration_analysis",
+          "owner": "MCP",
+          "status": "not_started",
+          "notes": "Assess known platform capabilities and limitations where they are relevant to the engagement.",
+          "estimatedDuration": "3-5 days"
+        },
+        {
+          "type": "deliverable",
+          "title": "Gap analysis summary",
+          "roadmapBucketId": "gap_recommendations",
+          "owner": "MCP",
+          "status": "not_started",
+          "notes": "Summarize gaps between current state, needs, constraints, and desired future state.",
+          "estimatedDuration": "1 week"
+        },
+        {
+          "type": "deliverable",
+          "title": "Operational risk assessment",
+          "roadmapBucketId": "gap_recommendations",
+          "owner": "MCP",
+          "status": "not_started",
+          "notes": "Document operational risks, dependencies, assumptions, and priority concerns.",
+          "estimatedDuration": "3-5 days"
+        },
+        {
+          "type": "deliverable",
+          "title": "Requirements recommendations",
+          "roadmapBucketId": "gap_recommendations",
+          "owner": "MCP",
+          "status": "not_started",
+          "notes": "Draft requirements or recommendation themes based on the assessment findings.",
+          "estimatedDuration": "3-5 days"
+        },
+        {
+          "type": "deliverable",
+          "title": "Prioritized modernization roadmap",
+          "roadmapBucketId": "gap_recommendations",
+          "owner": "MCP",
+          "status": "not_started",
+          "notes": "Prioritize recommendations by value, urgency, dependency, and feasibility.",
+          "estimatedDuration": "1 week"
+        },
+        {
+          "type": "decision",
+          "title": "Confirm recommendation priorities",
+          "roadmapBucketId": "gap_recommendations",
+          "owner": "Joint",
+          "status": "not_started",
+          "notes": "Confirm which recommendations should be emphasized, sequenced, or deferred.",
+          "estimatedDuration": "1 meeting"
+        },
+        {
+          "type": "deliverable",
+          "title": "Draft final report",
+          "roadmapBucketId": "review_approval",
+          "owner": "MCP",
+          "status": "not_started",
+          "notes": "Prepare draft assessment report for client review and working session discussion.",
+          "estimatedDuration": "1-2 weeks"
+        },
+        {
+          "type": "checkpoint",
+          "title": "Draft review working session completed",
+          "roadmapBucketId": "review_approval",
+          "owner": "Joint",
+          "status": "not_started",
+          "notes": "Review draft findings, recommendations, and revisions with the client.",
+          "estimatedDuration": "1 meeting"
+        },
+        {
+          "type": "deliverable",
+          "title": "Final report",
+          "roadmapBucketId": "closeout_handoff",
+          "owner": "MCP",
+          "status": "not_started",
+          "notes": "Finalize report after client review and approved revisions.",
+          "estimatedDuration": "3-5 days"
+        },
+        {
+          "type": "deliverable",
+          "title": "Final presentation materials",
+          "roadmapBucketId": "closeout_handoff",
+          "owner": "MCP",
+          "status": "not_started",
+          "notes": "Prepare concise presentation materials for final briefing or closeout.",
+          "estimatedDuration": "3-5 days"
+        },
+        {
+          "type": "checkpoint",
+          "title": "Final presentation completed",
+          "roadmapBucketId": "closeout_handoff",
+          "owner": "Joint",
+          "status": "not_started",
+          "notes": "Confirm final presentation is complete and any closeout follow-up items are captured.",
+          "estimatedDuration": "1 meeting"
+        }
+      ]
+    }
+  ]
+}

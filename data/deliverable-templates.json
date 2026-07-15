@@ -1,0 +1,609 @@
+{
+  "version": 1,
+  "catalogName": "MCP Standard Deliverable Templates",
+  "description": "Read-only generic deliverable outlines for Procurement Workbench assembly surfaces. These templates do not contain client-specific language or approved requirements.",
+  "templates": [
+    {
+      "id": "mcp-rfp-package-v1",
+      "name": "MCP Standard RFP Package",
+      "deliverableType": "rfp_package",
+      "version": "1.0",
+      "description": "A standard procurement package outline.",
+      "sections": [
+        {
+          "id": "introduction_procurement_overview",
+          "title": "Introduction / Procurement Overview",
+          "order": 1,
+          "purpose": "Summarize the procurement purpose and buying context.",
+          "expectedWorkbenchInputs": [
+            "Project Intake",
+            "Requirements Review"
+          ],
+          "templateRole": "required-section"
+        },
+        {
+          "id": "background_and_current_environment",
+          "title": "Background and Current Environment",
+          "order": 2,
+          "purpose": "Capture agency and current-state context.",
+          "expectedWorkbenchInputs": [
+            "Project Intake",
+            "Client Source Intake",
+            "Public Research"
+          ],
+          "templateRole": "recommended-section"
+        },
+        {
+          "id": "scope_of_work",
+          "title": "Scope of Work",
+          "order": 3,
+          "purpose": "Define work, services, and project boundaries.",
+          "expectedWorkbenchInputs": [
+            "Project Intake",
+            "Project Plan",
+            "Requirements Review"
+          ],
+          "templateRole": "required-section"
+        },
+        {
+          "id": "functional_requirements",
+          "title": "Functional Requirements",
+          "order": 4,
+          "purpose": "Present included functional requirements.",
+          "expectedWorkbenchInputs": [
+            "Requirements Review"
+          ],
+          "templateRole": "output-section"
+        },
+        {
+          "id": "technical_requirements",
+          "title": "Technical Requirements",
+          "order": 5,
+          "purpose": "Present technical and integration expectations.",
+          "expectedWorkbenchInputs": [
+            "Project Intake",
+            "Requirements Review"
+          ],
+          "templateRole": "output-section"
+        },
+        {
+          "id": "implementation_expectations",
+          "title": "Implementation Expectations",
+          "order": 6,
+          "purpose": "Describe implementation, migration, training, and support expectations.",
+          "expectedWorkbenchInputs": [
+            "Project Plan",
+            "Project Intake"
+          ],
+          "templateRole": "recommended-section"
+        },
+        {
+          "id": "vendor_qualifications",
+          "title": "Vendor Qualifications",
+          "order": 7,
+          "purpose": "Identify experience, staffing, and reference expectations.",
+          "expectedWorkbenchInputs": [
+            "Requirements Review",
+            "Project Configuration"
+          ],
+          "templateRole": "recommended-section"
+        },
+        {
+          "id": "proposal_instructions",
+          "title": "Proposal Instructions",
+          "order": 8,
+          "purpose": "Outline response format and submission instructions.",
+          "expectedWorkbenchInputs": [
+            "Project Configuration"
+          ],
+          "templateRole": "required-section"
+        },
+        {
+          "id": "evaluation_criteria",
+          "title": "Evaluation Criteria",
+          "order": 9,
+          "purpose": "Describe scoring categories and evaluation expectations.",
+          "expectedWorkbenchInputs": [
+            "Project Configuration",
+            "Requirements Review"
+          ],
+          "templateRole": "required-section"
+        },
+        {
+          "id": "attachments_exhibits",
+          "title": "Attachments / Exhibits",
+          "order": 10,
+          "purpose": "Reserve space for exhibits and supporting material.",
+          "expectedWorkbenchInputs": [
+            "Client Source Intake",
+            "Public Research"
+          ],
+          "templateRole": "optional-section"
+        }
+      ]
+    },
+    {
+      "id": "mcp-assessment-report-v1",
+      "name": "MCP Standard Assessment Report",
+      "deliverableType": "assessment_report",
+      "version": "1.0",
+      "description": "A consulting assessment report outline.",
+      "sections": [
+        {
+          "id": "executive_summary",
+          "title": "Executive Summary",
+          "order": 1,
+          "purpose": "Summarize context, findings, and recommended direction.",
+          "expectedWorkbenchInputs": [
+            "Project Intake",
+            "Review Queue",
+            "Project Plan"
+          ],
+          "templateRole": "required-section"
+        },
+        {
+          "id": "assessment_purpose_and_scope",
+          "title": "Assessment Purpose and Scope",
+          "order": 2,
+          "purpose": "Clarify goals, scope boundaries, and assumptions.",
+          "expectedWorkbenchInputs": [
+            "Project Intake",
+            "Client Source Intake"
+          ],
+          "templateRole": "required-section"
+        },
+        {
+          "id": "methodology",
+          "title": "Methodology",
+          "order": 3,
+          "purpose": "Describe reviewed sources and validation approach.",
+          "expectedWorkbenchInputs": [
+            "Client Source Intake",
+            "Public Research"
+          ],
+          "templateRole": "recommended-section"
+        },
+        {
+          "id": "current_state_overview",
+          "title": "Current State Overview",
+          "order": 4,
+          "purpose": "Summarize environment and constraints.",
+          "expectedWorkbenchInputs": [
+            "Project Intake",
+            "Client Source Intake",
+            "Public Research"
+          ],
+          "templateRole": "source-context"
+        },
+        {
+          "id": "key_findings",
+          "title": "Key Findings",
+          "order": 5,
+          "purpose": "Organize reviewed findings.",
+          "expectedWorkbenchInputs": [
+            "Client Source Intake",
+            "Public Research",
+            "Review Queue"
+          ],
+          "templateRole": "output-section"
+        },
+        {
+          "id": "gaps_and_risks",
+          "title": "Gaps and Risks",
+          "order": 6,
+          "purpose": "Identify gaps, limitations, and unresolved assumptions.",
+          "expectedWorkbenchInputs": [
+            "Review Queue",
+            "Project Plan",
+            "Requirements Review"
+          ],
+          "templateRole": "output-section"
+        },
+        {
+          "id": "recommendations",
+          "title": "Recommendations",
+          "order": 7,
+          "purpose": "Summarize recommended next actions.",
+          "expectedWorkbenchInputs": [
+            "Project Plan",
+            "Requirements Review"
+          ],
+          "templateRole": "output-section"
+        },
+        {
+          "id": "implementation_considerations",
+          "title": "Implementation Considerations",
+          "order": 8,
+          "purpose": "Capture dependencies, sequencing, and support considerations.",
+          "expectedWorkbenchInputs": [
+            "Project Plan"
+          ],
+          "templateRole": "recommended-section"
+        },
+        {
+          "id": "roadmap_next_steps",
+          "title": "Roadmap / Next Steps",
+          "order": 9,
+          "purpose": "Translate the assessment into practical follow-up work.",
+          "expectedWorkbenchInputs": [
+            "Project Plan"
+          ],
+          "templateRole": "recommended-section"
+        },
+        {
+          "id": "appendices",
+          "title": "Appendices",
+          "order": 10,
+          "purpose": "Reference source material without duplicating full source documents.",
+          "expectedWorkbenchInputs": [
+            "Client Source Intake",
+            "Public Research",
+            "Project Intake"
+          ],
+          "templateRole": "optional-section"
+        }
+      ]
+    },
+    {
+      "id": "mcp-executive-briefing-v1",
+      "name": "MCP Standard Executive Briefing",
+      "deliverableType": "executive_briefing",
+      "version": "1.0",
+      "description": "A concise decision briefing outline.",
+      "sections": [
+        {
+          "id": "purpose",
+          "title": "Purpose",
+          "order": 1,
+          "purpose": "State the briefing objective and decision need.",
+          "expectedWorkbenchInputs": [
+            "Project Intake"
+          ],
+          "templateRole": "required-section"
+        },
+        {
+          "id": "decision_context",
+          "title": "Decision Context",
+          "order": 2,
+          "purpose": "Summarize background and constraints.",
+          "expectedWorkbenchInputs": [
+            "Project Intake",
+            "Client Source Intake",
+            "Public Research"
+          ],
+          "templateRole": "required-section"
+        },
+        {
+          "id": "key_findings",
+          "title": "Key Findings",
+          "order": 3,
+          "purpose": "Highlight the most important reviewed findings.",
+          "expectedWorkbenchInputs": [
+            "Review Queue",
+            "Client Source Intake",
+            "Public Research"
+          ],
+          "templateRole": "output-section"
+        },
+        {
+          "id": "options_alternatives",
+          "title": "Options / Alternatives",
+          "order": 4,
+          "purpose": "Frame choices and tradeoffs.",
+          "expectedWorkbenchInputs": [
+            "Project Plan",
+            "Requirements Review"
+          ],
+          "templateRole": "recommended-section"
+        },
+        {
+          "id": "recommended_direction",
+          "title": "Recommended Direction",
+          "order": 5,
+          "purpose": "Summarize the consultant recommendation.",
+          "expectedWorkbenchInputs": [
+            "Project Plan"
+          ],
+          "templateRole": "output-section"
+        },
+        {
+          "id": "risks_and_tradeoffs",
+          "title": "Risks and Tradeoffs",
+          "order": 6,
+          "purpose": "Identify risks, blockers, and implications.",
+          "expectedWorkbenchInputs": [
+            "Project Plan",
+            "Review Queue"
+          ],
+          "templateRole": "recommended-section"
+        },
+        {
+          "id": "immediate_next_steps",
+          "title": "Immediate Next Steps",
+          "order": 7,
+          "purpose": "List practical next actions and owners.",
+          "expectedWorkbenchInputs": [
+            "Project Plan"
+          ],
+          "templateRole": "output-section"
+        }
+      ]
+    },
+    {
+      "id": "mcp-implementation-plan-v1",
+      "name": "MCP Standard Implementation Plan",
+      "deliverableType": "implementation_plan",
+      "version": "1.0",
+      "description": "A phased implementation planning outline.",
+      "sections": [
+        {
+          "id": "implementation_objectives",
+          "title": "Implementation Objectives",
+          "order": 1,
+          "purpose": "Define desired outcomes and objectives.",
+          "expectedWorkbenchInputs": [
+            "Project Intake",
+            "Project Plan"
+          ],
+          "templateRole": "required-section"
+        },
+        {
+          "id": "workstreams",
+          "title": "Workstreams",
+          "order": 2,
+          "purpose": "Group work into implementation streams.",
+          "expectedWorkbenchInputs": [
+            "Project Plan"
+          ],
+          "templateRole": "required-section"
+        },
+        {
+          "id": "timeline_phases",
+          "title": "Timeline / Phases",
+          "order": 3,
+          "purpose": "Show sequencing and timing assumptions.",
+          "expectedWorkbenchInputs": [
+            "Project Plan"
+          ],
+          "templateRole": "output-section"
+        },
+        {
+          "id": "roles_and_responsibilities",
+          "title": "Roles and Responsibilities",
+          "order": 4,
+          "purpose": "Clarify owners and decision responsibilities.",
+          "expectedWorkbenchInputs": [
+            "Project Plan",
+            "Project Intake"
+          ],
+          "templateRole": "recommended-section"
+        },
+        {
+          "id": "dependencies",
+          "title": "Dependencies",
+          "order": 5,
+          "purpose": "Track dependencies affecting sequencing.",
+          "expectedWorkbenchInputs": [
+            "Project Plan"
+          ],
+          "templateRole": "output-section"
+        },
+        {
+          "id": "risks_and_mitigations",
+          "title": "Risks and Mitigations",
+          "order": 6,
+          "purpose": "Summarize risks and mitigation actions.",
+          "expectedWorkbenchInputs": [
+            "Project Plan",
+            "Review Queue"
+          ],
+          "templateRole": "output-section"
+        },
+        {
+          "id": "readiness_checkpoints",
+          "title": "Readiness Checkpoints",
+          "order": 7,
+          "purpose": "Identify validation gates and criteria.",
+          "expectedWorkbenchInputs": [
+            "Project Plan"
+          ],
+          "templateRole": "recommended-section"
+        },
+        {
+          "id": "go_live_considerations",
+          "title": "Go-Live Considerations",
+          "order": 8,
+          "purpose": "Capture cutover, support, training, and stabilization concerns.",
+          "expectedWorkbenchInputs": [
+            "Project Plan",
+            "Project Intake"
+          ],
+          "templateRole": "recommended-section"
+        }
+      ]
+    },
+    {
+      "id": "mcp-requirements-matrix-v1",
+      "name": "MCP Standard Requirements Matrix",
+      "deliverableType": "requirements_matrix",
+      "version": "1.0",
+      "description": "A requirements matrix structure.",
+      "sections": [
+        {
+          "id": "requirement_id",
+          "title": "Requirement ID",
+          "order": 1,
+          "purpose": "Provide a stable identifier.",
+          "expectedWorkbenchInputs": [
+            "Requirements Review"
+          ],
+          "templateRole": "required-section"
+        },
+        {
+          "id": "category",
+          "title": "Category",
+          "order": 2,
+          "purpose": "Group requirements by category.",
+          "expectedWorkbenchInputs": [
+            "Requirements Review"
+          ],
+          "templateRole": "required-section"
+        },
+        {
+          "id": "requirement_statement",
+          "title": "Requirement Statement",
+          "order": 3,
+          "purpose": "Present reviewed requirement text.",
+          "expectedWorkbenchInputs": [
+            "Requirements Review"
+          ],
+          "templateRole": "output-section"
+        },
+        {
+          "id": "priority",
+          "title": "Priority",
+          "order": 4,
+          "purpose": "Reserve space for priority if available.",
+          "expectedWorkbenchInputs": [
+            "Requirements Review",
+            "Project Configuration"
+          ],
+          "templateRole": "recommended-section"
+        },
+        {
+          "id": "source",
+          "title": "Source",
+          "order": 5,
+          "purpose": "Track source/library/project-specific indicator.",
+          "expectedWorkbenchInputs": [
+            "Requirements Review"
+          ],
+          "templateRole": "source-context"
+        },
+        {
+          "id": "vendor_response",
+          "title": "Vendor Response",
+          "order": 6,
+          "purpose": "Reserve a vendor response field.",
+          "expectedWorkbenchInputs": [
+            "Project Configuration"
+          ],
+          "templateRole": "optional-section"
+        },
+        {
+          "id": "evaluation_notes",
+          "title": "Evaluation Notes",
+          "order": 7,
+          "purpose": "Reserve evaluator notes or scoring support.",
+          "expectedWorkbenchInputs": [
+            "Project Configuration"
+          ],
+          "templateRole": "optional-section"
+        }
+      ]
+    },
+    {
+      "id": "mcp-evaluation-scoring-package-v1",
+      "name": "MCP Standard Evaluation / Scoring Package",
+      "deliverableType": "evaluation_scoring_package",
+      "version": "1.0",
+      "description": "A procurement evaluation package outline.",
+      "sections": [
+        {
+          "id": "evaluation_overview",
+          "title": "Evaluation Overview",
+          "order": 1,
+          "purpose": "Explain process, team, and timeline.",
+          "expectedWorkbenchInputs": [
+            "Project Configuration",
+            "Project Plan"
+          ],
+          "templateRole": "required-section"
+        },
+        {
+          "id": "scoring_criteria",
+          "title": "Scoring Criteria",
+          "order": 2,
+          "purpose": "List scoring categories and weighting assumptions.",
+          "expectedWorkbenchInputs": [
+            "Project Configuration",
+            "Requirements Review"
+          ],
+          "templateRole": "required-section"
+        },
+        {
+          "id": "evaluator_instructions",
+          "title": "Evaluator Instructions",
+          "order": 3,
+          "purpose": "Provide instructions for consistent reviews.",
+          "expectedWorkbenchInputs": [
+            "Project Configuration"
+          ],
+          "templateRole": "required-section"
+        },
+        {
+          "id": "compliance_review",
+          "title": "Compliance Review",
+          "order": 4,
+          "purpose": "Reserve space for minimum compliance screening.",
+          "expectedWorkbenchInputs": [
+            "Requirements Review",
+            "Project Configuration"
+          ],
+          "templateRole": "recommended-section"
+        },
+        {
+          "id": "functional_scoring",
+          "title": "Functional Scoring",
+          "order": 5,
+          "purpose": "Support scoring against functional requirements.",
+          "expectedWorkbenchInputs": [
+            "Requirements Review"
+          ],
+          "templateRole": "output-section"
+        },
+        {
+          "id": "technical_scoring",
+          "title": "Technical Scoring",
+          "order": 6,
+          "purpose": "Support scoring against technical expectations.",
+          "expectedWorkbenchInputs": [
+            "Requirements Review"
+          ],
+          "templateRole": "output-section"
+        },
+        {
+          "id": "cost_scoring",
+          "title": "Cost Scoring",
+          "order": 7,
+          "purpose": "Reserve structure for cost evaluation.",
+          "expectedWorkbenchInputs": [
+            "Project Configuration"
+          ],
+          "templateRole": "recommended-section"
+        },
+        {
+          "id": "consensus_notes",
+          "title": "Consensus Notes",
+          "order": 8,
+          "purpose": "Provide space for panel notes.",
+          "expectedWorkbenchInputs": [
+            "Project Plan"
+          ],
+          "templateRole": "optional-section"
+        },
+        {
+          "id": "award_recommendation_support",
+          "title": "Award Recommendation Support",
+          "order": 9,
+          "purpose": "Organize evidence supporting a recommendation.",
+          "expectedWorkbenchInputs": [
+            "Project Plan",
+            "Requirements Review"
+          ],
+          "templateRole": "optional-section"
+        }
+      ]
+    }
+  ]
+}

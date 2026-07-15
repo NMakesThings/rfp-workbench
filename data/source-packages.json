@@ -1,0 +1,158 @@
+{
+  "sourcePackages": [
+    {
+      "id": "prototype-sample-library",
+      "label": "Initial Prototype Sample Library",
+      "packageType": "prototype",
+      "status": "approved_sample",
+      "procurementType": "General RFP requirements prototype",
+      "clientType": "Internal prototype",
+      "sourceFolder": "data",
+      "notesPath": "",
+      "importStatus": "active_sample",
+      "recommendedUse": "Use for validating the interview, preview, review, and export workflow.",
+      "documents": [
+        {
+          "id": "prototype-requirements-library",
+          "label": "Prototype Requirements Library",
+          "fileName": "requirements-library.json",
+          "documentType": "requirements_library",
+          "importStatus": "active_sample"
+        }
+      ]
+    },
+    {
+      "id": "da-full-rfp-package",
+      "label": "District Attorney CMS Full RFP Package",
+      "packageType": "source_rfp_package",
+      "status": "staged_for_review",
+      "procurementType": "District Attorney / Prosecutor Case Management System RFP",
+      "clientType": "District Attorney / Prosecutorial agency",
+      "sourceFolder": "source-rfps/da-full-rfp-package",
+      "notesPath": "source-rfps/da-full-rfp-package/notes.md",
+      "importStatus": "not_imported",
+      "recommendedUse": "Review for reusable requirements, RFP components, scoring models, SOW tasks, support obligations, accessibility obligations, cost requirements, and contract clauses before importing any content.",
+      "documents": [
+        {
+          "id": "da-main-rfp",
+          "label": "Main RFP",
+          "fileName": "01. LADA_CMS_RFP_Version 3.0.docx",
+          "documentType": "solicitation",
+          "importStatus": "not_imported"
+        },
+        {
+          "id": "da-sample-contract",
+          "label": "Appendix A Sample Contract",
+          "fileName": "02. LADA_CMS_RFP-DA-IT01_Appendix_A_Sample_Contract_v3.0.docx",
+          "documentType": "contract",
+          "importStatus": "not_imported"
+        },
+        {
+          "id": "da-sow",
+          "label": "Appendix A Exhibit A Statement of Work",
+          "fileName": "03. LADA_CMS_RFP_Appendix_A_Exhibit_A_SOW_Version 2.0.docx",
+          "documentType": "statement_of_work",
+          "importStatus": "not_imported"
+        },
+        {
+          "id": "da-sow-attachments",
+          "label": "SOW Attachments",
+          "fileName": "04. LADA_CMS_RFP_Appendix_A_Exhibit_A_SOW_Attachments.docx",
+          "documentType": "sow_attachment",
+          "importStatus": "not_imported"
+        },
+        {
+          "id": "da-exhibits-b-k",
+          "label": "Appendix A Exhibits B-K Additional Exhibits",
+          "fileName": "05. LADA_CMS_RFP_Appendix_A_Exhibits_B-K_Additional_Exhibits.docx",
+          "documentType": "contract_exhibits",
+          "importStatus": "not_imported"
+        },
+        {
+          "id": "da-required-forms-docx",
+          "label": "Appendix B Required Forms",
+          "fileName": "06. LADA_CMS_RFP_Appendix_B_(Exhibits_1-4_and_6-12)_Required_Forms_Version 2.0.docx",
+          "documentType": "required_forms",
+          "importStatus": "not_imported"
+        },
+        {
+          "id": "da-required-forms-xlsx",
+          "label": "Appendix B Required Forms Exhibit 5",
+          "fileName": "07. LADA_CMS_RFP_Appendix_B_(Exhibits_5)_Required_Forms.xlsx",
+          "documentType": "required_forms_matrix",
+          "importStatus": "not_imported"
+        },
+        {
+          "id": "da-appendix-c-d",
+          "label": "Appendix C and D",
+          "fileName": "08. LADA_CMS_RFP_Appendix_C,D.docx",
+          "documentType": "solicitation_appendix",
+          "importStatus": "not_imported"
+        },
+        {
+          "id": "da-functional-traceability",
+          "label": "Attachment 1 Functional Requirements and Traceability Matrix",
+          "fileName": "Attachment 1 Functional Requirements and Traceability Matrix Version 3.0.xlsx",
+          "documentType": "functional_requirements_matrix",
+          "importStatus": "not_imported"
+        },
+        {
+          "id": "da-technical-traceability",
+          "label": "Attachment 2 Technical Requirements and Traceability Matrix",
+          "fileName": "Attachment 2 Technical Requirements and Traceability Matrix Version 3.0.xlsx",
+          "documentType": "technical_requirements_matrix",
+          "importStatus": "not_imported"
+        },
+        {
+          "id": "da-implementation-requirements",
+          "label": "Attachment 3 Implementation Requirements",
+          "fileName": "Attachment 3 Implementation Requirements Version 3.0.xlsx",
+          "documentType": "implementation_requirements_matrix",
+          "importStatus": "not_imported"
+        },
+        {
+          "id": "da-cost-matrix",
+          "label": "Exhibit 11 Cost Matrix TCO",
+          "fileName": "Exhibit 11 - Cost Matrix TCO.xlsx",
+          "documentType": "cost_matrix",
+          "importStatus": "not_imported"
+        },
+        {
+          "id": "da-accessibility",
+          "label": "Exhibit J Digital Accessibility Requirements",
+          "fileName": "EXHIBIT J - DIGITAL ACCESSIBILITY REQUIREMENTS.docx",
+          "documentType": "accessibility_requirements",
+          "importStatus": "not_imported"
+        },
+        {
+          "id": "da-maintenance-support",
+          "label": "Exhibit K Maintenance and Support",
+          "fileName": "Exhibit K Maintenance and Support.docx",
+          "documentType": "maintenance_support",
+          "importStatus": "not_imported"
+        }
+      ]
+    },
+    {
+      "id": "court-requirements-in-progress",
+      "label": "Court CMS Requirements In Progress",
+      "packageType": "source_requirements_workbook",
+      "status": "staged_for_review",
+      "procurementType": "Court technology / court case management system requirements",
+      "clientType": "Court client",
+      "sourceFolder": "source-rfps/court-requirements-in-progress",
+      "notesPath": "source-rfps/court-requirements-in-progress/notes.md",
+      "importStatus": "not_imported",
+      "recommendedUse": "Use as a pilot import candidate after mapping workbook fields to requirement metadata, source provenance, scoring metadata, and review status.",
+      "documents": [
+        {
+          "id": "court-cms-requirements-draft",
+          "label": "Court CMS Draft Requirements Workbook",
+          "fileName": "Draft NE RFP Requirements_V3.xlsx",
+          "documentType": "requirements_workbook",
+          "importStatus": "not_imported"
+        }
+      ]
+    }
+  ]
+}

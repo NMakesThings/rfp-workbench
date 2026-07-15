@@ -1,0 +1,436 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RFP Requirements Review</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="app-sidebar">
+        <a class="brand" href="index.html" aria-label="Procurement Workbench home">
+          <span class="brand-mark">RB</span>
+          <span>
+            <span class="brand-name">Procurement Workbench</span>
+            <span class="brand-subtitle">Consulting workspace</span>
+          </span>
+        </a>
+        <section class="sidebar-nav-section sidebar-home" aria-label="Home navigation">
+          <a class="nav-link context-link" href="index.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Home</span>
+              <span class="nav-detail">Launch pad</span>
+            </span>
+          </a>
+        </section>
+        <section class="sidebar-nav-section" data-sidebar-section-key="workspace" aria-label="Workspace navigation">
+          <p class="sidebar-group-label">Workspace</p>
+          <a class="nav-link context-link" href="workspace-management.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Clients &amp; Workspaces</span>
+              <span class="nav-detail">Manage saved work</span>
+            </span>
+          </a>
+          <a class="nav-link context-link" href="project-plan.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Project Plan</span>
+              <span class="nav-detail">Roadmap and work packages</span>
+            </span>
+          </a>
+        </section>
+        <nav class="sidebar-nav-section app-nav" data-sidebar-section-key="discovery" aria-label="Discovery navigation">
+          <p class="sidebar-group-label">Discovery</p>
+          <a class="nav-link" href="interview.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Project Intake</span>
+              <span class="nav-detail">Capture engagement context</span>
+            </span>
+          </a>
+          <a class="nav-link" href="client-source-intake.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Client Source Intake</span>
+              <span class="nav-detail">Review source materials</span>
+            </span>
+          </a>
+          <a class="nav-link" href="public-information-ai-assist.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Public Research</span>
+              <span class="nav-detail">Structure public information</span>
+            </span>
+          </a>
+          <a class="nav-link" href="client-template-intake.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Client Template Intake</span>
+              <span class="nav-detail">Prepare client templates</span>
+            </span>
+          </a>
+        </nav>
+        <section class="sidebar-nav-section" data-sidebar-section-key="analysis" aria-label="Analysis navigation">
+          <p class="sidebar-group-label">Analysis</p>
+          <a class="nav-link active" href="preview.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Requirements Review</span>
+              <span class="nav-detail">Review and refine requirements</span>
+            </span>
+          </a>
+          <a class="nav-link" href="assessment-findings.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Assessment Findings</span>
+              <span class="nav-detail">Findings, gaps, risks</span>
+            </span>
+          </a>
+          <a class="nav-link" href="review-queue.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Review Queue</span>
+              <span class="nav-detail">Triage open items</span>
+            </span>
+          </a>
+        </section>
+        <section class="sidebar-nav-section" data-sidebar-section-key="outputs" aria-label="Outputs navigation">
+          <p class="sidebar-group-label">Outputs</p>
+          <a class="nav-link" href="rfp-package.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Deliverable Builder</span>
+              <span class="nav-detail">Draft review outputs</span>
+            </span>
+          </a>
+        </section>
+        <section class="sidebar-nav-section sidebar-admin" data-sidebar-section-key="admin" aria-label="Admin navigation">
+          <p class="sidebar-group-label">Admin</p>
+          <a class="nav-link context-link" href="default-profiles.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Default Profiles</span>
+              <span class="nav-detail">Manage reusable defaults</span>
+            </span>
+          </a>
+          <a class="nav-link context-link" href="project-configuration.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Project Configuration</span>
+              <span class="nav-detail">Review planning templates</span>
+            </span>
+          </a>
+          <a class="nav-link context-link" href="requirements-library-manager.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Requirements Library</span>
+              <span class="nav-detail">Manage reusable requirements</span>
+            </span>
+          </a>
+          <a class="nav-link context-link" href="staged-review.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Content Staging</span>
+              <span class="nav-detail">Review staged content</span>
+            </span>
+          </a>
+          <a class="nav-link context-link" href="data-health.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Data Health &amp; Support</span>
+              <span class="nav-detail">Support diagnostics</span>
+            </span>
+          </a>
+        </section>
+        <section class="sidebar-note">
+          <p class="sidebar-note-title">Review workflow</p>
+          <p>
+            Mark generated requirements for inclusion, revision, clarification,
+            or exclusion before export.
+          </p>
+        </section>
+      </aside>
+
+      <div class="app-main">
+        <header class="app-header">
+          <div>
+            <p class="eyebrow">Requirements Review</p>
+            <h1>Requirements Review</h1>
+            <p>Review generated requirements, readiness checks, gaps, and client clarifications before package assembly.</p>
+          </div>
+          <div class="app-header-actions">
+            <div class="global-workspace-context" aria-label="Client / Project Workspace">
+              <label for="workspace-select">Client / Project Workspace</label>
+              <select id="workspace-select" aria-label="Select client / project workspace"></select>
+              <a class="global-workspace-manage-link" href="workspace-management.html">Manage</a>
+            </div>
+          <a class="secondary-link" href="interview.html">Edit Project Intake</a>
+          </div>
+        </header>
+
+        <main class="page-shell">
+          <section class="context-panel project-roadmap-strip hidden" data-project-roadmap-strip aria-label="Client project roadmap"></section>
+
+          <section class="workflow-phase-strip-panel" data-workflow-phase-strip aria-label="Workflow phase status"></section>
+
+          <section class="context-panel requirements-output-compact" aria-label="Requirements Review Outputs">
+            <div class="requirements-output-compact-header">
+              <div>
+                <p class="section-kicker">Requirements outputs</p>
+                <h2>Requirements Review Outputs</h2>
+                <p id="preview-summary">Loading selected requirements for review...</p>
+                <p class="helper-text">Brief + enhanced CSV for client review.</p>
+              </div>
+              <div class="requirements-output-help-wrap">
+                <button
+                  type="button"
+                  class="button secondary compact-button"
+                  id="requirements-output-help-toggle"
+                  aria-haspopup="dialog"
+                  aria-expanded="false"
+                  aria-controls="requirements-output-help-popout"
+                >
+                  Help
+                </button>
+                <div class="requirements-output-help-popout hidden" id="requirements-output-help-popout" role="dialog" aria-labelledby="requirements-output-help-title">
+                  <div class="modal-header requirements-output-help-header">
+                    <div>
+                      <h2 id="requirements-output-help-title">Requirements Review Outputs Help</h2>
+                      <p>Use the brief to orient reviewers and the CSV for row-level review.</p>
+                    </div>
+                    <button type="button" class="modal-close-button" id="requirements-output-help-close" aria-label="Close Requirements Review Outputs help">&times;</button>
+                  </div>
+                  <ul class="requirements-output-help-list">
+                    <li>Review Brief Markdown is for orientation and summary.</li>
+                    <li>Enhanced Requirements Matrix CSV is for detailed requirement-by-requirement review.</li>
+                    <li>The brief does not list every requirement.</li>
+                    <li>Client review columns in the CSV are intentionally blank.</li>
+                    <li>Existing selected requirements and Requirements Matrix CSV exports remain available.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="requirements-output-compact-actions" aria-label="Requirements Review export actions">
+              <div class="requirements-output-action-group primary-output-actions" aria-label="Review Brief and Enhanced CSV outputs">
+                <span class="export-label">Client review outputs</span>
+                <div class="toolbar-actions">
+                  <button type="button" class="button secondary" id="copy-review-brief">Copy Brief</button>
+                  <button type="button" class="button primary" id="download-review-brief">Download Brief</button>
+                  <button type="button" class="button primary" id="download-enhanced-requirements-csv">Download Enhanced CSV</button>
+                </div>
+              </div>
+              <div class="requirements-output-action-group compatibility-output-actions" aria-label="Existing Requirements Review exports">
+                <span class="export-label">Existing exports</span>
+                <div class="toolbar-actions">
+                  <button type="button" class="button secondary" id="copy-requirements">Copy Selected Requirements</button>
+                  <button type="button" class="button secondary" id="download-requirements">Download Selected Requirements</button>
+                  <button type="button" class="button secondary" id="download-requirements-csv">Download Requirements Matrix CSV</button>
+                  <a class="button secondary" href="rfp-package.html">Open Deliverable Builder</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="requirements-review-controls" aria-label="Requirements review filters and sorting">
+            <div>
+              <p class="section-kicker">Review controls</p>
+              <h2>Filter and Triage Requirements</h2>
+            </div>
+            <div id="review-decision-counts" class="review-decision-counts" aria-label="Review decision counts"></div>
+            <div class="requirements-view-controls" aria-label="Requirements review view mode">
+              <span class="requirements-view-label">View</span>
+              <label>
+                <input type="radio" name="requirements-view-mode" value="cards" checked />
+                <span>Detail Cards</span>
+              </label>
+              <label>
+                <input type="radio" name="requirements-view-mode" value="table" />
+                <span>Overview Table</span>
+              </label>
+            </div>
+            <div class="requirements-filter-grid">
+              <label>
+                Review decision
+                <select id="review-filter-decision">
+                  <option value="all">All decisions</option>
+                  <option value="no_decision">No decision</option>
+                  <option value="include">Include</option>
+                  <option value="exclude">Exclude</option>
+                  <option value="revise">Needs Revision</option>
+                  <option value="clarify">Needs Client Clarification</option>
+                </select>
+              </label>
+              <label>
+                Section
+                <select id="review-filter-section">
+                  <option value="all">All sections</option>
+                </select>
+              </label>
+              <label>
+                Priority
+                <select id="review-filter-priority">
+                  <option value="all">All priorities</option>
+                </select>
+              </label>
+              <label>
+                Source type
+                <select id="review-filter-source-type">
+                  <option value="all">All source types</option>
+                  <option value="approved_library">Approved Library</option>
+                  <option value="project_specific">Project Specific</option>
+                </select>
+              </label>
+              <label>
+                Notes
+                <select id="review-filter-notes">
+                  <option value="all">All note states</option>
+                  <option value="has_notes">Has notes</option>
+                  <option value="no_notes">No notes</option>
+                </select>
+              </label>
+              <label>
+                Category / function
+                <select id="review-filter-taxonomy">
+                  <option value="all">All categories and functions</option>
+                </select>
+              </label>
+              <label class="requirements-search-control">
+                Search
+                <input id="review-filter-search" type="search" placeholder="Search ID, title, text, rationale, or why selected" />
+              </label>
+              <label>
+                Sort by
+                <select id="review-sort-field">
+                  <option value="default">Default order</option>
+                  <option value="section">Section</option>
+                  <option value="title">Title</option>
+                  <option value="priority">Priority</option>
+                  <option value="decision">Review decision</option>
+                  <option value="category">Category</option>
+                  <option value="function">Function</option>
+                  <option value="id">Requirement ID</option>
+                </select>
+              </label>
+              <label>
+                Sort direction
+                <select id="review-sort-direction">
+                  <option value="asc">Ascending</option>
+                  <option value="desc">Descending</option>
+                </select>
+              </label>
+            </div>
+            <div class="requirements-batch-actions" aria-label="Batch review actions">
+              <span id="requirements-selected-count">0 selected</span>
+              <button type="button" class="button secondary" data-batch-review-decision="include" disabled>Include selected</button>
+              <button type="button" class="button secondary" data-batch-review-decision="revise" disabled>Mark Needs Revision</button>
+              <button type="button" class="button secondary" data-batch-review-decision="clarify" disabled>Mark Needs Client Clarification</button>
+              <button type="button" class="button secondary button-danger" data-batch-review-decision="exclude" disabled>Exclude selected</button>
+            </div>
+          </section>
+
+          <details class="project-specific-requirements-panel">
+            <summary>
+              <span>
+                <span class="section-kicker">Project-specific requirements</span>
+                <strong>Add a project-only requirement</strong>
+              </span>
+              <span class="details-summary-hint">Does not change the reusable library</span>
+            </summary>
+            <form id="project-specific-requirement-form" class="project-specific-form">
+              <input type="hidden" id="project-specific-requirement-id" />
+              <label class="project-specific-form-title">
+                Title
+                <input id="project-specific-title" type="text" autocomplete="off" />
+              </label>
+              <label>
+                Section
+                <input id="project-specific-section" type="text" placeholder="Functional Requirements" />
+              </label>
+              <label>
+                Category
+                <input id="project-specific-category" type="text" placeholder="Functional Requirements" />
+              </label>
+              <label>
+                Function
+                <input id="project-specific-function" type="text" placeholder="Workflow / Operations" />
+              </label>
+              <label>
+                Priority
+                <select id="project-specific-priority">
+                  <option value="">Unspecified</option>
+                  <option value="critical">Critical</option>
+                  <option value="high">High</option>
+                  <option value="medium">Medium</option>
+                  <option value="low">Low</option>
+                </select>
+              </label>
+              <label class="project-specific-form-wide">
+                Requirement text
+                <textarea id="project-specific-text" placeholder="Describe the project-only requirement..."></textarea>
+              </label>
+              <label class="project-specific-form-wide">
+                Rationale
+                <textarea id="project-specific-rationale" placeholder="Why this requirement matters for this project..."></textarea>
+              </label>
+              <label class="project-specific-form-wide">
+                Response instructions
+                <textarea id="project-specific-response" placeholder="Optional vendor response guidance..."></textarea>
+              </label>
+              <label class="project-specific-form-wide">
+                Source / note
+                <textarea id="project-specific-source-note" placeholder="Optional source, meeting note, or rationale trail..."></textarea>
+              </label>
+              <div class="project-specific-form-actions">
+                <button type="submit" class="button primary" id="project-specific-save">Save Requirement</button>
+                <button type="button" class="button secondary" id="project-specific-cancel">Cancel</button>
+                <span id="project-specific-status" class="status-message" aria-live="polite"></span>
+              </div>
+            </form>
+          </details>
+          <section class="preview-context-grid" aria-label="Requirements review context">
+            <article class="context-panel context-panel-wide requirements-context-note">
+              <p class="section-kicker">Review context</p>
+              <h2>Requirements Source Context</h2>
+              <p class="helper-text">
+                Requirements are generated from confirmed Project Intake answers and the approved requirements library. Package-facing context details are now reviewed in Deliverable Builder. Active type: RFP Package.
+              </p>
+              <a class="secondary-link" href="rfp-package.html">Open Deliverable Builder</a>
+            </article>
+
+            <article class="context-panel context-panel-wide">
+              <p class="section-kicker">Gap / Risk Review</p>
+              <h2>Draft Readiness Checks</h2>
+              <div id="gap-review" class="gap-review">Loading gap review...</div>
+            </article>
+          </section>
+
+          <section id="empty-state" class="empty-state hidden">
+            <h2>No project intake answers found</h2>
+            <p>
+              Complete Project Intake before reviewing generated requirements.
+            </p>
+            <a class="button primary inline-button" href="interview.html">Start Project Intake</a>
+          </section>
+
+          <section id="requirements-root" class="requirements-preview"></section>
+        </main>
+      </div>
+    </div>
+
+    <script src="js/workspaces.js"></script>
+    <script src="js/requirements-engine.js"></script>
+    <script src="js/export.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,126 @@
+{
+  "componentTypes": [
+    {
+      "id": "requirement",
+      "label": "Requirement",
+      "description": "Reusable functional, technical, implementation, support, accessibility, security, or operational requirement."
+    },
+    {
+      "id": "minimum_mandatory_requirement",
+      "label": "Minimum Mandatory Requirement",
+      "description": "Pass/fail qualification or compliance item that may determine whether a proposal proceeds."
+    },
+    {
+      "id": "proposal_instruction",
+      "label": "Proposal Instruction",
+      "description": "Instruction telling vendors what to submit and how to structure responses."
+    },
+    {
+      "id": "evaluation_criterion",
+      "label": "Evaluation Criterion",
+      "description": "Criterion used to assess proposal quality, fit, risk, or value."
+    },
+    {
+      "id": "scoring_weight",
+      "label": "Scoring Weight",
+      "description": "Weighted evaluation allocation for a phase, section, criterion, demonstration, or cost component."
+    },
+    {
+      "id": "demonstration_requirement",
+      "label": "Demonstration Requirement",
+      "description": "Scenario, script, or capability vendors must demonstrate during evaluation."
+    },
+    {
+      "id": "cost_requirement",
+      "label": "Cost Requirement",
+      "description": "Pricing table, total cost of ownership item, cost assumption, or pricing response instruction."
+    },
+    {
+      "id": "contract_clause",
+      "label": "Contract Clause",
+      "description": "Reusable legal or contractual obligation that should be reviewed separately from functional requirements."
+    },
+    {
+      "id": "sow_task",
+      "label": "SOW Task",
+      "description": "Statement-of-work activity, service, phase, or implementation responsibility."
+    },
+    {
+      "id": "deliverable",
+      "label": "Deliverable",
+      "description": "Work product, artifact, plan, report, configuration, or milestone acceptance item."
+    },
+    {
+      "id": "service_level",
+      "label": "Service Level",
+      "description": "Operational commitment, response target, resolution target, uptime target, service credit, or support coverage term."
+    }
+  ],
+  "draftSchema": {
+    "id": "string",
+    "componentType": "string",
+    "title": "string",
+    "sectionId": "string",
+    "sectionLabel": "string",
+    "text": "string",
+    "rationale": "string",
+    "responseInstructions": "string",
+    "evaluationUse": "string",
+    "applicability": {},
+    "sourcePackageId": "string",
+    "sourceDocumentId": "string",
+    "originalId": "string",
+    "originalText": "string",
+    "sourceStatus": "string",
+    "reviewStatus": "string",
+    "reuseAssessment": "string",
+    "notes": "string"
+  },
+  "sampleComponents": [
+    {
+      "id": "EVAL-PHASED-MODEL-001",
+      "componentType": "scoring_weight",
+      "title": "Phased Evaluation Model",
+      "sectionId": "evaluation_criteria",
+      "sectionLabel": "Evaluation Criteria",
+      "text": "Represent business proposal, cost proposal, and demonstration scoring as separate weighted evaluation phases.",
+      "rationale": "The DA package shows that scoring and demonstrations should be modeled separately from reusable requirements.",
+      "responseInstructions": "",
+      "evaluationUse": "Use to define future evaluation phase and scoring weight data structures.",
+      "applicability": {
+        "sourcePackageIds": ["da-full-rfp-package"],
+        "procurementTypes": ["district_attorney_cms", "case_management_system"]
+      },
+      "sourcePackageId": "da-full-rfp-package",
+      "sourceDocumentId": "da-main-rfp",
+      "originalId": "",
+      "originalText": "",
+      "sourceStatus": "source_package_note",
+      "reviewStatus": "candidate",
+      "reuseAssessment": "domain-specific",
+      "notes": "Placeholder component derived from package notes only; do not treat as imported RFP language."
+    },
+    {
+      "id": "IMPORT-STAGING-001",
+      "componentType": "proposal_instruction",
+      "title": "Import Staging Review",
+      "sectionId": "internal_workflow",
+      "sectionLabel": "Internal Workflow",
+      "text": "Imported source content should be staged for review before being promoted into the reusable requirements library.",
+      "rationale": "Court workbook notes indicate draft status, reviewer comments, and unresolved decisions must be preserved before reuse.",
+      "responseInstructions": "",
+      "evaluationUse": "Use as an internal workflow guardrail for future import tooling.",
+      "applicability": {
+        "sourcePackageIds": ["court-requirements-in-progress", "da-full-rfp-package"]
+      },
+      "sourcePackageId": "court-requirements-in-progress",
+      "sourceDocumentId": "court-cms-requirements-draft",
+      "originalId": "",
+      "originalText": "",
+      "sourceStatus": "source_package_note",
+      "reviewStatus": "candidate",
+      "reuseAssessment": "reusable",
+      "notes": "Placeholder component derived from package notes only; do not treat as imported workbook content."
+    }
+  ]
+}

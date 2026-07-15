@@ -1,0 +1,63 @@
+{
+  "rules": [
+    {
+      "id": "routing-domain",
+      "severity": "high",
+      "title": "Domain not selected",
+      "description": "Select a justice/public-safety domain before treating generated requirements as a client-ready draft.",
+      "answerKey": "justice_domain",
+      "missingWhen": ["", null]
+    },
+    {
+      "id": "routing-system-type",
+      "severity": "high",
+      "title": "System type not selected",
+      "description": "Select the primary system type so the app can route to the right template and future domain modules.",
+      "answerKey": "system_type",
+      "missingWhen": ["", null]
+    },
+    {
+      "id": "routing-procurement-type",
+      "severity": "medium",
+      "title": "Procurement type not selected",
+      "description": "Choose whether this is a new system, replacement, implementation, integration, support, or planning effort.",
+      "answerKey": "procurement_type",
+      "missingWhen": ["", null]
+    },
+    {
+      "id": "integration-context",
+      "severity": "medium",
+      "title": "Integration partners not identified",
+      "description": "Justice technology RFPs usually need clear partner and system integration context.",
+      "answerKey": "integration_partners",
+      "missingWhen": [[], null]
+    },
+    {
+      "id": "compliance-context",
+      "severity": "medium",
+      "title": "Compliance context is incomplete",
+      "description": "Confirm whether CJIS, accessibility, privacy, HIPAA, PCI, FedRAMP, or other obligations apply.",
+      "answerKey": "compliance",
+      "missingWhen": [[], null]
+    },
+    {
+      "id": "data-migration-replacement",
+      "severity": "high",
+      "title": "Replacement project missing data migration support",
+      "description": "Replacement or modernization projects usually need explicit data migration and validation requirements.",
+      "requires": {
+        "procurement_type": ["replacement"]
+      },
+      "answerKey": "implementation_support",
+      "mustInclude": ["migration"]
+    },
+    {
+      "id": "scoring-priorities",
+      "severity": "medium",
+      "title": "Evaluation priorities not selected",
+      "description": "Select vendor evaluation priorities before drafting scoring weights or demo criteria.",
+      "answerKey": "vendor_priorities",
+      "missingWhen": [[], null]
+    }
+  ]
+}

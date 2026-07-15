@@ -1,0 +1,233 @@
+{
+  "sections": [
+    {
+      "id": "justice_project_setup",
+      "title": "Justice Project Setup",
+      "questions": [
+        {
+          "id": "project_name",
+          "type": "text",
+          "label": "Project name",
+          "help": "Working name for this client workspace or procurement.",
+          "required": false
+        },
+        {
+          "id": "justice_domain",
+          "type": "select",
+          "label": "Primary justice/public safety domain",
+          "required": true,
+          "optionSource": "domains"
+        },
+        {
+          "id": "system_type",
+          "type": "select",
+          "label": "Primary system type",
+          "required": true,
+          "optionSource": "systemTypes"
+        },
+        {
+          "id": "procurement_type",
+          "type": "select",
+          "label": "Procurement type",
+          "required": true,
+          "optionSource": "procurementTypes"
+        },
+        {
+          "id": "client_type",
+          "type": "select",
+          "label": "Client organization type",
+          "required": true,
+          "optionSource": "clientTypes"
+        },
+        {
+          "id": "integration_partners",
+          "type": "checkboxes",
+          "label": "Justice partners or systems in the integration context",
+          "required": false,
+          "optionSource": "integrationPartners"
+        }
+      ]
+    },
+    {
+      "id": "project_context",
+      "title": "Project Context",
+      "questions": [
+        {
+          "id": "project_type",
+          "type": "select",
+          "label": "What type of solution or engagement is this?",
+          "required": true,
+          "options": [
+            { "value": "software_platform", "label": "Software platform or SaaS" },
+            { "value": "professional_services", "label": "Professional services" },
+            { "value": "data_analytics", "label": "Data and analytics solution" },
+            { "value": "operations_program", "label": "Operations or managed program" }
+          ]
+        },
+        {
+          "id": "procurement_stage",
+          "type": "select",
+          "label": "What stage is the procurement in?",
+          "required": true,
+          "options": [
+            { "value": "discovery", "label": "Early discovery" },
+            { "value": "rfp_ready", "label": "Ready for RFP" },
+            { "value": "replacement", "label": "Replacing an existing vendor or system" }
+          ]
+        },
+        {
+          "id": "current_environment",
+          "type": "textarea",
+          "label": "Current environment or business problem",
+          "help": "Optional context to keep with the saved interview answers.",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "scope",
+      "title": "Scope and Users",
+      "questions": [
+        {
+          "id": "user_count",
+          "type": "select",
+          "label": "Expected number of users",
+          "required": true,
+          "options": [
+            { "value": "under_50", "label": "Under 50" },
+            { "value": "50_250", "label": "50 to 250" },
+            { "value": "250_1000", "label": "250 to 1,000" },
+            { "value": "over_1000", "label": "Over 1,000" }
+          ]
+        },
+        {
+          "id": "deployment_model",
+          "type": "checkboxes",
+          "label": "Required deployment or access models",
+          "required": false,
+          "options": [
+            { "value": "cloud", "label": "Cloud hosted" },
+            { "value": "on_prem", "label": "On premises" },
+            { "value": "hybrid", "label": "Hybrid" },
+            { "value": "mobile", "label": "Mobile access" }
+          ]
+        },
+        {
+          "id": "timeline",
+          "type": "select",
+          "label": "Target implementation timeline",
+          "required": true,
+          "options": [
+            { "value": "under_3_months", "label": "Under 3 months" },
+            { "value": "3_6_months", "label": "3 to 6 months" },
+            { "value": "6_12_months", "label": "6 to 12 months" },
+            { "value": "flexible", "label": "Flexible" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "technology",
+      "title": "Technology, Data, and Compliance",
+      "questions": [
+        {
+          "id": "integrations",
+          "type": "checkboxes",
+          "label": "Needed technical integrations",
+          "required": false,
+          "options": [
+            { "value": "sso", "label": "Single sign-on" },
+            { "value": "crm", "label": "CRM" },
+            { "value": "erp", "label": "ERP or finance system" },
+            { "value": "data_warehouse", "label": "Data warehouse" },
+            { "value": "payment", "label": "Payment processor" },
+            { "value": "email", "label": "Email or notification platform" }
+          ]
+        },
+        {
+          "id": "reporting_needs",
+          "type": "checkboxes",
+          "label": "Reporting and data needs",
+          "required": false,
+          "options": [
+            { "value": "dashboards", "label": "Dashboards" },
+            { "value": "scheduled_reports", "label": "Scheduled reports" },
+            { "value": "ad_hoc", "label": "Ad hoc analysis" },
+            { "value": "api_exports", "label": "API exports" }
+          ]
+        },
+        {
+          "id": "data_sensitivity",
+          "type": "radio",
+          "label": "Data sensitivity",
+          "required": true,
+          "options": [
+            { "value": "low", "label": "Low" },
+            { "value": "moderate", "label": "Moderate" },
+            { "value": "high", "label": "High or regulated" }
+          ]
+        },
+        {
+          "id": "compliance",
+          "type": "checkboxes",
+          "label": "Applicable compliance needs",
+          "required": false,
+          "options": [
+            { "value": "cjis", "label": "CJIS" },
+            { "value": "wcag_2_2_aa", "label": "WCAG 2.2 AA / digital accessibility" },
+            { "value": "records_retention", "label": "Records retention" },
+            { "value": "nibrs", "label": "NIBRS / statutory reporting" },
+            { "value": "soc2", "label": "SOC 2" },
+            { "value": "hipaa", "label": "HIPAA" },
+            { "value": "pci", "label": "PCI DSS" },
+            { "value": "gdpr", "label": "GDPR" },
+            { "value": "fedramp", "label": "FedRAMP" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "services",
+      "title": "Implementation, Support, and Evaluation",
+      "questions": [
+        {
+          "id": "implementation_support",
+          "type": "checkboxes",
+          "label": "Implementation support needed",
+          "required": false,
+          "options": [
+            { "value": "migration", "label": "Data migration" },
+            { "value": "training", "label": "Admin and end-user training" },
+            { "value": "change_management", "label": "Change management" },
+            { "value": "phased_rollout", "label": "Phased rollout" }
+          ]
+        },
+        {
+          "id": "support_model",
+          "type": "select",
+          "label": "Required support coverage",
+          "required": true,
+          "options": [
+            { "value": "business_hours", "label": "Business hours" },
+            { "value": "extended", "label": "Extended weekday hours" },
+            { "value": "24x7", "label": "24x7 coverage" }
+          ]
+        },
+        {
+          "id": "vendor_priorities",
+          "type": "checkboxes",
+          "label": "Vendor evaluation priorities",
+          "required": false,
+          "options": [
+            { "value": "price", "label": "Price" },
+            { "value": "experience", "label": "Relevant justice/public safety experience" },
+            { "value": "roadmap", "label": "Product roadmap" },
+            { "value": "security", "label": "Security maturity" },
+            { "value": "references", "label": "Client references" },
+            { "value": "implementation_capacity", "label": "Implementation capacity" }
+          ]
+        }
+      ]
+    }
+  ]
+}

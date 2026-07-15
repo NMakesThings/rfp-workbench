@@ -1,0 +1,441 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deliverable Builder</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="app-sidebar">
+        <a class="brand" href="index.html" aria-label="Procurement Workbench home">
+          <span class="brand-mark">RB</span>
+          <span>
+            <span class="brand-name">Procurement Workbench</span>
+            <span class="brand-subtitle">Consulting workspace</span>
+          </span>
+        </a>
+        <section class="sidebar-nav-section sidebar-home" aria-label="Home navigation">
+          <a class="nav-link context-link" href="index.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Home</span>
+              <span class="nav-detail">Launch pad</span>
+            </span>
+          </a>
+        </section>
+        <section class="sidebar-nav-section" data-sidebar-section-key="workspace" aria-label="Workspace navigation">
+          <p class="sidebar-group-label">Workspace</p>
+          <a class="nav-link context-link" href="workspace-management.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Clients &amp; Workspaces</span>
+              <span class="nav-detail">Manage saved work</span>
+            </span>
+          </a>
+          <a class="nav-link context-link" href="project-plan.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Project Plan</span>
+              <span class="nav-detail">Roadmap and work packages</span>
+            </span>
+          </a>
+        </section>
+        <nav class="sidebar-nav-section app-nav" data-sidebar-section-key="discovery" aria-label="Discovery navigation">
+          <p class="sidebar-group-label">Discovery</p>
+          <a class="nav-link" href="interview.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Project Intake</span>
+              <span class="nav-detail">Capture engagement context</span>
+            </span>
+          </a>
+          <a class="nav-link" href="client-source-intake.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Client Source Intake</span>
+              <span class="nav-detail">Review source materials</span>
+            </span>
+          </a>
+          <a class="nav-link" href="public-information-ai-assist.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Public Research</span>
+              <span class="nav-detail">Structure public information</span>
+            </span>
+          </a>
+          <a class="nav-link" href="client-template-intake.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Client Template Intake</span>
+              <span class="nav-detail">Prepare client templates</span>
+            </span>
+          </a>
+        </nav>
+        <section class="sidebar-nav-section" data-sidebar-section-key="analysis" aria-label="Analysis navigation">
+          <p class="sidebar-group-label">Analysis</p>
+          <a class="nav-link" href="preview.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Requirements Review</span>
+              <span class="nav-detail">Review and refine requirements</span>
+            </span>
+          </a>
+          <a class="nav-link" href="assessment-findings.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Assessment Findings</span>
+              <span class="nav-detail">Findings, gaps, risks</span>
+            </span>
+          </a>
+          <a class="nav-link" href="review-queue.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Review Queue</span>
+              <span class="nav-detail">Triage open items</span>
+            </span>
+          </a>
+        </section>
+        <section class="sidebar-nav-section" data-sidebar-section-key="outputs" aria-label="Outputs navigation">
+          <p class="sidebar-group-label">Outputs</p>
+          <a class="nav-link active" href="rfp-package.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Deliverable Builder</span>
+              <span class="nav-detail">Draft review outputs</span>
+            </span>
+          </a>
+        </section>
+        <section class="sidebar-nav-section sidebar-admin" data-sidebar-section-key="admin" aria-label="Admin navigation">
+          <p class="sidebar-group-label">Admin</p>
+          <a class="nav-link context-link" href="default-profiles.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Default Profiles</span>
+              <span class="nav-detail">Manage reusable defaults</span>
+            </span>
+          </a>
+          <a class="nav-link context-link" href="project-configuration.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Project Configuration</span>
+              <span class="nav-detail">Review planning templates</span>
+            </span>
+          </a>
+          <a class="nav-link context-link" href="requirements-library-manager.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Requirements Library</span>
+              <span class="nav-detail">Manage reusable requirements</span>
+            </span>
+          </a>
+          <a class="nav-link context-link" href="staged-review.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Content Staging</span>
+              <span class="nav-detail">Review staged content</span>
+            </span>
+          </a>
+          <a class="nav-link context-link" href="data-health.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Data Health &amp; Support</span>
+              <span class="nav-detail">Support diagnostics</span>
+            </span>
+          </a>
+        </section>
+        <section class="sidebar-note">
+          <p class="sidebar-note-title">Deliverable Builder</p>
+          <p>
+            Review deliverable readiness before moving into client-facing drafting.
+          </p>
+        </section>
+      </aside>
+
+      <main class="app-main rfp-package-page">
+        <header class="app-header">
+          <div>
+            <p class="eyebrow">Requirements</p>
+            <h1>Deliverable Builder</h1>
+            <p class="header-subtitle">
+              Assemble reviewed workspace information into a selected deliverable outline. Choose RFP Package or Assessment Report; this read-only surface does not change records and is not a final document generator.
+            </p>
+          </div>
+          <div class="app-header-actions">
+            <div class="global-workspace-context" aria-label="Client / Project Workspace">
+              <label for="workspace-select">Client / Project Workspace</label>
+              <select id="workspace-select" aria-label="Select client / project workspace"></select>
+              <a class="global-workspace-manage-link" href="workspace-management.html">Manage</a>
+            </div>
+          </div>
+        </header>
+
+        <section id="rfp-package-status" class="status-message" aria-live="polite"></section>
+
+        <section class="context-panel deliverable-type-status" aria-label="Deliverable types">
+          <div class="deliverable-type-copy">
+            <p class="section-kicker">Deliverable types</p>
+            <h2>Choose Deliverable Type</h2>
+            <p class="helper-text">The selected type controls the outline shown. Planned types are roadmap placeholders, not active controls.</p>
+          </div>
+          <div class="deliverable-type-row" aria-label="Deliverable type selector">
+            <div class="deliverable-type-selector" role="group" aria-label="Selectable deliverable types">
+              <button type="button" class="deliverable-type-option active" data-deliverable-type="rfp_package" aria-pressed="true">
+                <span class="deliverable-type-label">Available now</span>
+                <strong>RFP Package</strong>
+                <span class="deliverable-type-description">Package readiness, included requirements, and blockers.</span>
+              </button>
+              <button type="button" class="deliverable-type-option" data-deliverable-type="assessment_report" aria-pressed="false">
+                <span class="deliverable-type-label">Available now</span>
+                <strong>Assessment Report</strong>
+                <span class="deliverable-type-description">Assessment outline, source material, and blockers.</span>
+              </button>
+            </div>
+            <div class="deliverable-type-planned" aria-label="Planned deliverable types">
+              <span class="deliverable-type-label">Planned</span>
+              <div class="deliverable-type-planned-list">
+                <span>Executive Briefing</span>
+                <span>Implementation Plan</span>
+                <span>Requirements Matrix</span>
+                <span>Evaluation / Scoring Package</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="rfp-package-no-active" class="empty-state hidden">
+          <p class="section-kicker">No active workspace</p>
+          <h2>Select a workspace to assemble a deliverable outline</h2>
+          <p>
+            Deliverable Builder uses only existing workspace data and does not change records. RFP Package is selected by default; Assessment Report can be selected after a workspace is available.
+          </p>
+          <div class="empty-state-actions">
+            <a class="button primary" href="workspace-management.html">Open Clients &amp; Workspaces</a>
+            <a class="secondary-link" href="interview.html">Go to Project Intake</a>
+          </div>
+        </section>
+
+        <div id="rfp-package-workspace" class="rfp-package-workspace hidden">
+          <section class="content-card rfp-package-section deliverable-help-strip" aria-label="Deliverable Builder help">
+            <div class="deliverable-help-strip-copy">
+              <p class="section-kicker">Assembly workflow</p>
+              <h2>Deliverable Builder Workspace</h2>
+              <p class="helper-text">Readiness follows the workbench flow: Workspace, Discovery, Analysis, Outputs.</p>
+            </div>
+            <div class="deliverable-help-wrap">
+              <button
+                type="button"
+                class="button secondary compact-button"
+                id="deliverable-builder-help-toggle"
+                aria-haspopup="dialog"
+                aria-expanded="false"
+                aria-controls="deliverable-builder-help-popout"
+              >
+                Help
+              </button>
+              <div class="deliverable-help-popout hidden" id="deliverable-builder-help-popout" role="dialog" aria-labelledby="deliverable-builder-help-title">
+                <div class="modal-header deliverable-help-header">
+                  <div>
+                    <h2 id="deliverable-builder-help-title">Deliverable Builder Help</h2>
+                    <p>Use this page to assemble reviewed workbench content into draft/readiness outputs.</p>
+                  </div>
+                  <button type="button" class="modal-close-button" id="deliverable-builder-help-close" aria-label="Close Deliverable Builder help">&times;</button>
+                </div>
+                <ul class="deliverable-help-list">
+                  <li>Deliverable Builder summarizes readiness and exports outline-level Markdown only.</li>
+                  <li>It does not generate final client-ready DOCX or PDF files.</li>
+                  <li>Upstream pages provide context, source material, analysis, templates, and reviewed records.</li>
+                  <li>Requirements Review owns Requirements Matrix CSV and review brief outputs.</li>
+                  <li>Client templates guide structure and insertion areas but are not populated automatically.</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+<section class="content-card rfp-package-section deliverable-readiness-path-panel" aria-label="Selected deliverable readiness path">
+            <div class="section-heading-row">
+              <div>
+                <p class="section-kicker">Readiness path</p>
+                <h2 id="deliverable-readiness-path-heading">Selected Deliverable Inputs</h2>
+              </div>
+            </div>
+            <p class="helper-text" id="deliverable-readiness-path-note">
+              Completing upstream sections improves readiness and context for this deliverable. Structured exports remain owned by the page that owns the data.
+            </p>
+            <div id="deliverable-readiness-path" class="deliverable-readiness-path-list"></div>
+          </section>
+
+          <section class="content-card rfp-package-section deliverable-output-ownership-panel" aria-label="Output ownership">
+            <div class="section-heading-row">
+              <div>
+                <p class="section-kicker">Outputs</p>
+                <h2>Output Ownership</h2>
+              </div>
+            </div>
+            <p class="helper-text">
+              Deliverable Builder currently exports an outline-level Markdown file. Requirements Matrix CSV is generated from Requirements Review. Page-owned exports remain owned by their source pages until a future package export model is explicitly approved.
+            </p>
+            <div id="deliverable-output-ownership" class="deliverable-output-ownership-list"></div>
+          </section>
+          <section class="context-panel rfp-package-intro">
+            <div>
+              <p class="section-kicker" id="rfp-package-intro-kicker">Package readiness</p>
+              <h2 id="rfp-package-workspace-title">Draft package outline</h2>
+              <p id="rfp-package-template-note">
+                Loading package inputs...
+              </p>
+              <p class="helper-text rfp-package-readonly-note">
+                No records are changed from this page. The selected deliverable outline is derived from existing workspace data.
+              </p>
+            </div>
+            <div class="rfp-package-actions">
+              <button type="button" class="button secondary" id="copy-package-outline">Copy Deliverable Outline</button>
+              <button type="button" class="button primary" id="download-package-outline">Download Markdown</button>
+            </div>
+          </section>
+
+          <section class="content-card rfp-package-section deliverable-template-source-panel" id="deliverable-template-source-panel">
+            <div class="section-heading-row">
+              <div>
+                <p class="section-kicker">Template source</p>
+                <h2>Template Source</h2>
+              </div>
+              <a class="secondary-link" href="client-template-intake.html">Open Client Template Intake</a>
+            </div>
+            <p class="helper-text">
+              Choose the source structure for this deliverable outline. Preferences are saved only for the active workspace and do not map content or generate final documents.
+            </p>
+            <div class="deliverable-template-source-controls">
+              <label class="field-label template-source-field" for="deliverable-template-source">
+                <span>Template source</span>
+                <select id="deliverable-template-source" aria-label="Template source">
+                  <option value="outline_only">Outline only</option>
+                  <option value="mcp_standard">MCP standard template</option>
+                  <option value="client_provided">Client-provided template</option>
+                  <option value="ad_hoc_custom">Ad hoc / custom</option>
+                </select>
+              </label>
+              <label class="field-label template-source-field hidden" for="deliverable-mcp-template" id="deliverable-mcp-template-control">
+                <span>MCP template</span>
+                <select id="deliverable-mcp-template" aria-label="MCP standard template"></select>
+              </label>
+              <label class="field-label template-source-field hidden" for="deliverable-client-template" id="deliverable-client-template-control">
+                <span>Client template</span>
+                <select id="deliverable-client-template" aria-label="Client-provided template"></select>
+              </label>
+            </div>
+            <div id="deliverable-template-source-message" class="template-source-message">Outline only selected.</div>
+          </section>
+
+          <section class="library-summary-grid rfp-package-summary-grid" id="rfp-package-summary" aria-label="Deliverable readiness summary">
+            Loading package readiness...
+          </section>
+
+
+          <section class="content-card rfp-package-section hidden" id="rfp-package-assessment-findings-section">
+            <div class="section-heading-row">
+              <div>
+                <p class="section-kicker">Assessment source context</p>
+                <h2>Assessment Findings</h2>
+              </div>
+              <a class="secondary-link" href="assessment-findings.html">Open Assessment Findings</a>
+            </div>
+            <p class="helper-text">Assessment findings are consultant-authored workspace records. Deliverable Builder summarizes them for Assessment Report readiness only and does not change download content.</p>
+            <div id="rfp-package-assessment-findings-context" class="assessment-findings-context-list">Loading assessment findings context...</div>
+          </section>
+
+          <section class="content-card rfp-package-section" id="rfp-package-client-template-section">
+            <div class="section-heading-row">
+              <div>
+                <p class="section-kicker">Client template context</p>
+                <h2>Client Template Status</h2>
+              </div>
+              <a class="secondary-link" href="client-template-intake.html">Open Client Template Intake</a>
+            </div>
+            <p class="helper-text">
+              Prepared client templates are workspace-specific source context for future document assembly. Extracted sections and classifications can guide outline structure, but Deliverable Builder does not map content into templates or generate final documents yet.
+            </p>
+            <div id="rfp-package-client-template-status" class="client-template-status-list">Loading client template status...</div>
+          </section>
+
+          <section class="content-card rfp-package-section">
+            <div class="section-heading-row">
+              <div>
+                <p class="section-kicker">Source context</p>
+                <h2>Project Profile</h2>
+              </div>
+              <a class="secondary-link" href="interview.html">Open Project Intake</a>
+            </div>
+            <p class="helper-text">
+              These confirmed intake answers provide deliverable assembly context only. No Project Intake answers are changed from this page.
+            </p>
+            <div id="rfp-package-project-profile" class="profile-grid rfp-package-profile-grid">Loading project profile...</div>
+          </section>
+
+          <section class="content-card rfp-package-section" id="rfp-package-template-section">
+            <div class="section-heading-row">
+              <div>
+                <p class="section-kicker">Template context</p>
+                <h2>Template Source Context</h2>
+              </div>
+              <a class="secondary-link" href="project-configuration.html">Review configuration</a>
+            </div>
+            <p class="helper-text">
+              Template context informs the selected deliverable outline. It does not change source records, map content, or create a final document.
+            </p>
+            <div id="rfp-package-template-context" class="template-summary rfp-package-template-context">Loading template source context...</div>
+          </section>
+
+          <section class="content-card rfp-package-section">
+            <div class="section-heading-row">
+              <div>
+                <p class="section-kicker" id="rfp-package-outline-kicker">Draft outline</p>
+                <h2 id="rfp-package-outline-heading">Package Outline</h2>
+              </div>
+              <a class="secondary-link" href="project-configuration.html">Review configuration</a>
+            </div>
+            <div id="rfp-package-outline" class="rfp-package-outline-list"></div>
+          </section>
+
+          <section class="content-card rfp-package-section" id="rfp-package-included-section">
+            <div class="section-heading-row">
+              <div>
+                <p class="section-kicker">Requirements content</p>
+                <h2>Included Requirements</h2>
+              </div>
+              <a class="secondary-link" href="preview.html">Open Requirements Review</a>
+            </div>
+            <p class="helper-text">
+              Only requirements explicitly marked Include in RFP are shown here. No Decision requirements are counted only when available and are not included in draft package content.
+            </p>
+            <div id="rfp-package-included-requirements" class="rfp-package-requirements-list"></div>
+          </section>
+
+          <section class="content-card rfp-package-section">
+            <div class="section-heading-row">
+              <div>
+                <p class="section-kicker" id="rfp-package-blockers-kicker">Before package is ready</p>
+                <h2 id="rfp-package-blockers-heading">Open Items and Blockers</h2>
+              </div>
+              <a class="secondary-link" href="review-queue.html">Open Review Queue</a>
+            </div>
+            <div id="rfp-package-blockers" class="rfp-package-blocker-list"></div>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <script src="js/workspaces.js"></script>
+    <script src="js/rfp-package.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
