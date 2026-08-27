@@ -4,7 +4,8 @@ Static HTML, CSS, JavaScript, and JSON prototype for generating RFP requirements
 
 ## Files
 
-- `index.html` loads `data/interview-questions.json` and renders the interview.
+- `index.html` is the Home / Launch Pad. It contains the home dashboard and loads home UI scripts (`js/home.js`, `js/workspaces.js`).
+- `interview.html` contains the structured Project Intake workflow and loads `js/app.js` (which reads `data/interview-questions.json` and manages interview autosave and validation).
 - `preview.html` loads `data/requirements-library.json` and displays matching requirements grouped by section.
 - `css/styles.css` contains shared styling.
 - `js/app.js` handles interview rendering and browser storage.
@@ -14,7 +15,7 @@ Static HTML, CSS, JavaScript, and JSON prototype for generating RFP requirements
 - `data/interview-questions.json` stores interview sections, prompts, and answer choices.
 - `data/requirements-library.json` stores reusable RFP requirements, Category/Function taxonomy, applicability metadata, and matching criteria.
 - `data/source-packages.json` describes source RFP packages staged for review before import.
-- `data/rfp-components-library.json` sketches reusable RFP component types that are not always requirements, such as scoring weights, proposal instructions, SOW tasks, cost requirements, service levels, and contract clauses.
+- `data/rfp-components-library.json` sketches reusable RFP component types that are not always requirements, such as scoring weights, proposal instructions, SOW tasks, cost requirements, service liabilities, and templates.
 - `source-rfps/` stores source package notes and source documents for future review.
 
 ## Run Locally
@@ -88,7 +89,7 @@ The current sample requirements also include import-readiness metadata:
 - `reuseAssessment`
 - `clientSpecificity`
 
-These fields are intended to keep future imports from mixing approved reusable requirements with draft source language, reviewer comments, client-specific language, contract clauses, scoring items, or SOW/service-level terms.
+These fields are intended to keep future imports from mixing approved reusable requirements with draft source language, reviewer comments, client-specific language, contract clauses, scoring items, and other non-reusable material.
 
 The `criteria` object remains compatible with the current interview answers:
 
@@ -180,4 +181,4 @@ The preview page now shows why each requirement was selected from the interview 
 - `Needs client clarification`
 - `Exclude from export`
 
-Reviewer decisions are stored in browser storage. Copy/download output excludes only requirements marked `Exclude from export`; requirements marked for revision or clarification remain in the export with their reviewer decision visible so the draft can be used for internal review.
+Reviewer decisions are stored in browser storage. Copy/download output excludes only requirements marked `Exclude from export`; requirements marked for revision or clarification remain in the exported outputs to preserve reviewer context and consultant notes.
