@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supabase V2 Foundation Test</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      .test-container {
+        max-width: 600px;
+        margin: 2rem auto;
+        padding: 2rem;
+      }
+
+      .status-card {
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin: 1rem 0;
+        background: var(--panel-soft);
+      }
+
+      .status-card.success {
+        border-left: 4px solid var(--accent);
+        background: var(--green-soft);
+      }
+
+      .status-card.error {
+        border-left: 4px solid var(--red);
+        background: var(--red-soft);
+      }
+
+      .status-card.warning {
+        border-left: 4px solid var(--gold);
+        background: var(--gold-soft);
+      }
+
+      .status-label {
+        font-size: 0.85rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 0.5rem;
+      }
+
+      .status-value {
+        font-size: 1rem;
+        color: var(--panel-strong);
+        margin: 0.5rem 0;
+      }
+
+      .status-detail {
+        font-size: 0.9rem;
+        color: var(--muted-strong);
+        font-family: monospace;
+        margin-top: 0.5rem;
+        word-break: break-all;
+      }
+
+      .config-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .config-list li {
+        margin: 0.5rem 0;
+        font-size: 0.9rem;
+      }
+
+      .config-list strong {
+        color: var(--panel-strong);
+      }
+
+      .config-list code {
+        background: rgba(0, 0, 0, 0.08);
+        padding: 0.2rem 0.4rem;
+        border-radius: 3px;
+        font-size: 0.85rem;
+      }
+
+      .action-buttons {
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 1.5rem;
+        flex-wrap: wrap;
+      }
+
+      .test-button {
+        display: inline-flex;
+        min-height: 2.2rem;
+        align-items: center;
+        justify-content: center;
+        padding: 0.6rem 1rem;
+        border: 1px solid var(--border);
+        border-radius: 7px;
+        background: var(--panel);
+        color: var(--accent-dark);
+        cursor: pointer;
+        font-size: 0.85rem;
+        font-weight: 800;
+        text-decoration: none;
+        transition: background-color 140ms ease, border-color 140ms ease;
+      }
+
+      .test-button:hover {
+        border-color: var(--accent);
+        background: var(--green-soft);
+      }
+
+      .test-button.primary {
+        background: var(--accent);
+        color: #ffffff;
+        border-color: var(--accent-dark);
+      }
+
+      .test-button.primary:hover {
+        background: var(--accent-dark);
+      }
+
+      .test-result {
+        margin-top: 1rem;
+        padding: 1rem;
+        border: 1px solid var(--border);
+        border-radius: 7px;
+        background: rgba(0, 0, 0, 0.03);
+        font-family: monospace;
+        font-size: 0.85rem;
+        max-height: 200px;
+        overflow-y: auto;
+        white-space: pre-wrap;
+        word-break: break-word;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="app-sidebar">
+        <a class="brand" href="index.html" aria-label="Procurement Workbench home">
+          <span class="brand-mark">RB</span>
+          <span>
+            <span class="brand-name">Procurement Workbench</span>
+            <span class="brand-subtitle">Consulting workspace</span>
+          </span>
+        </a>
+        <nav class="sidebar-nav-section" aria-label="Navigation">
+          <a class="nav-link" href="index.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Home</span>
+              <span class="nav-detail">Back to app</span>
+            </span>
+          </a>
+          <a class="nav-link active" href="v2-supabase-test.html">
+            <span class="nav-step" aria-hidden="true"></span>
+            <span>
+              <span class="nav-title">Supabase V2 Test</span>
+              <span class="nav-detail">Connection check</span>
+            </span>
+          </a>
+        </nav>
+      </aside>
+
+      <div class="app-main">
+        <header class="app-header">
+          <div>
+            <p class="eyebrow">Version 2 Foundation</p>
+            <h1>Supabase Client Test</h1>
+          </div>
+        </header>
+
+        <main class="page-shell test-container">
+          <section>
+            <p>This page tests the Supabase client initialization for Version 2 of the RFP Workbench.</p>
+            <p>
+              If you see errors below, update <code>config.js</code> with your Supabase project URL and publishable key.
+            </p>
+          </section>
+
+          <!-- Client Initialization Status -->
+          <div id="client-status" class="status-card">
+            <div class="status-label">Client Status</div>
+            <div class="status-value" id="client-value">Initializing...</div>
+            <div class="status-detail" id="client-detail"></div>
+          </div>
+
+          <!-- Configuration Status -->
+          <div id="config-status" class="status-card">
+            <div class="status-label">Configuration</div>
+            <ul class="config-list" id="config-list"></ul>
+          </div>
+
+          <!-- Session Status -->
+          <div id="session-status" class="status-card">
+            <div class="status-label">Authenticated Session</div>
+            <div class="status-value" id="session-value">Checking...</div>
+            <div class="status-detail" id="session-detail"></div>
+          </div>
+
+          <!-- Actions -->
+          <div class="action-buttons">
+            <button class="test-button primary" id="refresh-button">Refresh Status</button>
+            <button class="test-button" id="console-button">Show Console Details</button>
+            <a class="test-button" href="index.html">Return to Home</a>
+          </div>
+
+          <!-- Test Results -->
+          <div id="test-result" class="test-result" style="display: none;"></div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Supabase JS library from CDN (pinned to v2.39.8, UMD build) -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.39.8/dist/umd/supabase.min.js"></script>
+
+    <!-- Configuration -->
+    <script src="config.js"></script>
+
+    <!-- Supabase Client Module -->
+    <script src="js/supabase-client.js"></script>
+
+    <!-- Test Logic -->
+    <script>
+      function updateStatus() {
+        const clientStatus = document.getElementById('client-status');
+        const clientValue = document.getElementById('client-value');
+        const clientDetail = document.getElementById('client-detail');
+        const configStatus = document.getElementById('config-status');
+        const configList = document.getElementById('config-list');
+        const sessionValue = document.getElementById('session-value');
+        const sessionDetail = document.getElementById('session-detail');
+
+        const status = window.RfpSupabase.getStatus();
+
+        // Update client status
+        if (status.isInitialized) {
+          clientStatus.classList.remove('error', 'warning');
+          clientStatus.classList.add('success');
+          clientValue.textContent = '✓ Client initialized successfully';
+          clientDetail.textContent = '';
+        } else {
+          clientStatus.classList.remove('success', 'warning');
+          clientStatus.classList.add('error');
+          clientValue.textContent = '✗ Client initialization failed';
+          clientDetail.textContent = status.error || 'Unknown error';
+        }
+
+        // Update config status
+        configStatus.classList.remove('success', 'error');
+        if (status.config.hasUrl && status.config.hasKey) {
+          configStatus.classList.add('success');
+        } else {
+          configStatus.classList.add('warning');
+        }
+
+        configList.innerHTML = `
+          <li><strong>Supabase URL:</strong> <code>${escapeHtml(status.config.hasUrl ? status.config.urlPreview : 'Not configured')}</code></li>
+          <li><strong>Publishable Key:</strong> <code>${escapeHtml(status.config.hasKey ? status.config.keyPreview : 'Not configured')}</code></li>
+        `;
+
+        // Update session status
+        window.RfpSupabase.getCurrentSession().then((session) => {
+          const sessionStatus = document.getElementById('session-status');
+          if (session) {
+            sessionStatus.classList.remove('error', 'warning');
+            sessionStatus.classList.add('success');
+            sessionValue.textContent = '✓ User is authenticated';
+            sessionDetail.textContent = `User ID: ${session.user.id}`;
+          } else {
+            sessionStatus.classList.remove('success', 'error');
+            sessionStatus.classList.add('warning');
+            sessionValue.textContent = '⚠ No authenticated session';
+            sessionDetail.textContent = 'User is not signed in (expected for unauthenticated clients)';
+          }
+        }).catch((error) => {
+          const sessionStatus = document.getElementById('session-status');
+          sessionStatus.classList.remove('success', 'warning');
+          sessionStatus.classList.add('error');
+          sessionValue.textContent = '✗ Session check failed';
+          sessionDetail.textContent = error.message || 'Unknown error';
+        });
+      }
+
+      function escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+      }
+
+      function showConsoleDetails() {
+        const resultDiv = document.getElementById('test-result');
+        const status = window.RfpSupabase.getStatus();
+        resultDiv.textContent = JSON.stringify(status, null, 2);
+        resultDiv.style.display = 'block';
+        resultDiv.scrollIntoView({ behavior: 'smooth' });
+      }
+
+      // Event listeners
+      document.getElementById('refresh-button').addEventListener('click', updateStatus);
+      document.getElementById('console-button').addEventListener('click', showConsoleDetails);
+
+      // Initial update
+      document.addEventListener('DOMContentLoaded', updateStatus);
+    </script>
+  </body>
+</html>
