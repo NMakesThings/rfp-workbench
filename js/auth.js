@@ -33,6 +33,25 @@
     return client;
   }
 
+  /**
+   * Validate a redirect target is a safe, same-origin, relative path.
+   * Returns true only for same-origin relative URLs (e.g., /index.html, /foo/bar).
+   */
+  function isSafeRedirectTarget(target) {
+    if (!target || typeof target !== 'string') return false;
+    // Disallow protocol-relative and absolute URLs that include an origin.
+    // Only allow paths that start with a single slash.
+    if (!target.startsWith('/')) return false;
+    if (target.startsWith('//')) return false;
+    try {
+      // Construct a URL relative to current origin and verify origin match.
+      const resolved = new URL(target, window.location.origin);
+      return resolved.origin === window.location.origin;
+    } catch (e) {
+      return false;
+    }
+  }
+
   async function showSession(session) {
     if (!session) {
       setStatus('Not signed in.');
@@ -110,6 +129,20 @@
       if (session) {
         setStatus('Sign-in successful.', 'success');
         await showSession(session);
+        // If a safe relative redirect was provided, return the user there.
+        try {
+          const params = new URLSearchParams(window.location.search);
+          const redirect = params.get('redirect');
+          if (redirect && isSafeRedirectTarget(redirect)) {
+            // Clear sensitive values before navigating away.
+            passwordInput.value = '';
+            // Use replace() to avoid leaving the auth page in history.
+            window.location.replace(redirect);
+            return;
+          }
+        } catch (e) {
+          // If parsing fails, do nothing and stay on this page.
+        }
       } else {
         setStatus('Sign-in complete (no session returned).', 'success');
         await showSession(null);
