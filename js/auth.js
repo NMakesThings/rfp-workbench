@@ -15,7 +15,7 @@
     emailInput.disabled = disabled;
     passwordInput.disabled = disabled;
     submitBtn.disabled = disabled;
-    signoutBtn.disabled = disabled;
+    // leave signoutBtn alone here; session logic will control it
   }
 
   function safeClient() {
@@ -37,6 +37,7 @@
     if (!session) {
       setStatus('Not signed in.');
       signoutBtn.hidden = true;
+      signoutBtn.disabled = true;
       submitBtn.hidden = false;
       disableForm(false);
       return;
@@ -44,6 +45,7 @@
     const user = session.user || {};
     setStatus('Signed in as ' + (user.email || user.id), 'success');
     signoutBtn.hidden = false;
+    signoutBtn.disabled = false;
     submitBtn.hidden = true;
     disableForm(true);
   }
