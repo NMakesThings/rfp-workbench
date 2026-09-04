@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Workspace Landing — Procurement Workbench</title>
+    <link rel="stylesheet" href="css/workspace-supabase.css" />
+  </head>
+  <body>
+    <main class="wl-container">
+      <header class="wl-header">
+        <h1>Workspace Landing</h1>
+        <p class="wl-sub">Server-backed workspace listing (Supabase)</p>
+      </header>
+
+      <section id="wl-status" class="wl-status" aria-live="polite"></section>
+
+      <section class="wl-profile" id="wl-profile" hidden>
+        <h2>Profile</h2>
+        <div id="wl-profile-info" class="wl-card"></div>
+      </section>
+
+      <section class="wl-orgs" id="wl-orgs" hidden>
+        <h2>Organizations</h2>
+        <div id="wl-org-list" class="wl-list"></div>
+      </section>
+
+      <section class="wl-clients" id="wl-clients" hidden>
+        <h2>Clients</h2>
+        <div id="wl-client-list" class="wl-list"></div>
+      </section>
+
+      <section class="wl-workspaces" id="wl-workspaces" hidden>
+        <h2>Workspaces</h2>
+        <div id="wl-workspace-list" class="wl-list"></div>
+      </section>
+
+      <footer class="wl-footer">
+        <p class="muted">This view uses server data. Your local prototype storage is unchanged.</p>
+      </footer>
+    </main>
+
+    <!-- Load Supabase config and UMD (pinned) and the repo's initializer before the page script -->
+    <script src="config.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.39.8/dist/umd/supabase.min.js"></script>
+    <script src="js/supabase-client.js"></script>
+
+    <script src="js/workspace-supabase.js"></script>
+  </body>
+</html>
