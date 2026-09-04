@@ -163,4 +163,125 @@
 
   function escapeHtml(s) {
     if (s == null) return '';
-    return String(s).replace(/[&<>\
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+
+  async function loadAndRender() {
+    setStatus('Checking authentication...');
+    const { client, session, initialized } = await getClientAndSession();
+
+    if (!initialized) {
+      // Fail-open: show local-only banner; do not attempt server queries
+      setStatus('Supabase not initialized — showing local-only view. No server data was requested.', null);
+      return;
+    }
+
+    if (!session) {
+      // client initialized but no session -> redirect to auth
+      safeRedirectToAuth();
+      return;
+    }
+
+    setStatus('Loading server workspace data...');
+
+    const userId = session.user && session.user.id;
+    try {
+      // 1) profiles: select id, full_name by id matching session user id
+      const { data: profile, error: profileError } = await client
+        .from('profiles')
+        .select('id,full_name')
+        .eq('id', userId)
+        .maybeSingle();
+      if (profileError) {
+        showError('Failed to load profile.');
+        console.warn('workspace-supabase profileError', profileError.message);
+        return;
+      }
+      renderProfile(profile, session);
+
+      // 2) organization_members by user_id
+      const { data: orgMembers, error: orgMembersError } = await client
+        .from('organization_members')
+        .select('organization_id, role')
+        .eq('user_id', userId);
+      if (orgMembersError) {
+        showError('Failed to load organization memberships.');
+        console.warn('workspace-supabase orgMembersError', orgMembersError.message);
+        return;
+      }
+      const orgIds = Array.from(new Set((orgMembers || []).map((r) => r.organization_id).filter(Boolean)));
+
+      // 3) organizations by those org ids
+      let orgRows = [];
+      if (orgIds.length > 0) {
+        const { data: orgsData, error: orgsError } = await client
+          .from('organizations')
+          .select('id,name')
+          .in('id', orgIds);
+        if (orgsError) {
+          showError('Failed to load organizations.');
+          console.warn('workspace-supabase orgsError', orgsError.message);
+          return;
+        }
+        orgRows = orgsData || [];
+      }
+      renderOrgs(orgRows, orgMembers);
+
+      // 4) clients by organization_ids
+      let clientRows = [];
+      if (orgIds.length > 0) {
+        const { data: clientsData, error: clientsError } = await client
+          .from('clients')
+          .select('id,organization_id,name')
+          .in('organization_id', orgIds);
+        if (clientsError) {
+          showError('Failed to load clients.');
+          console.warn('workspace-supabase clientsError', clientsError.message);
+          return;
+        }
+        clientRows = clientsData || [];
+      }
+      renderClients(clientRows);
+
+      // 5) workspace_members by user_id
+      const { data: wMembers, error: wMembersError } = await client
+        .from('workspace_members')
+        .select('workspace_id, role')
+        .eq('user_id', userId);
+      if (wMembersError) {
+        showError('Failed to load workspace memberships.');
+        console.warn('workspace-supabase wMembersError', wMembersError.message);
+        return;
+      }
+      const workspaceIds = Array.from(new Set((wMembers || []).map((r) => r.workspace_id).filter(Boolean)));
+
+      // 6) workspaces by returned workspace IDs
+      let workspaceRows = [];
+      if (workspaceIds.length > 0) {
+        const { data: workspacesData, error: workspacesError } = await client
+          .from('workspaces')
+          .select('id,organization_id,client_id,name,description,status')
+          .in('id', workspaceIds);
+        if (workspacesError) {
+          showError('Failed to load workspaces.');
+          console.warn('workspace-supabase workspacesError', workspacesError.message);
+          return;
+        }
+        workspaceRows = workspacesData || [];
+      }
+      renderWorkspaces(workspaceRows, wMembers);
+
+      setStatus('Loaded server workspace data.');
+    } catch (e) {
+      showError('Unexpected error loading workspace data.');
+      console.warn('workspace-supabase unexpected', e && e.message);
+    }
+  }
+
+  // initialize on load
+  document.addEventListener('DOMContentLoaded', function () {
+    loadAndRender();
+  });
+})();
