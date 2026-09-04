@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sign in — Procurement Workbench</title>
+    <link rel="stylesheet" href="css/auth.css" />
+  </head>
+  <body>
+    <main class="auth-container" role="main">
+      <header>
+        <h1>Sign in</h1>
+        <p class="muted">Email / password sign-in (Supabase)</p>
+      </header>
+
+      <section class="auth-card" aria-labelledby="signin-heading">
+        <h2 id="signin-heading" class="sr-only">Sign in with email and password</h2>
+
+        <form id="signin-form" novalidate>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" inputmode="email" autocomplete="email" required />
+
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" autocomplete="current-password" required />
+
+          <div class="form-actions">
+            <button id="signin-submit" class="button primary" type="submit">Sign in</button>
+            <button id="signout-button" class="button secondary" type="button" hidden>Sign out</button>
+          </div>
+        </form>
+
+        <div id="auth-status" aria-live="polite" class="auth-status" role="status"></div>
+
+        <details class="auth-help">
+          <summary>Developer notes</summary>
+          <p>This page uses the repo's <code>config.js</code> and <code>js/supabase-client.js</code>. Make sure <code>config.js</code> has a publishable key and URL for testing.</p>
+        </details>
+      </section>
+    </main>
+
+    <!-- Existing project config and Supabase UMD (pinned) -->
+    <script src="config.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.39.8/dist/umd/supabase.min.js"></script>
+
+    <!-- Use the repo's initializer -->
+    <script src="js/supabase-client.js"></script>
+
+    <!-- Page behaviour -->
+    <script src="js/auth.js"></script>
+  </body>
+</html>
