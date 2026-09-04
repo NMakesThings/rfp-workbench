@@ -19,10 +19,10 @@
 window.SUPABASE_CONFIG = {
   // Your Supabase project URL
   // Format: https://your-project-id.supabase.co
-  SUPABASE_URL: 'https://your-project-id.supabase.co',
+SUPABASE_URL: 'https://vpzgonwgldwvbslrgqmd.supabase.co',
 
   // Your Supabase publishable (anon) key
   // This is safe to expose publicly in client-side code.
   // Format: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
-  SUPABASE_PUBLISHABLE_KEY: 'your-publishable-key-here'
+  SUPABASE_PUBLISHABLE_KEY: 'sb_publishable_KL78qHLr2HbL_KsjELY2xg_Ce3LqED_'
 };
