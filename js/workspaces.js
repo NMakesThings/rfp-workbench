@@ -259,6 +259,96 @@
     return ensureWorkspaces().map((workspace) => ({ ...workspace }));
   }
 
+  async function synchronizeServerWorkspaces() {
+    if (
+      !window.RfpSupabase ||
+      typeof window.RfpSupabase.getSupabaseClient !== "function" ||
+      typeof window.RfpSupabase.getCurrentSession !== "function"
+    ) {
+      return;
+    }
+
+    const client = window.RfpSupabase.getSupabaseClient();
+
+    if (!client) {
+      return;
+    }
+
+    const session = await window.RfpSupabase.getCurrentSession();
+    const userId = session && session.user && session.user.id;
+
+    if (!userId) {
+      return;
+    }
+
+    const { data: memberships, error: membershipsError } = await client
+      .from("workspace_members")
+      .select("workspace_id")
+      .eq("user_id", userId);
+
+    if (membershipsError) {
+      console.warn(
+        "workspaces: failed to synchronize workspace memberships",
+        membershipsError.message
+      );
+      return;
+    }
+
+    const workspaceIds = Array.from(
+      new Set((memberships || []).map((membership) => membership.workspace_id).filter(Boolean))
+    );
+
+    if (!workspaceIds.length) {
+      return;
+    }
+
+    const { data: serverWorkspaces, error: workspacesError } = await client
+      .from("workspaces")
+      .select("id, name, description")
+      .in("id", workspaceIds);
+
+    if (workspacesError) {
+      console.warn(
+        "workspaces: failed to synchronize workspaces",
+        workspacesError.message
+      );
+      return;
+    }
+
+    const localWorkspaces = getWorkspaces();
+    const localById = new Map(
+      localWorkspaces.map((workspace) => [String(workspace.id), workspace])
+    );
+
+    (serverWorkspaces || []).forEach((serverWorkspace) => {
+      const workspaceId = String(serverWorkspace.id || "").trim();
+
+      if (!workspaceId) {
+        return;
+      }
+
+      const existingWorkspace = localById.get(workspaceId);
+      const metadata = {};
+
+      if (serverWorkspace.name) {
+        metadata.name = serverWorkspace.name;
+      }
+
+      if (serverWorkspace.description) {
+        metadata.description = serverWorkspace.description;
+      }
+
+      localById.set(
+        workspaceId,
+        existingWorkspace
+          ? { ...existingWorkspace, ...metadata }
+          : { id: workspaceId, ...metadata }
+      );
+    });
+
+    saveWorkspaces(Array.from(localById.values()));
+  }
+
   function migrateLegacyData(workspaceId) {
     const legacyAnswers = localStorage.getItem(LEGACY_ANSWERS_KEY);
     const answersKey = scopedKey(workspaceId, "answers");
@@ -1745,6 +1835,7 @@
     getWorkspaceAnswers,
     getWorkspaceReviewDecisions,
     listWorkspaces,
+    synchronizeServerWorkspaces,
     openCreateWorkspaceModal,
     renameWorkspace,
     saveProjectRoadmap,
@@ -1895,6 +1986,7 @@
     }
   }
   document.addEventListener("DOMContentLoaded", async () => {
+    await synchronizeServerWorkspaces();
     renderWorkspaceControls();
     renderNoActiveWorkspaceState();
     renderSidebarControls();
