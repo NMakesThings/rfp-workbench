@@ -65,10 +65,15 @@
 
   document.addEventListener("DOMContentLoaded", init);
 
-  function init() {
+  async function init() {
     initializeReadOnlySidebarControls();
     bindElements();
     bindActions();
+
+    if (window.RfpWorkspaces && window.RfpWorkspaces.ready) {
+      await window.RfpWorkspaces.ready;
+    }
+
     render();
   }
 

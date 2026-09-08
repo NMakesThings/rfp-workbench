@@ -158,6 +158,10 @@
     bindActions();
     setStatus("Loading package inputs...", false);
 
+    if (window.RfpWorkspaces && window.RfpWorkspaces.ready) {
+      await window.RfpWorkspaces.ready;
+    }
+
     referenceData = await loadReferenceData();
     currentModel = buildPackageModel(referenceData);
     render(currentModel);

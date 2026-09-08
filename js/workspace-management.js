@@ -58,6 +58,10 @@
       return;
     }
 
+    if (window.RfpWorkspaces.ready) {
+      await window.RfpWorkspaces.ready;
+    }
+
     await loadTaxonomy();
     bindActions();
     renderWorkspaces();

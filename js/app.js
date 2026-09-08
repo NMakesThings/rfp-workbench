@@ -1006,6 +1006,10 @@
   }
 
   async function loadQuestions() {
+    if (window.RfpWorkspaces && window.RfpWorkspaces.ready) {
+      await window.RfpWorkspaces.ready;
+    }
+
     try {
       const [questionsResponse, taxonomyResponse] = await Promise.all([
         fetch(QUESTIONS_URL),
