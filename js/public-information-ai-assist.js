@@ -188,6 +188,11 @@
 
     setDefaultOptions();
     await loadOptions();
+
+    if (window.RfpWorkspaces.ready) {
+      await window.RfpWorkspaces.ready;
+    }
+
     bindActions();
     render();
   }

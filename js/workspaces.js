@@ -190,6 +190,14 @@
     "projectRoadmap",
     "projectPlanItems"
   ];
+  const SHARED_STATE_ITEM_KEYS = new Set([
+    "answers",
+    "reviewDecisions",
+    "requirementReviewNotes",
+    "projectRoadmap",
+    "projectPlanItems",
+    "clientSourceDocuments"
+  ]);
 
   function readJson(key, fallback) {
     try {
@@ -348,6 +356,123 @@
 
     saveWorkspaces(Array.from(localById.values()));
   }
+
+  async function persistSharedState(workspaceId, itemKey, data) {
+    if (!workspaceId || !SHARED_STATE_ITEM_KEYS.has(itemKey)) {
+      return;
+    }
+
+    try {
+      if (
+        !window.RfpSupabase ||
+        typeof window.RfpSupabase.getSupabaseClient !== "function" ||
+        typeof window.RfpSupabase.getCurrentSession !== "function"
+      ) {
+        return;
+      }
+
+      const client = window.RfpSupabase.getSupabaseClient();
+
+      const session = await window.RfpSupabase.getCurrentSession();
+
+      if (!client || !session) {
+        return;
+      }
+
+      const { error } = await client
+        .from("workspace_shared_state")
+        .upsert(
+          {
+            workspace_id: workspaceId,
+            item_key: itemKey,
+            data,
+            updated_at: new Date().toISOString(),
+            updated_by: session.user && session.user.id ? session.user.id : null
+          },
+          { onConflict: "workspace_id,item_key" }
+        );
+
+      if (error) {
+        console.warn(
+          "workspaces: failed to persist shared state",
+          error.message
+        );
+      }
+    } catch (error) {
+      console.warn(
+        "workspaces: unexpected shared state persistence error",
+        error && error.message
+      );
+    }
+  }
+
+  function saveSharedState(itemKey, data, workspaceId) {
+    const targetWorkspaceId = workspaceId || (getActiveWorkspaceOrNull() || {}).id;
+
+    void persistSharedState(targetWorkspaceId, itemKey, data);
+  }
+
+  async function hydrateSharedWorkspaceState() {
+    const workspace = getActiveWorkspaceOrNull();
+
+    if (!workspace) {
+      return;
+    }
+
+    try {
+      if (
+        !window.RfpSupabase ||
+        typeof window.RfpSupabase.getSupabaseClient !== "function" ||
+        typeof window.RfpSupabase.getCurrentSession !== "function"
+      ) {
+        return;
+      }
+
+      const client = window.RfpSupabase.getSupabaseClient();
+
+      if (!client || !(await window.RfpSupabase.getCurrentSession())) {
+        return;
+      }
+
+      const { data: rows, error } = await client
+        .from("workspace_shared_state")
+        .select("item_key, data")
+        .eq("workspace_id", workspace.id);
+
+      if (error) {
+        console.warn(
+          "workspaces: failed to hydrate shared state",
+          error.message
+        );
+        return;
+      }
+
+      (rows || []).forEach((row) => {
+        if (!SHARED_STATE_ITEM_KEYS.has(row.item_key)) {
+          return;
+        }
+
+        writeJson(scopedKey(workspace.id, row.item_key), row.data);
+      });
+    } catch (error) {
+      console.warn(
+        "workspaces: unexpected shared state hydration error",
+        error && error.message
+      );
+    }
+  }
+
+  const ready = (async () => {
+    try {
+      await synchronizeServerWorkspaces();
+      await hydrateSharedWorkspaceState();
+    } catch (error) {
+      console.warn(
+        "workspaces: shared workspace initialization failed",
+        error && error.message
+      );
+    }
+  })();
 
   function migrateLegacyData(workspaceId) {
     const legacyAnswers = localStorage.getItem(LEGACY_ANSWERS_KEY);
@@ -610,10 +735,13 @@
       return false;
     }
 
-    writeJson(scopedKey(workspace.id, "answers"), {
+    const savedAnswers = {
       ...answers,
       savedAt: new Date().toISOString()
-    });
+    };
+
+    writeJson(scopedKey(workspace.id, "answers"), savedAnswers);
+    saveSharedState("answers", savedAnswers, workspace.id);
     touchWorkspace(workspace.id);
     return true;
   }
@@ -626,6 +754,7 @@
     }
 
     localStorage.removeItem(scopedKey(workspace.id, "answers"));
+    saveSharedState("answers", {}, workspace.id);
     touchWorkspace(workspace.id);
     return true;
   }
@@ -656,6 +785,7 @@
     }
 
     writeJson(scopedKey(workspace.id, "reviewDecisions"), decisions);
+    saveSharedState("reviewDecisions", decisions, workspace.id);
     touchWorkspace(workspace.id);
     return true;
   }
@@ -727,6 +857,7 @@
 
     normalized.updatedAt = new Date().toISOString();
     writeJson(scopedKey(workspace.id, "requirementReviewNotes"), normalized);
+    saveSharedState("requirementReviewNotes", normalized, workspace.id);
     touchWorkspace(workspace.id);
     return normalized;
   }
@@ -866,6 +997,7 @@
     const normalized = normalizeProjectRoadmap(workspaceId, roadmap);
     normalized.updatedAt = new Date().toISOString();
     writeJson(scopedKey(workspaceId, "projectRoadmap"), normalized);
+    saveSharedState("projectRoadmap", normalized, workspaceId);
     touchWorkspace(workspaceId);
     return normalized;
   }
@@ -908,6 +1040,7 @@
     const normalized = normalizeProjectPlanItems(workspaceId, projectPlanItems);
     normalized.updatedAt = new Date().toISOString();
     writeJson(scopedKey(workspaceId, "projectPlanItems"), normalized);
+    saveSharedState("projectPlanItems", normalized, workspaceId);
     touchWorkspace(workspaceId);
     return normalized;
   }
@@ -1840,6 +1973,7 @@
     renameWorkspace,
     saveProjectRoadmap,
     saveProjectPlanItems,
+    saveSharedState,
     saveProjectSpecificRequirements,
     saveRequirementReviewNotes,
     renderProjectRoadmapStrip,
@@ -1848,7 +1982,8 @@
     renderSidebarControls,
     saveAnswers,
     saveReviewDecisions,
-    setActiveWorkspace
+    setActiveWorkspace,
+    ready
   };
   function getWorkspaceIdFromUrl() {
     const params = new URLSearchParams(window.location.search);
@@ -1986,7 +2121,7 @@
     }
   }
   document.addEventListener("DOMContentLoaded", async () => {
-    await synchronizeServerWorkspaces();
+    await ready;
     renderWorkspaceControls();
     renderNoActiveWorkspaceState();
     renderSidebarControls();

@@ -119,6 +119,10 @@
       return;
     }
 
+    if (window.RfpWorkspaces.ready) {
+      await window.RfpWorkspaces.ready;
+    }
+
     bindFilterActions();
     await loadRequirementsReferenceData();
     renderQueue();

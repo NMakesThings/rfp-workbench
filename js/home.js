@@ -52,7 +52,7 @@
 
   document.addEventListener("DOMContentLoaded", init);
 
-  function init() {
+  async function init() {
     elements.pageTitle = document.querySelector(".app-header h1");
     elements.heroKicker = document.querySelector(".home-hero-copy .section-kicker");
     elements.actionLabel = document.querySelector(".home-action-label");
@@ -81,6 +81,10 @@
     if (!window.RfpWorkspaces) {
       renderUnavailable();
       return;
+    }
+
+    if (window.RfpWorkspaces.ready) {
+      await window.RfpWorkspaces.ready;
     }
 
     bindActions();

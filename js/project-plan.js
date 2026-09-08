@@ -38,6 +38,10 @@
       return;
     }
 
+    if (window.RfpWorkspaces.ready) {
+      await window.RfpWorkspaces.ready;
+    }
+
     bindEvents();
     await loadTemplates();
     render();

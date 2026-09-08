@@ -2164,6 +2164,10 @@
   }
 
   async function loadRequirements() {
+    if (window.RfpWorkspaces && window.RfpWorkspaces.ready) {
+      await window.RfpWorkspaces.ready;
+    }
+
     const answers = getSavedAnswers();
 
     if (!answers) {

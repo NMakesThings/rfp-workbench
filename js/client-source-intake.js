@@ -373,6 +373,10 @@
   document.addEventListener("DOMContentLoaded", init);
 
   async function init() {
+    if (window.RfpWorkspaces && window.RfpWorkspaces.ready) {
+      await window.RfpWorkspaces.ready;
+    }
+
     elements = {
       form: document.getElementById("client-source-form"),
       title: document.getElementById("client-source-title"),
@@ -2865,6 +2869,10 @@
 
   function saveCollection(item, value) {
     localStorage.setItem(scopedKey(item), JSON.stringify(value));
+
+    if (item === COLLECTIONS.documents && window.RfpWorkspaces.saveSharedState) {
+      window.RfpWorkspaces.saveSharedState(item, value);
+    }
   }
 
   function findTerm(text, term) {

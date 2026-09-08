@@ -162,6 +162,9 @@
   async function init() {
     try {
       await loadConfig();
+      if (window.RfpWorkspaces && window.RfpWorkspaces.ready) {
+        await window.RfpWorkspaces.ready;
+      }
       profiles = seedStarterProfiles(readProfiles());
       renderEditor();
       renderProfileList();
