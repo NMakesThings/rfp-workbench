@@ -1759,13 +1759,148 @@
     saveReviewDecisions,
     setActiveWorkspace
   };
+  function getWorkspaceIdFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    return params.get("workspace_id");
+  }
 
-  document.addEventListener("DOMContentLoaded", () => {
+  function isValidWorkspaceUuid(value) {
+    return /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(
+      String(value || "")
+    );
+  }
+
+  function removeWorkspaceIdFromUrl() {
+    const url = new URL(window.location.href);
+
+    if (!url.searchParams.has("workspace_id")) {
+      return;
+    }
+
+    url.searchParams.delete("workspace_id");
+    window.history.replaceState(
+      window.history.state,
+      "",
+      url.pathname + url.search + url.hash
+    );
+  }
+
+  function showWorkspaceSelectionNotice(message) {
+    let notice = document.getElementById("workspace-selection-notice");
+
+    if (!notice) {
+      notice = document.createElement("div");
+      notice.id = "workspace-selection-notice";
+      notice.className = "status-message";
+      notice.setAttribute("role", "status");
+      notice.setAttribute("aria-live", "polite");
+      document.body.prepend(notice);
+    }
+
+    notice.textContent = message;
+  }
+
+  async function handleWorkspaceIdFromUrl() {
+    const workspaceId = getWorkspaceIdFromUrl();
+
+    if (!workspaceId) {
+      return;
+    }
+
+    try {
+      if (!isValidWorkspaceUuid(workspaceId)) {
+        showWorkspaceSelectionNotice("The requested workspace link is invalid.");
+        return;
+      }
+
+      if (
+        !window.RfpSupabase ||
+        typeof window.RfpSupabase.getSupabaseClient !== "function" ||
+        typeof window.RfpSupabase.getCurrentSession !== "function"
+      ) {
+        showWorkspaceSelectionNotice(
+          "Workspace access could not be verified. Please select a workspace manually."
+        );
+        return;
+      }
+
+      const client = window.RfpSupabase.getSupabaseClient();
+
+      if (!client) {
+        showWorkspaceSelectionNotice(
+          "Workspace access could not be verified. Please select a workspace manually."
+        );
+        return;
+      }
+
+      const session = await window.RfpSupabase.getCurrentSession();
+      const userId = session && session.user && session.user.id;
+
+      if (!userId) {
+        showWorkspaceSelectionNotice(
+          "Please sign in before opening this workspace."
+        );
+        return;
+      }
+
+      const { data: memberships, error } = await client
+        .from("workspace_members")
+        .select("workspace_id, role")
+        .eq("user_id", userId);
+
+      if (error) {
+        console.warn(
+          "workspaces: failed to verify workspace membership",
+          error.message
+        );
+        showWorkspaceSelectionNotice(
+          "Workspace access could not be verified. Please select a workspace manually."
+        );
+        return;
+      }
+
+      const isMember = (memberships || []).some(
+        (membership) =>
+          String(membership.workspace_id) === String(workspaceId)
+      );
+
+      if (!isMember) {
+        showWorkspaceSelectionNotice(
+          "You do not have access to the requested workspace."
+        );
+        return;
+      }
+
+      const activated = setActiveWorkspace(workspaceId);
+
+      if (!activated) {
+        showWorkspaceSelectionNotice(
+          "This workspace is available to your account but is not yet available in the local workspace list."
+        );
+        return;
+      }
+
+      removeWorkspaceIdFromUrl();
+      window.location.reload();
+    } catch (error) {
+      console.warn(
+        "workspaces: unexpected workspace selection error",
+        error && error.message
+      );
+      showWorkspaceSelectionNotice(
+        "The requested workspace could not be opened. Please select a workspace manually."
+      );
+    } finally {
+      removeWorkspaceIdFromUrl();
+    }
+  }
+  document.addEventListener("DOMContentLoaded", async () => {
     renderWorkspaceControls();
     renderNoActiveWorkspaceState();
     renderSidebarControls();
     renderProjectRoadmapStrip();
     renderWorkflowPhaseStrip();
+    await handleWorkspaceIdFromUrl();
   });
 })();
 

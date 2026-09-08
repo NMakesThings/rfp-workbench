@@ -156,7 +156,10 @@
           <div><strong>${escapeHtml(w.name)}</strong></div>
           <div class="meta">${escapeHtml(w.description || '')}</div>
         </div>
-        <div class="meta">${escapeHtml(role)}${w.client_id ? ' • client ' + escapeHtml(String(w.client_id)) : ''}</div>`;
+        <div class="meta">${escapeHtml(role)}${w.client_id ? ' • client ' + escapeHtml(String(w.client_id)) : ''}</div>
+        <div class="wl-actions">
+          <a class="button primary wl-open" href="index.html?workspace_id=${encodeURIComponent(w.id)}">Open workspace</a>
+        </div>`;
       workspaceList.appendChild(el);
     });
   }
